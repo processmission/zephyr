@@ -419,6 +419,7 @@ external_content_contents = [
     (ZEPHYR_BASE, "cmake/modules"),
     (ZEPHYR_BASE, "share/sysbuild/cmake/modules"),
 ]
+external_content_exclude = [ZEPHYR_BASE / "doc" / "translations"]
 if not SKIP_EXTERNAL_CONTENT:
     external_content_contents += [
         (ZEPHYR_BASE, "boards/**/*.rst"),

@@ -28,6 +28,9 @@ Configuration options
   directory) that should be kept even if they do not exist in the source
   directory. This option can be useful for auto-generated files in the
   destination directory.
+- ``external_content_exclude``: Absolute directories omitted from source collection.
+- ``external_content_overlay``: Optional source directory whose relative paths replace matching
+  narrative files in the assembled tree. Generated files are not selected from this directory.
 """
 
 import filecmp
@@ -53,6 +56,7 @@ def adjust_includes(
     directives: list[str],
     encoding: str,
     dstpath: Path | None = None,
+    source_map: dict[Path, Path] | None = None,
 ) -> None:
     """Adjust included content paths.
 
@@ -62,6 +66,7 @@ def adjust_includes(
         directives: Directives to be parsed and adjusted.
         encoding: Sources encoding.
         dstpath: Destination path for fname if its path is not the actual destination.
+        source_map: Original source paths mapped to their assembled destinations.
     """
 
     if fname.suffix != ".rst":
@@ -76,7 +81,10 @@ def adjust_includes(
         if fpath.startswith("/"):
             fpath_adj = fpath
         else:
-            fpath_adj = Path(os.path.relpath(basepath / fpath, dstpath)).as_posix()
+            target = (basepath / fpath).resolve()
+            if directive == "include" and source_map is not None:
+                target = source_map.get(target, target)
+            fpath_adj = Path(os.path.relpath(target, dstpath)).as_posix()
 
         return f".. {directive}:: {fpath_adj}"
 
@@ -107,7 +115,11 @@ def sync_contents(app: Sphinx) -> None:
 
     def _pattern_excludes(f):
         # backup files
-        return f.match('.#*') or f.match('*~')
+        return (
+            f.match('.#*')
+            or f.match('*~')
+            or any(f.is_relative_to(Path(path)) for path in app.config.external_content_exclude)
+        )
 
     for content in app.config.external_content_contents:
         prefix_src, glob = content
@@ -123,15 +135,45 @@ def sync_contents(app: Sphinx) -> None:
             elif not _pattern_excludes(src):
                 to_copy.append((src, prefix_src))
 
+    source_map = {src.resolve(): srcdir / src.relative_to(prefix) for src, prefix in to_copy}
+    overlay = app.config.external_content_overlay
     for entry in to_copy:
         src, prefix_src = entry
         dst = (srcdir / src.relative_to(prefix_src)).resolve()
+        original = src
+        if overlay and src.suffix in (".rst", ".html", ".txt"):
+            translation = Path(overlay) / src.relative_to(prefix_src)
+            if translation.is_file():
+                src = translation
 
         if dst in to_delete:
             to_delete.remove(dst)
 
         if not dst.parent.exists():
             dst.parent.mkdir(parents=True)
+
+        # Compare assembled RST, including after a translation is removed or replaced by
+        # an older file. Source mtimes alone cannot detect a change of language source.
+        if src.suffix == ".rst":
+            with tempfile.TemporaryDirectory() as td:
+                adjusted = Path(td) / src.name
+                shutil.copy(src, adjusted)
+                adjust_includes(
+                    adjusted,
+                    original.parent,
+                    app.config.external_content_directives,
+                    app.config.source_encoding,
+                    dstpath=dst.parent,
+                    source_map=source_map,
+                )
+                if not dst.exists() or not filecmp.cmp(adjusted, dst, shallow=False):
+                    shutil.copyfile(adjusted, dst)
+            continue
+
+        if overlay and src.suffix in (".html", ".txt"):
+            if not dst.exists() or not filecmp.cmp(src, dst, shallow=False):
+                shutil.copyfile(src, dst)
+            continue
 
         # just copy if it does not exist
         if not dst.exists():
@@ -170,6 +212,8 @@ def setup(app: Sphinx) -> dict[str, Any]:
     app.add_config_value("external_content_contents", [], "env")
     app.add_config_value("external_content_directives", DEFAULT_DIRECTIVES, "env")
     app.add_config_value("external_content_keep", [], "")
+    app.add_config_value("external_content_exclude", [], "env")
+    app.add_config_value("external_content_overlay", "", "env")
 
     app.connect("builder-inited", sync_contents)
 
