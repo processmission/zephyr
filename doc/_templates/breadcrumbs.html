@@ -14,6 +14,17 @@
 
 {% endblock %}
 {%- block breadcrumbs_aside %}
+  {%- if docs_site_base_url %}
+  <li class="wy-breadcrumbs-aside">
+    {% if docs_language == "zh_CN" %}
+      <a href="{{ docs_upstream_base_url }}{{ pagename }}.html" class="fa fa-language"
+         hreflang="en" lang="en"> English</a>
+    {% else %}
+      <a href="{{ docs_site_base_url }}{{ pagename }}.html" class="fa fa-language"
+         hreflang="zh-CN" lang="zh-CN"> 简体中文</a>
+    {% endif %}
+  </li>
+  {%- endif %}
   <li class="wy-breadcrumbs-aside">
     <dark-mode-toggle id="dark-mode-toggle" appearance="three-way" permanent="true"/>
   </li>

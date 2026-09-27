@@ -1,11 +1,16 @@
+# SPDX-FileCopyrightText: Copyright The Zephyr Project Contributors
+# SPDX-License-Identifier: Apache-2.0
+
 # Zephyr documentation build configuration file.
 # Reference: https://www.sphinx-doc.org/en/master/usage/configuration.html
 
+import json
 import os
 import re
 import sys
 import textwrap
 from pathlib import Path
+from urllib.parse import urlsplit
 from urllib.request import urlopen
 
 ZEPHYR_BASE = Path(__file__).resolve().parents[1]
@@ -38,6 +43,9 @@ except ImportError:
 project = "Zephyr Project"
 copyright = "2015-2026 Zephyr Project members and individual contributors"
 author = "The Zephyr Project Contributors"
+language = "en"
+# Document translations are complete RST sources selected before parsing.
+locale_dirs = []
 
 # parse version from 'VERSION' file
 with open(ZEPHYR_BASE / "VERSION") as f:
@@ -91,6 +99,8 @@ if SKIP_EXTERNAL_CONTENT:
 
 extensions = [
     "zephyr.build_timer",
+    "zephyr.chinese_search",
+    "zephyr.translated_html",
     "sphinx_rtd_theme",
     "sphinx.ext.todo",
     "sphinx.ext.extlinks",
@@ -135,7 +145,7 @@ if tags.has("convertimages"):  # pylint: disable=undefined-variable  # noqa: F82
 
 templates_path = ["_templates"]
 
-exclude_patterns = ["_build"]
+exclude_patterns = ["_build", "README.rst"]
 
 # EOL release notes and migration guides are not built (to avoid dead links etc.)
 RELEASE_NOTES_GLOB_PATTERNS = [
@@ -207,7 +217,7 @@ nitpick_ignore = [
     ("c:identifier", "va_list"),
 ]
 
-SDK_URL_BASE="https://github.com/zephyrproject-rtos/sdk-ng/releases/download"
+SDK_URL_BASE = "https://github.com/zephyrproject-rtos/sdk-ng/releases/download"
 
 rst_epilog = f"""
 .. include:: /substitutions.txt
@@ -241,7 +251,7 @@ html_theme_options = {
     "prev_next_buttons_location": None,
     "navigation_depth": 6,
 }
-html_baseurl = "https://docs.zephyrproject.org/latest/"
+html_baseurl = os.environ.get("ZEPHYR_DOCS_HTML_BASEURL", "https://docs.zephyrproject.org/latest/")
 html_title = "Zephyr Project Documentation"
 html_logo = str(ZEPHYR_BASE / "doc" / "_static" / "images" / "logo.svg")
 html_favicon = str(ZEPHYR_BASE / "doc" / "_static" / "images" / "favicon.png")
@@ -252,14 +262,23 @@ html_split_index = True
 html_show_sourcelink = False
 html_show_sphinx = False
 html_search_scorer = str(ZEPHYR_BASE / "doc" / "_static" / "js" / "scorer.js")
-html_additional_pages = {
-    "gsearch": "gsearch.html"
-}
+html_additional_pages = {"gsearch": "gsearch.html"}
 
 is_release = tags.has("release")  # pylint: disable=undefined-variable  # noqa: F821
-reference_prefix = ""
-if tags.has("publish"):  # pylint: disable=undefined-variable  # noqa: F821
-    reference_prefix = f"/{version}" if is_release else "/latest"
+translation_upstream_base_url = (
+    os.environ.get(
+        "ZEPHYR_DOCS_UPSTREAM_BASE_URL",
+        f"https://docs.zephyrproject.org/{version if is_release else 'latest'}/",
+    ).rstrip("/")
+    + "/"
+)
+reference_prefix = os.environ.get("ZEPHYR_DOCS_REFERENCE_PREFIX")
+if reference_prefix is None:
+    reference_prefix = ""
+    if tags.has("publish"):  # pylint: disable=undefined-variable  # noqa: F821
+        reference_prefix = f"/{version}" if is_release else "/latest"
+else:
+    reference_prefix = reference_prefix.rstrip("/")
 docs_title = "Docs / {}".format(version if is_release else "Latest")
 html_context = {
     "show_license": True,
@@ -319,7 +338,7 @@ latex_documents = [
     ("index-tex", "zephyr.tex", "Zephyr Project Documentation", author, "manual"),
 ]
 latex_engine = "xelatex"
-figure_align = "H" # Place figures exactly where they are defined in the source file.
+figure_align = "H"  # Place figures exactly where they are defined in the source file.
 
 # -- Options for zephyr.doxyrunner plugin ---------------------------------
 
@@ -390,8 +409,12 @@ notfound_urls_prefix = f"/{version}/" if is_release else "/latest/"
 
 # -- Options for zephyr.gh_utils ------------------------------------------
 
-gh_link_version = f"v{version}" if is_release else "main"
-gh_link_base_url = "https://github.com/zephyrproject-rtos/zephyr"
+# Source and issue links point to the upstream repository by default. Downstream or translated
+# builds can point them at the repository that actually hosts the documentation they render.
+gh_link_base_url = os.environ.get(
+    "ZEPHYR_DOCS_GH_BASE_URL", "https://github.com/zephyrproject-rtos/zephyr"
+)
+gh_link_version = os.environ.get("ZEPHYR_DOCS_GH_REF") or (f"v{version}" if is_release else "main")
 gh_link_prefixes = {
     "samples/.*": "",
     "boards/.*": "",
@@ -408,13 +431,14 @@ gh_link_exclude = [
 
 kconfig_generate_db = not SKIP_KCONFIG
 kconfig_ext_paths = [ZEPHYR_BASE]
-kconfig_gh_link_base_url = "https://github.com/zephyrproject-rtos/zephyr"
-kconfig_zephyr_version = f"v{version}" if is_release else "main"
+kconfig_gh_link_base_url = gh_link_base_url
+kconfig_zephyr_version = gh_link_version
 
 # -- Options for zephyr.external_content ----------------------------------
 
 external_content_contents = [
     (ZEPHYR_BASE / "doc", "[!_]*"),
+    (ZEPHYR_BASE, "README.rst"),
     (ZEPHYR_BASE, "tests/**/*.pts"),
     (ZEPHYR_BASE, "cmake/modules"),
     (ZEPHYR_BASE, "share/sysbuild/cmake/modules"),
@@ -472,7 +496,7 @@ copybutton_prompt_is_regexp = True
 
 sitemap_url_scheme = "{link}"
 
-#-- Options for sphinxcontrib-mermaid -------------------------------------
+# -- Options for sphinxcontrib-mermaid -------------------------------------
 
 mermaid_version = "11.16.1"
 d3_version = "7.9.0"
@@ -480,15 +504,13 @@ d3_version = "7.9.0"
 # Without this, every diagram is drawn in a box of a fixed height and centered in it.
 mermaid_height = "auto"
 
-if tags.has("no-external-deps"): # pylint: disable=undefined-variable  # noqa: F821
+if tags.has("no-external-deps"):  # pylint: disable=undefined-variable  # noqa: F821
     mermaid_use_local = "js/mermaid/mermaid.esm.mjs"
     d3_use_local = "js/d3/d3.min.js"
 
 # -- Linkcheck options ----------------------------------------------------
 
-linkcheck_ignore = [
-    r"https://github.com/zephyrproject-rtos/zephyr/issues/.*"
-]
+linkcheck_ignore = [r"https://github.com/zephyrproject-rtos/zephyr/issues/.*"]
 
 extlinks = {
     "github": ("https://github.com/zephyrproject-rtos/zephyr/issues/%s", "GitHub #%s"),
@@ -508,9 +530,52 @@ def _set_html_permalinks_icon(_, config):
     config.html_permalinks_icon = ""
 
 
+def _set_language_switch_context(app, config):
+    config.html_context = dict(config.html_context)
+    config.html_context["docs_language"] = config.language or "en"
+    config.html_context["docs_upstream_base_url"] = config.translation_upstream_base_url
+
+    base_url = os.environ.get("ZEPHYR_DOCS_SITE_BASE_URL")
+    if base_url:
+        config.html_context["docs_site_base_url"] = base_url.rstrip("/") + "/"
+
+    if config.language == "zh_CN":
+        config.html_context.pop("kapa_website_id", None)
+        translation_root = ZEPHYR_BASE / "doc" / "translations" / "zh_CN"
+        config.external_content_overlay = str(translation_root)
+        config.templates_path = [str(translation_root / "_templates"), *config.templates_path]
+        config.html_static_path = [*config.html_static_path, str(translation_root / "_static")]
+        site = json.loads(
+            (translation_root / "_templates" / "site.json").read_text(encoding="utf-8")
+        )
+        config.notfound_urls_prefix = urlsplit(config.html_baseurl).path or "/"
+        app.tags.add("zh_CN")
+        app.add_js_file("search-ui.js", priority=900)
+        app.add_js_file("catalog-ui.js", priority=400)
+        config.project = site["project"]
+        config.html_title = site["html_title"]
+        config.html_last_updated_fmt = site["date_format"]
+        config.copyright = config.copyright.replace(
+            "Zephyr Project members and individual contributors",
+            site["copyright_holders"],
+        )
+        config.html_context["docs_title"] = site["docs_title"]
+        config.html_context["reference_links"] = {
+            title: (
+                f"{reference_prefix}{path}"
+                if path == "/glossary.html"
+                else f"{config.translation_upstream_base_url}{path.lstrip('/')}"
+            )
+            for title, path in site["references"].items()
+        }
+    else:
+        app.tags.remove("zh_CN")
+
+
 def setup(app):
     # theme customizations
     app.add_css_file("css/custom.css")
     app.add_js_file("js/custom.js")
     # RTD theme hard codes a Font Awesome link icon in its setup() code, but we want no icon
     app.connect("config-inited", _set_html_permalinks_icon, priority=900)
+    app.connect("config-inited", _set_language_switch_context, priority=900)

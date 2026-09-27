@@ -5,6 +5,11 @@
 
 var memorySliderConfigs = {};
 
+function catalogText(message, values = {}) {
+  const translated = window.ZEPHYR_CATALOG_TRANSLATIONS?.[message] ?? message;
+  return translated.replace(/\{(\w+)\}/g, (match, key) => values[key] ?? match);
+}
+
 const MEMORY_KB = 1024;
 const MEMORY_MB = MEMORY_KB ** 2;
 const MEMORY_GB = MEMORY_KB ** 3;
@@ -25,8 +30,8 @@ function toggleDisplayMode(btn) {
   btn.classList.toggle("fa-bars");
   btn.classList.toggle("fa-th");
   btn.textContent = catalog.classList.contains("compact")
-    ? " Switch to Card View"
-    : " Switch to Compact View";
+    ? catalogText("Switch to Card View")
+    : catalogText("Switch to Compact View");
 }
 
 function populateFormFromURL() {
@@ -489,8 +494,12 @@ function updateBoardCount() {
   const visibleShields = visible.filter((board) => board.classList.contains("shield"));
 
   document.getElementById("nb-matches").textContent =
-    `Showing ${visible.length - visibleShields.length} of ${boards.length - shields.length} boards,` +
-    ` ${visibleShields.length} of ${shields.length} shields`;
+    catalogText("Showing {boards} of {totalBoards} boards, {shields} of {totalShields} shields", {
+      boards: visible.length - visibleShields.length,
+      totalBoards: boards.length - shields.length,
+      shields: visibleShields.length,
+      totalShields: shields.length,
+    });
 }
 
 function updateOptionsAvailability(selectElement, availableValues) {
@@ -641,8 +650,8 @@ function initMemorySliders() {
       behaviour: "tap-drag",
       keyboardSupport: true,
       handleAttributes: [
-        { "aria-label": `Minimum on-target ${typeLabel}` },
-        { "aria-label": `Maximum on-target ${typeLabel}` },
+        { "aria-label": catalogText("Minimum on-target {type}", {type: typeLabel}) },
+        { "aria-label": catalogText("Maximum on-target {type}", {type: typeLabel}) },
       ],
       ariaFormat: {
         to(value) {
@@ -707,7 +716,7 @@ function updateMemorySlider(type) {
   if (!label) return;
 
   if (!root || !root.noUiSlider || !cfg) {
-    label.textContent = "Any";
+    label.textContent = catalogText("Any");
     return;
   }
 
@@ -719,7 +728,7 @@ function updateMemorySlider(type) {
   const atMax = maxBytes >= Infinity;
 
   if (atMin && atMax) {
-    label.textContent = "Any";
+    label.textContent = catalogText("Any");
   } else if (atMin) {
     label.textContent = `≤ ${formatMemoryBytes(maxBytes)}`;
   } else if (atMax) {

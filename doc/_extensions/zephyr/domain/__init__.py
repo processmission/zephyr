@@ -829,7 +829,7 @@ class BoardCatalogDirective(SphinxDirective):
             # Cache the docname containing the board catalog
             domain_data["board_catalog_docname"] = self.env.docname
 
-            renderer = SphinxRenderer([TEMPLATES_DIR])
+            renderer = SphinxRenderer([*self.env.app.config.templates_path, TEMPLATES_DIR])
             rendered = renderer.render(
                 "board-catalog.html",
                 {

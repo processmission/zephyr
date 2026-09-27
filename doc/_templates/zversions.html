@@ -1,15 +1,15 @@
 {# Add rst-badge after rst-versions for small badge style. #}
-  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="{{ _('Versions') }}">
     <span class="rst-current-version" data-toggle="rst-current-version">
-      <span class="fa fa-book"> Zephyr Project</span>
-      v: {{ current_version if is_release else "latest" }}
+      <span class="fa fa-book"> {{ _('Zephyr Project') }}</span>
+      {{ _('Version:') }} {{ current_version if is_release else _('latest') }}
       <span class="fa fa-caret-down"></span>
     </span>
     <div class="rst-other-versions">
       <dl>
         <dt>{{ _('Document Release Versions') }}</dt>
         {% for slug, url in versions %}
-          <dd><a href="{{ url }}">{{ slug }}</a></dd>
+          <dd><a href="{{ url }}">{{ _('latest') if slug == 'latest' else slug }}</a></dd>
         {% endfor %}
       </dl>
       <dl>
@@ -20,13 +20,13 @@
       <dl>
         <dt>{{ _('zephyrproject.org Links') }}</dt>
           <dd>
-            <a href="https://www.zephyrproject.org/">Project Home</a>
+            <a href="https://www.zephyrproject.org/">{{ _('Project Home') }}</a>
           </dd>
           <dd>
             <a href="https://github.com/zephyrproject-rtos/sdk-ng/releases">SDK</a>
           </dd>
           <dd>
-            <a href="https://github.com/zephyrproject-rtos/zephyr/releases">Releases</a>
+            <a href="https://github.com/zephyrproject-rtos/zephyr/releases">{{ _('Releases') }}</a>
           </dd>
       </dl>
     </div>

@@ -73,7 +73,7 @@ def create_redirect_pages(app, exception):
 
         # check that new_url is a valid docname, or if not that it is at least
         # covered as the "old" part of another redirect rule
-        if new_url not in app.env.all_docs and not any(
+        if new_url not in app.env.found_docs and not any(
             old == new_url for (old, _) in app.config.html_redirect_pages
         ):
             logger.warning(

@@ -1,5 +1,6 @@
 # ------------------------------------------------------------------------------
 # Makefile for documentation build
+# SPDX-FileCopyrightText: Copyright The Zephyr Project Contributors
 # SPDX-License-Identifier: Apache-2.0
 
 BUILDDIR ?= _build
@@ -30,10 +31,19 @@ SKIP_TAGS = \
 # ------------------------------------------------------------------------------
 # Documentation targets
 
-.PHONY: configure clean html html-fast html-minimal html-live html-live-fast latex pdf doxygen doxygen-xml doxygen-coverage doxygen-coverage-json
+.PHONY: configure clean html html-zh html-zh-fast \
+	html-fast html-minimal html-live html-live-fast latex pdf doxygen doxygen-xml \
+	doxygen-coverage doxygen-coverage-json
 
 html-fast:
 	${MAKE} html DT_TURBO_MODE=1 HW_FEATURES_TURBO_MODE=1
+
+html-zh:
+	${MAKE} html BUILDDIR=${BUILDDIR}/zh \
+		SPHINXOPTS_EXTRA="${SPHINXOPTS_EXTRA} -D language=zh_CN -t zh_CN"
+
+html-zh-fast:
+	${MAKE} html-zh DT_TURBO_MODE=1 HW_FEATURES_TURBO_MODE=1
 
 # Minimal preview build: html-fast with every SKIP_* switch enabled. The
 # fastest way to preview narrative .rst changes; not suitable for publishing

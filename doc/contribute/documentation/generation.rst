@@ -242,6 +242,65 @@ build the documentation directly from there:
    # To generate PDF output
    make pdf
 
+.. _building-translated-documentation:
+
+Building translated documentation
+**********************************
+
+Chinese translations are complete reStructuredText documents under
+``doc/translations/zh_CN/``. Their paths mirror the assembled English documentation tree:
+``doc/kernel/index.rst`` maps to ``doc/translations/zh_CN/kernel/index.rst``, while
+``boards/<vendor>/<board>/doc/index.rst`` maps to
+``doc/translations/zh_CN/boards/<vendor>/<board>/doc/index.rst``.
+
+Translate manually authored narrative documents only. Source-generated API documentation,
+Kconfig option references, Devicetree binding references, and generated hardware tables remain
+in English. Keep their generation directives, code, identifiers, explicit labels, and link
+targets intact. Pages without a translated source use the complete English source.
+
+The build selects the translated file before parsing and reuses the Zephyr theme, extensions,
+and generated references. Includes use the corresponding assembled document when available;
+code examples and shared images continue to use their original resources. Translated interface
+templates live in ``doc/translations/zh_CN/_templates``; no project gettext catalogs are used.
+
+Build from the ``doc`` directory::
+
+   make html-zh
+
+Chinese HTML is written to ``_build/zh/html``. The Pages workflow sets
+``HW_FEATURES_TURBO_MODE=1`` to skip Twister's per-board CMake configuration runs.
+It runs documentation tests and Sphinx only, without installing cross-compilers or building
+firmware samples. The catalog retains board names, vendors and architectures; hardware
+capabilities and memory sizes are available in the upstream English board documentation.
+Doxygen and Kconfig metadata are still generated for reference validation. ``SKIP_*`` options
+remain limited to local previews.
+
+The GitHub Pages workflow builds the Chinese site only. English source documents and generated
+API metadata are still read to validate references, but no English documentation mirror is
+rendered or published. The English link opens the corresponding page on the upstream site;
+untranslated documents and standalone generated references also link upstream. The default
+upstream is ``https://docs.zephyrproject.org/latest/``. Set ``ZEPHYR_DOCS_UPSTREAM_BASE_URL`` to a
+release documentation URL when publishing translations for that release.
+
+``_scripts/package_translations.py`` packages the rendered Chinese pages, their static assets,
+and small compatibility redirects for old local English URLs. Source maps and internal build
+artifacts are omitted, and the package size is checked against the GitHub Pages limit.
+
+Review complete translated articles alongside their English sources and rendered pages.
+``translations/zh_CN/_meta/sources.json`` records the migration baseline for each source;
+this baseline is provenance, not a claim that the translation has been reviewed. After upstream
+changes, compare against that revision, update the complete article, and review terminology,
+references, included documents, and code examples before updating the baseline.
+
+The downstream build accepts these environment variables:
+
+* ``ZEPHYR_DOCS_HTML_BASEURL``: canonical URL for the current language.
+* ``ZEPHYR_DOCS_REFERENCE_PREFIX``: URL prefix for generated references.
+* ``ZEPHYR_DOCS_SITE_BASE_URL``: root URL of the Chinese site.
+* ``ZEPHYR_DOCS_UPSTREAM_BASE_URL``: matching official English documentation version.
+* ``ZEPHYR_DOCS_GH_BASE_URL``: GitHub repository for source and issue links.
+* ``ZEPHYR_DOCS_GH_REF``: branch or tag for source links.
+
 Developer-mode Document Building
 ********************************
 

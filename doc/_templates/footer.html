@@ -1,16 +1,22 @@
 {% extends "!footer.html" %}
 {% block contentinfo %}
+{%- set sentence_end = "。" if docs_language == "zh_CN" else "." %}
+{%- set label_sep = "" if docs_language == "zh_CN" else " " %}
 <p>
   {%- if show_copyright %}
-  &#169; Copyright {{ copyright }}.
+  {%- if docs_language == "zh_CN" %}
+  {{ _('Copyright') }} &#169; {{ copyright }}{{ sentence_end }}
+  {%- else %}
+  &#169; Copyright {{ copyright }}{{ sentence_end }}
+  {%- endif %}
   {%- endif %}
 
   {%- if last_updated %}
   <div class="lastupdated">
-    Last generated: {{ last_updated }}.
+    {{ _('Last generated:') }}{{ label_sep }}{{ last_updated }}{{ sentence_end }}
     {%- set git_last_updated, sha1 = pagename | git_info | default((None, None), true) %}
     {%- if git_last_updated %}
-    Last source update: {{ git_last_updated }}.
+    {{ _('Last source update:') }}{{ label_sep }}{{ git_last_updated }}{{ sentence_end }}
     {%- endif %}
   </div>
   {%- endif -%}

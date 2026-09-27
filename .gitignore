@@ -16,6 +16,7 @@
 
 build*/
 !doc/build/
+!doc/translations/zh_CN/build/
 !scripts/build
 !share/sysbuild/build
 !tests/drivers/build_all
@@ -36,6 +37,10 @@ scripts/gen_idt/gen_idt
 coverage-report
 doc-coverage.info
 doc/_build
+/_site/
+# Vendored by the documentation build from doc/package.json
+doc/_static/js/d3
+doc/_static/js/mermaid
 doc/doxygen
 doc/xml
 doc/html

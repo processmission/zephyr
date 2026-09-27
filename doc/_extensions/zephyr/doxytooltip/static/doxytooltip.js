@@ -40,7 +40,7 @@ registerDoxygenTooltip = function () {
 
   let firstTimeShowingTooltip = true;
   let links = Array.from(document.querySelectorAll('a.reference.internal')).filter((a) =>
-    a.querySelector('code.c')
+    a.querySelector('code.c') && new URL(a.href, location.href).origin === location.origin
   );
   links.forEach((link) => {
     tippy(link, {

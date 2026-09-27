@@ -79,6 +79,10 @@ def get_page_prefix(app: Sphinx, pagename: str) -> str:
         if re.match(exclude, pagename):
             return None
 
+    overlay = app.config.external_content_overlay
+    if overlay and (Path(overlay) / app.env.doc2path(pagename, False)).is_file():
+        return Path(overlay).relative_to(ZEPHYR_BASE).as_posix()
+
     found_prefix = ""
     for pattern, prefix in app.config.gh_link_prefixes.items():
         if re.match(pattern, pagename):

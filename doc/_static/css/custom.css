@@ -1522,3 +1522,15 @@ li>a.code-sample-link.reference.internal.current {
     color: var(--svc-accent-soft, var(--link-color));
     font-weight: 500;
 }
+
+/* Size landing cards against the content column, excluding the navigation sidebar. */
+.landing-container {
+    container-type: inline-size;
+}
+
+@container (max-width: 640px) {
+    .landing-container .landing-grid,
+    .landing-container .landing-grid.three-col {
+        grid-template-columns: 1fr;
+    }
+}

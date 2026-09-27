@@ -28,24 +28,16 @@ Zephyr Project Documentation
    .. admonition:: Welcome to Zephyr Project Documentation for version |version|.
       :class: welcome
 
-      .. raw:: html
-
-         <p>
-           Use the <a href="#" onclick="openVersionSelector(); return false;">version selector</a>
-           for the documentation of other Zephyr versions.
-         </p>
+      Use the `official documentation site <https://docs.zephyrproject.org/>`_
+      for documentation of other Zephyr versions.
 
 .. only:: development
 
    .. admonition:: Welcome to Zephyr Project Documentation for the ``main`` tree (|version|).
       :class: welcome
 
-      .. raw:: html
-
-         <p>
-           Use the <a href="#" onclick="openVersionSelector(); return false;">version selector</a>
-           for the documentation of previously released versions.
-         </p>
+      Use the `official documentation site <https://docs.zephyrproject.org/>`_
+      for documentation of previously released versions.
 
 .. raw:: html
    :file: index.html
@@ -58,12 +50,12 @@ Zephyr Project Documentation
    develop/index.rst
    kernel/index.rst
    services/index.rst
-   build/index.rst
+   Build and Configuration Systems <build/index.rst>
    hardware/index.rst
    contribute/index.rst
    project/index.rst
    security/index.rst
    safety/index.rst
-   samples/index.rst
-   boards/index.rst
+   Samples and Demos <samples/index.rst>
+   Supported Boards and Shields <boards/index.rst>
    releases/index.rst
