@@ -1,0 +1,141 @@
+# SPDX-FileCopyrightText: Copyright The Zephyr Project Contributors
+# SPDX-License-Identifier: Apache-2.0
+
+name: Chinese Documentation Pages
+
+on:
+  push:
+    branches:
+      - docs-zh
+  pull_request:
+    branches:
+      - docs-zh
+    paths:
+      - "doc/**"
+      - "scripts/tests/doc/**"
+      - "boards/**/doc/**"
+      - "samples/**/doc/**"
+      - "snippets/**/doc/**"
+      - "dts/bindings/**"
+      - "west.yml"
+      - ".github/workflows/docs-zh-pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: docs-zh-pages-${{ github.ref }}
+  cancel-in-progress: false
+
+env:
+  DOXYGEN_VERSION: 1.17.0
+  DOXYGEN_SHA256SUM: 75419ef4f446fc1c24ef12514b574e66e898ee6f527c6ae2ad84f91a905823c2
+  PAGES_BASE_URL: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}
+  PAGES_BASE_PATH: /${{ github.event.repository.name }}
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 90
+
+    steps:
+      - name: Check out Zephyr
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          path: zephyr
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: 3.12
+          cache: pip
+          cache-dependency-path: zephyr/doc/requirements.txt
+
+      - name: Install documentation system packages
+        working-directory: zephyr
+        run: |
+          sudo apt-get update
+          sudo apt-get install --yes --no-install-recommends \
+            cmake ninja-build device-tree-compiler gperf \
+            graphviz imagemagick librsvg2-bin wget
+          DOXYGEN_RELEASE="Release_${DOXYGEN_VERSION//./_}"
+          DOXYGEN_ARCHIVE="doxygen-${DOXYGEN_VERSION}.linux.bin.tar.gz"
+          DOXYGEN_URL="https://github.com/doxygen/doxygen/releases/download/${DOXYGEN_RELEASE}"
+          wget --no-verbose "${DOXYGEN_URL}/${DOXYGEN_ARCHIVE}"
+          echo "${DOXYGEN_SHA256SUM}  ${DOXYGEN_ARCHIVE}" | sha256sum --check
+          sudo tar xf "${DOXYGEN_ARCHIVE}" -C /opt
+          echo "/opt/doxygen-${DOXYGEN_VERSION}/bin" >> "$GITHUB_PATH"
+
+      - name: Install Python packages
+        working-directory: zephyr
+        run: |
+          pip uninstall -y reuse
+          pip install -r scripts/requirements-actions.txt --require-hashes
+          pip install -r doc/requirements.txt --require-hashes
+
+      - name: Initialize documentation workspace
+        run: |
+          west init -l zephyr
+          west update -o=--depth=1 -n
+
+      - name: Verify translated source assembly
+        working-directory: zephyr
+        run: python -m pytest -q scripts/tests/doc
+
+      - name: Set up Node.js
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24
+
+      - name: Install and vendor documentation JavaScript libraries
+        working-directory: zephyr
+        run: |
+          npm install --prefix doc
+          for package in mermaid d3; do
+            mkdir -p "doc/_static/js/${package}"
+            cp -a "doc/node_modules/${package}/dist/." "doc/_static/js/${package}/"
+          done
+
+      - name: Build Simplified Chinese documentation
+        working-directory: zephyr
+        env:
+          ZEPHYR_DOCS_HTML_BASEURL: ${{ env.PAGES_BASE_URL }}/
+          ZEPHYR_DOCS_REFERENCE_PREFIX: ${{ env.PAGES_BASE_PATH }}
+          ZEPHYR_DOCS_SITE_BASE_URL: ${{ env.PAGES_BASE_URL }}
+          ZEPHYR_DOCS_UPSTREAM_BASE_URL: https://docs.zephyrproject.org/latest/
+          # Source links point to the complete translated RST files in this repository.
+          ZEPHYR_DOCS_GH_BASE_URL: ${{ github.server_url }}/${{ github.repository }}
+          ZEPHYR_DOCS_GH_REF: docs-zh
+        run: |
+          DOC_TAG=development NO_EXTERNAL_DEPS=1 make -C doc html-zh \
+            BUILDDIR=_build/pages HW_FEATURES_TURBO_MODE=1
+
+      - name: Package Chinese site
+        working-directory: zephyr
+        run: |
+          python doc/_scripts/package_translations.py \
+            --html doc/_build/pages/zh/html --output _site
+
+      - name: Upload GitHub Pages artifact
+        uses: actions/upload-pages-artifact@7b1f4a764d45c48632c6b24a0339c27f5614fb0b # v4.0.0
+        with:
+          path: zephyr/_site
+
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/docs-zh'
+    needs: build
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e # v4.0.5
