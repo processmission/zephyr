@@ -43,6 +43,7 @@ from anytree import ChildResolverError, Node, PreOrderIter, Resolver, search
 from docutils import nodes
 from docutils.parsers.rst import directives, roles
 from docutils.statemachine import StringList
+from docutils.utils import column_width
 from sphinx import addnodes
 from sphinx.application import Sphinx
 from sphinx.domains import Domain, ObjType
@@ -713,7 +714,7 @@ class CodeSampleCategoryDirective(SphinxDirective):
         # a toctree and correctly mounts whatever relevant documents under it in the global toc
         lines = [
             name,
-            "#" * len(name),
+            "#" * column_width(name),
             "",
             ".. toctree::",
             "   :titlesonly:",
@@ -1297,8 +1298,10 @@ class ZephyrDomain(Domain):
                 board_data.pop("docname", None)
 
     def merge_domaindata(self, docnames: list[str], otherdata: dict) -> None:
-        self.data["code-samples"].update(otherdata["code-samples"])
-        self.data["code-samples-categories"].update(otherdata["code-samples-categories"])
+        for kind in ("code-samples", "code-samples-categories"):
+            self.data[kind].update(
+                (key, item) for key, item in otherdata[kind].items() if item["docname"] in docnames
+            )
 
         # self.data["boards"] contains all the boards right from builder-inited time, but it still
         # potentially needs merging since a board's docname property is set by BoardDirective to
@@ -1310,7 +1313,11 @@ class ZephyrDomain(Domain):
         # merge category trees by adding all the categories found in the "other" tree that to
         # self tree
         other_tree = otherdata["code-samples-categories-tree"]
-        categories = [n for n in PreOrderIter(other_tree) if hasattr(n, "category")]
+        categories = [
+            n
+            for n in PreOrderIter(other_tree)
+            if hasattr(n, "category") and n.category["docname"] in docnames
+        ]
         for category in categories:
             category_path = f"/{'/'.join(n.name for n in category.path)}"
             self.add_category_to_tree(
