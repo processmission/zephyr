@@ -1,0 +1,97 @@
+.. SPDX-FileCopyrightText: Copyright The Process Mission
+
+..
+   SPDX-FileCopyrightText: Copyright The Zephyr Project Contributors
+   SPDX-License-Identifier: Apache-2.0
+
+.. _vulnerabilities_2022:
+
+CVE-2022
+########
+
+:cve:`2022-0553`
+----------------
+
+可提取未加密的固件映像
+
+此问题已在 main 中针对 v3.0.0 修复。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-wrj2-9vj9-rrcp <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-wrj2-9vj9-rrcp>`_
+
+- `main 的修复 PR 42424 <https://github.com/zephyrproject-rtos/zephyr/pull/42424>`_
+
+:cve:`2022-1041`
+----------------
+
+Bluetooth Mesh 核心栈中的越界写入漏洞可在配网过程中触发
+
+此问题已在 main 中针对 v3.1.0 修复。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-p449-9hv9-pj38 <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-p449-9hv9-pj38>`_
+
+- `main 的修复 PR 45136 <https://github.com/zephyrproject-rtos/zephyr/pull/45136>`_
+
+- `v3.0.0 的修复 PR 45188 <https://github.com/zephyrproject-rtos/zephyr/pull/45188>`_
+
+- `v2.7.0 的修复 PR 45187 <https://github.com/zephyrproject-rtos/zephyr/pull/45187>`_
+
+:cve:`2022-1042`
+----------------
+
+Bluetooth Mesh 核心栈中的越界写入漏洞可在配网过程中触发
+
+此问题已在 main 中针对 v3.1.0 修复。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-j7v7-w73r-mm5x <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-j7v7-w73r-mm5x>`_
+
+- `main 的修复 PR 45066 <https://github.com/zephyrproject-rtos/zephyr/pull/45066>`_
+
+- `v3.0.0 的修复 PR 45135 <https://github.com/zephyrproject-rtos/zephyr/pull/45135>`_
+
+- `v2.7.0 的修复 PR 45134 <https://github.com/zephyrproject-rtos/zephyr/pull/45134>`_
+
+:cve:`2022-1841`
+----------------
+
+tcp_flags 中的越界写入
+
+此问题已在 main 中针对 v3.1.0 修复。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-5c3j-p8cr-2pgh <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-5c3j-p8cr-2pgh>`_
+
+- `main 的修复 PR 45796 <https://github.com/zephyrproject-rtos/zephyr/pull/45796>`_
+
+:cve:`2022-2741`
+----------------
+
+can：精心构造的 CAN 帧可触发拒绝服务
+
+此问题已在 main 中针对 v3.2.0 修复。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-hx5v-j59q-c3j8 <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-hx5v-j59q-c3j8>`_
+
+- `main 的修复 PR 47903 <https://github.com/zephyrproject-rtos/zephyr/pull/47903>`_
+
+- `v3.1.0 的修复 PR 47957 <https://github.com/zephyrproject-rtos/zephyr/pull/47957>`_
+
+- `v3.0.0 的修复 PR 47958 <https://github.com/zephyrproject-rtos/zephyr/pull/47958>`_
+
+- `v2.7.0 的修复 PR 47959 <https://github.com/zephyrproject-rtos/zephyr/pull/47959>`_
+
+:cve:`2022-2993`
+----------------
+
+bt：host：密钥校验检查有误
+
+此问题已在 main 中针对 v3.2.0 修复。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-3286-jgjx-8cvr <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-3286-jgjx-8cvr>`_
+
+- `main 的修复 PR 48733 <https://github.com/zephyrproject-rtos/zephyr/pull/48733>`_
+
+:cve:`2022-3806`
+----------------
+
+DoS：le_read_buffer_size_complete() 中的无效初始化
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-w525-fm68-ppq3 <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-w525-fm68-ppq3>`_

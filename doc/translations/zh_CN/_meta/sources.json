@@ -1,0 +1,3078 @@
+{
+    "status": "migrated; human review required",
+    "documents": {
+        "404.rst": {
+            "source": "doc/404.rst",
+            "source_sha256": "7e1522a814e2ccb6d8b18f7387dd6ffc1629ce0fd00205f02ebd5eca88784922"
+        },
+        "LICENSING.rst": {
+            "source": "doc/LICENSING.rst",
+            "source_sha256": "c3a60d998139a99f96df5c19f5a047b361e03cdda8d42b42042e982048180254"
+        },
+        "contribute/bin_blobs.rst": {
+            "source": "doc/contribute/bin_blobs.rst",
+            "source_sha256": "c11405651ac8dafd3a23d06d64e480f5f02cba76a367019156f17f85aec2d75b"
+        },
+        "contribute/coding_guidelines/index.rst": {
+            "source": "doc/contribute/coding_guidelines/index.rst",
+            "source_sha256": "10f1e4b2c14eefe5ef0e5378bb533fa3f40f9d802896cfd48d2d1023ac763c9d"
+        },
+        "contribute/contributor_expectations.rst": {
+            "source": "doc/contribute/contributor_expectations.rst",
+            "source_sha256": "c1b9de83c773cf54d55ee8d046e74effeaf22c0b7166cc3456ae2002326c6026"
+        },
+        "contribute/documentation/generation.rst": {
+            "source": "doc/contribute/documentation/generation.rst",
+            "source_sha256": "7bb3115bd18bfa64171090e6af309af795092fe89f8ef3e5af8bdd85f12ff2a4"
+        },
+        "contribute/documentation/guidelines.rst": {
+            "source": "doc/contribute/documentation/guidelines.rst",
+            "source_sha256": "47951b21fe0caa69f473e7e256006fa54fb824c506df549887dd2a97bb3514dd"
+        },
+        "contribute/external.rst": {
+            "source": "doc/contribute/external.rst",
+            "source_sha256": "18f55d55090490805dbd7381d964ba6398eafac6dd9b4efe804f3ea04a4a2db5"
+        },
+        "contribute/guidelines.rst": {
+            "source": "doc/contribute/guidelines.rst",
+            "source_sha256": "8f86dba4b298dd912d95c1528d312dca6033baed1bd04ff9fc4a4e4bf81d98e2"
+        },
+        "contribute/index.rst": {
+            "source": "doc/contribute/index.rst",
+            "source_sha256": "018204bba443992b1c768d1843a62071b7dcc7bb89383b201cd0d7e286ed8cb5"
+        },
+        "contribute/modifying_contributions.rst": {
+            "source": "doc/contribute/modifying_contributions.rst",
+            "source_sha256": "f3edc237472d90ddd73ebcc0f4413347722527fbf5129876b42753b6b8a3c271"
+        },
+        "contribute/pr_lifecycle_policy.rst": {
+            "source": "doc/contribute/pr_lifecycle_policy.rst",
+            "source_sha256": "7131675d46f4f92c76ade4207c5d9f426f13bccfb4735e3d85bd88509adbe7ff"
+        },
+        "contribute/proposals_and_rfcs.rst": {
+            "source": "doc/contribute/proposals_and_rfcs.rst",
+            "source_sha256": "fa06bbd8640f86f8bf4a4967991971d36ab9a4e0462ebe6b10fc1d88889f4542"
+        },
+        "contribute/reviewer_expectations.rst": {
+            "source": "doc/contribute/reviewer_expectations.rst",
+            "source_sha256": "258d0f3c13379f39af4e5fb8f92b1619d7f870bf5b42fa163700c45407f38364"
+        },
+        "contribute/style/cmake.rst": {
+            "source": "doc/contribute/style/cmake.rst",
+            "source_sha256": "5164ea2daa8d276fc512610c8996a4c1e8be00f9a84d953608ead430dea6e647"
+        },
+        "contribute/style/code.rst": {
+            "source": "doc/contribute/style/code.rst",
+            "source_sha256": "67817d170e6b3453b13a3e7bba7c6a2492161aa10768013376675549c7760416"
+        },
+        "contribute/style/devicetree.rst": {
+            "source": "doc/contribute/style/devicetree.rst",
+            "source_sha256": "0cd4c5d521937e587ef3cea79e42a529b27cdcf931fbb6379a43d31f0a466fea"
+        },
+        "contribute/style/doxygen.rst": {
+            "source": "doc/contribute/style/doxygen.rst",
+            "source_sha256": "73f25c20c25dc0104da08ea06b358565c1f33b059c1524f8b561f8887a999c98"
+        },
+        "contribute/style/index.rst": {
+            "source": "doc/contribute/style/index.rst",
+            "source_sha256": "504f117c92550cbe505c231e6267db63b3ff245e634ada53ffcc457997fa9290"
+        },
+        "contribute/style/kconfig.rst": {
+            "source": "doc/contribute/style/kconfig.rst",
+            "source_sha256": "f5fac5d8b0345babb53c494923f940ee53368788ec7a30ad078e71286ef9e866"
+        },
+        "contribute/style/naming.rst": {
+            "source": "doc/contribute/style/naming.rst",
+            "source_sha256": "977478e5cbdb40051237cf60ff44f25b738a97ffa17cead3874ff13e7965cc4e"
+        },
+        "contribute/style/python.rst": {
+            "source": "doc/contribute/style/python.rst",
+            "source_sha256": "160004ffca98200747cc61d7d9266c46cd77bf68117f348bb6fe81c7d2527a1d"
+        },
+        "develop/api/api_lifecycle.rst": {
+            "source": "doc/develop/api/api_lifecycle.rst",
+            "source_sha256": "3438a5f372f0d6635e6e9a44f75c061f416f932c380e024ceee3dc99b91f47e0"
+        },
+        "develop/api/design_guidelines.rst": {
+            "source": "doc/develop/api/design_guidelines.rst",
+            "source_sha256": "fca35184901cf1c3e2b3351a18466a7413483ab9b524ada140c7194115eaef57"
+        },
+        "develop/api/index.rst": {
+            "source": "doc/develop/api/index.rst",
+            "source_sha256": "0edeba8e094066f0d053b46a8a9de98a5161f886fa24b8e571734d9979bc8176"
+        },
+        "develop/api/overview.rst": {
+            "source": "doc/develop/api/overview.rst",
+            "source_sha256": "33f1eb52217ac79032409c0eab5b9360c6931ae3d454ca249bb0dcda00ef581e"
+        },
+        "develop/api/terminology.rst": {
+            "source": "doc/develop/api/terminology.rst",
+            "source_sha256": "e6b873f962fde14ffb384960ea230ac7c1e4f0715feb6c31a3bebd3a82c6bf3b"
+        },
+        "develop/api/vendor_interfaces_policy.rst": {
+            "source": "doc/develop/api/vendor_interfaces_policy.rst",
+            "source_sha256": "be453a25e7c0ab3b373b2bd745630b0b777f7fb7355869d92cd83f95369eb04d"
+        },
+        "develop/application/index.rst": {
+            "source": "doc/develop/application/index.rst",
+            "source_sha256": "010b89719aa392eccd28bb164c3a487eab8269c2aabae22f5736e5b2dd779168"
+        },
+        "develop/beyond-GSG.rst": {
+            "source": "doc/develop/beyond-GSG.rst",
+            "source_sha256": "c73ddce93d080b5dbeade0de54d69bb45936831f4bfd91c1616c226e0c149bd7"
+        },
+        "develop/debug/index.rst": {
+            "source": "doc/develop/debug/index.rst",
+            "source_sha256": "6ad8caefc0a5b67aaae57b07fce5ac858bab0bdddbbc62c0452e4384fa74c30f"
+        },
+        "develop/env_vars.rst": {
+            "source": "doc/develop/env_vars.rst",
+            "source_sha256": "c68ccd46981be6007184a13dde06256e1f3ea98d538fa7feb96cbd981630913b"
+        },
+        "develop/flash_debug/host-tools.rst": {
+            "source": "doc/develop/flash_debug/host-tools.rst",
+            "source_sha256": "f93c6f95b9f7ed7df23022016bb72d70c79bc788ec1b2cd27dbf9438fc330529"
+        },
+        "develop/flash_debug/index.rst": {
+            "source": "doc/develop/flash_debug/index.rst",
+            "source_sha256": "0679690dd2856ee67210932f03e751341631ab2f4e141e2b72d1775bc377320c"
+        },
+        "develop/flash_debug/nordic_segger.rst": {
+            "source": "doc/develop/flash_debug/nordic_segger.rst",
+            "source_sha256": "d8f72b15e7f71b3dc4b42475d7d12f95308b2c96de211fbd693697a5bdda8a19"
+        },
+        "develop/flash_debug/probes.rst": {
+            "source": "doc/develop/flash_debug/probes.rst",
+            "source_sha256": "3d7bba892fef9b7c1c15a5137e607a4ff9b76b61fc7ae163240b286859371200"
+        },
+        "develop/getting_started/index.rst": {
+            "source": "doc/develop/getting_started/index.rst",
+            "source_sha256": "7f609a0db3d98f82401812c800a2d42249552abba343121d02a76d989c85db96"
+        },
+        "develop/getting_started/installation_linux.rst": {
+            "source": "doc/develop/getting_started/installation_linux.rst",
+            "source_sha256": "b141e10ee52a73cce2faf765aa989d9ad5655394a1b788b5b3907f509bf21a9d"
+        },
+        "develop/getting_started/installation_mac.rst": {
+            "source": "doc/develop/getting_started/installation_mac.rst",
+            "source_sha256": "5dc4c5e02eef01c9f2c7496c4b97e25fd6480e13f6717973f7c3809160a1110e"
+        },
+        "develop/getting_started/installation_win.rst": {
+            "source": "doc/develop/getting_started/installation_win.rst",
+            "source_sha256": "a052406bdd6459f1b5e11c6bcc13b01d502182947b1f8c55d5e6eda11bef29b1"
+        },
+        "develop/index.rst": {
+            "source": "doc/develop/index.rst",
+            "source_sha256": "bed55b00bf8b23f529049d4df91d88c327151c9ecf72642714a328a0502fdb6f"
+        },
+        "develop/languages/c/common_libc.rst": {
+            "source": "doc/develop/languages/c/common_libc.rst",
+            "source_sha256": "9d637cbefa7893cf8385a23621048efeb6795869524834224e2379181baa92d4"
+        },
+        "develop/languages/c/index.rst": {
+            "source": "doc/develop/languages/c/index.rst",
+            "source_sha256": "783b087499dbadd110645836ed24691daefc0e5e4830e590e1c41b179a137374"
+        },
+        "develop/languages/c/minimal_libc.rst": {
+            "source": "doc/develop/languages/c/minimal_libc.rst",
+            "source_sha256": "a47c0181444e6fcad44727233fecf906ad703937f6b9f7e12ea0ec0a98f2b058"
+        },
+        "develop/languages/c/newlib.rst": {
+            "source": "doc/develop/languages/c/newlib.rst",
+            "source_sha256": "4dd51f1400025fefd59393b945edf787dbdc4276f5b6d37d2d0359dd1bc4a778"
+        },
+        "develop/languages/c/picolibc.rst": {
+            "source": "doc/develop/languages/c/picolibc.rst",
+            "source_sha256": "04861e0ad96acd1b153769614f75c16380fc831ad7bd4f65ff5ebdb7caca94d4"
+        },
+        "develop/languages/cpp/index.rst": {
+            "source": "doc/develop/languages/cpp/index.rst",
+            "source_sha256": "e83fdff59b0d3d943750afbca43cb21f00aae3c1898595448ec6bd94b6402678"
+        },
+        "develop/languages/index.rst": {
+            "source": "doc/develop/languages/index.rst",
+            "source_sha256": "186352b93811b2dad71de2351312eac98383be52d7433871c555601b7f7791a5"
+        },
+        "develop/languages/rust/index.rst": {
+            "source": "doc/develop/languages/rust/index.rst",
+            "source_sha256": "aca69aa570d2d484a1dceac840391fd7805814def7836379480e8652bcfc8cf0"
+        },
+        "develop/manifest/external/arduino-core-api.rst": {
+            "source": "doc/develop/manifest/external/arduino-core-api.rst",
+            "source_sha256": "5773765cc609ed16e270cc8e6bd528325ca8e85b3111b5c5ee42f54bb4f5f9db"
+        },
+        "develop/manifest/external/cannectivity.rst": {
+            "source": "doc/develop/manifest/external/cannectivity.rst",
+            "source_sha256": "8e734306d48f7b5ae699a4607bfe7c9dba5c773ee3bf4ca2834a7535a9751ace"
+        },
+        "develop/manifest/external/canopennode.rst": {
+            "source": "doc/develop/manifest/external/canopennode.rst",
+            "source_sha256": "12476ca50c353081d71950dc27b1f4f64184b760ccbd2f56c3e7569ac0499492"
+        },
+        "develop/manifest/external/chre.rst": {
+            "source": "doc/develop/manifest/external/chre.rst",
+            "source_sha256": "db15dd59b329ebc5e77a539024d4c2f6386f1bb678d1660616133beedb4dfbad"
+        },
+        "develop/manifest/external/clutgen.rst": {
+            "source": "doc/develop/manifest/external/clutgen.rst",
+            "source_sha256": "9577af3a4ba07aa17450a1bb414678929e31d306a62a9e5da28fd791b9879b2d"
+        },
+        "develop/manifest/external/dtsh.rst": {
+            "source": "doc/develop/manifest/external/dtsh.rst",
+            "source_sha256": "e5655d03c2dfc8bb95277cd28fb82a9d7a10aca0eb0c15c3bcc3107c2a17b589"
+        },
+        "develop/manifest/external/edge-impulse.rst": {
+            "source": "doc/develop/manifest/external/edge-impulse.rst",
+            "source_sha256": "3acd886b7b5e3194adc2a650ddf6952089fc2856a4616b3d008a06882d83aa77"
+        },
+        "develop/manifest/external/emlearn.rst": {
+            "source": "doc/develop/manifest/external/emlearn.rst",
+            "source_sha256": "336fed60fc51205f5577ae0f88a5e11c84bba4bb9cb6ccde2334f6012f1fae5e"
+        },
+        "develop/manifest/external/esp-serial-flasher.rst": {
+            "source": "doc/develop/manifest/external/esp-serial-flasher.rst",
+            "source_sha256": "68614905ca6ee45c718069a553a492a0f39c1831951ba96358ee1474faf2e892"
+        },
+        "develop/manifest/external/executorch.rst": {
+            "source": "doc/develop/manifest/external/executorch.rst",
+            "source_sha256": "034294517608042247063c50b0ea9bc0e19988d260bfb96f8fcd2fa41682eb4b"
+        },
+        "develop/manifest/external/greybus.rst": {
+            "source": "doc/develop/manifest/external/greybus.rst",
+            "source_sha256": "55ad25a88326358f7ce93dfd7c06e1cf84815d718203f680d7b7701a01362633"
+        },
+        "develop/manifest/external/grvl.rst": {
+            "source": "doc/develop/manifest/external/grvl.rst",
+            "source_sha256": "d162f8b02d4223565818c863b780eb9a243d1110f40fcdf8805c010cc19d44b9"
+        },
+        "develop/manifest/external/libcsp.rst": {
+            "source": "doc/develop/manifest/external/libcsp.rst",
+            "source_sha256": "239363ac8684a8fe3641918af5c26f484a817d0645087a3bd7852e59d79a373a"
+        },
+        "develop/manifest/external/libiio.rst": {
+            "source": "doc/develop/manifest/external/libiio.rst",
+            "source_sha256": "ffe65bb930bc4a90abc182321f6ffb44114e9f6f0f2d6e878ad7b80e0eb34dd3"
+        },
+        "develop/manifest/external/libmpix.rst": {
+            "source": "doc/develop/manifest/external/libmpix.rst",
+            "source_sha256": "db6571d81caee31f94745714f5ef439ee0de0b074fee8505a1aab31e0468946b"
+        },
+        "develop/manifest/external/ludlc.rst": {
+            "source": "doc/develop/manifest/external/ludlc.rst",
+            "source_sha256": "253d8c60605dd1e9dbae030bccb0ac142acdefc4f276734b0e3b166789fa6c00"
+        },
+        "develop/manifest/external/lz4.rst": {
+            "source": "doc/develop/manifest/external/lz4.rst",
+            "source_sha256": "568e4459bbf5160dc51dfbfcfff9d14d8aa2bba6b8dbca7cb4337566a371aad2"
+        },
+        "develop/manifest/external/memfault-firmware-sdk.rst": {
+            "source": "doc/develop/manifest/external/memfault-firmware-sdk.rst",
+            "source_sha256": "5fbca707081e75db41984c68422fa9c2231a0a7091a8e65faf93c2374a373b4a"
+        },
+        "develop/manifest/external/mender-mcu.rst": {
+            "source": "doc/develop/manifest/external/mender-mcu.rst",
+            "source_sha256": "4224326878be53ee6e798f11a375fb5205161bcab50eb987459005ac32980de3"
+        },
+        "develop/manifest/external/requests.rst": {
+            "source": "doc/develop/manifest/external/requests.rst",
+            "source_sha256": "76b635a143425dffd23cac1e629a4a3263464849a6065ebbc76b95d1d85e919d"
+        },
+        "develop/manifest/external/safety-iec60730b.rst": {
+            "source": "doc/develop/manifest/external/safety-iec60730b.rst",
+            "source_sha256": "a43a4b70816a82212fc688ddcd7e5c937a6cbb873ce5416b116b6337f008e45c"
+        },
+        "develop/manifest/external/thrift.rst": {
+            "source": "doc/develop/manifest/external/thrift.rst",
+            "source_sha256": "3fb3fe09be4c7ccfc4ee48248dd2bffa476e9dcdd513428093e6a3a7a23af170"
+        },
+        "develop/manifest/external/wamr.rst": {
+            "source": "doc/develop/manifest/external/wamr.rst",
+            "source_sha256": "1f51751509b1a87c90d497c5d147ce082974c9d45a9feb0bfb39f53e4e2d4ba5"
+        },
+        "develop/manifest/external/wolfmqtt.rst": {
+            "source": "doc/develop/manifest/external/wolfmqtt.rst",
+            "source_sha256": "adab576b86f30081d44a03c1ae8b137d09fdd78b2ca9dab4621cc4af96a8cc3e"
+        },
+        "develop/manifest/external/wolfssh.rst": {
+            "source": "doc/develop/manifest/external/wolfssh.rst",
+            "source_sha256": "4856461fec457ca4de9213917ac508e0a8ab4adf408e6d866c9fd9b9695f2b98"
+        },
+        "develop/manifest/external/wolfssl.rst": {
+            "source": "doc/develop/manifest/external/wolfssl.rst",
+            "source_sha256": "5d94203d6252effdccc0b31c61e4a9937fdbcd73203e7c404e66a85d411f8774"
+        },
+        "develop/manifest/external/wolftpm.rst": {
+            "source": "doc/develop/manifest/external/wolftpm.rst",
+            "source_sha256": "0beb89ebcf16596cd1e58d6850c67bdc2ab931b98e4b3b549a1ad356a231b23f"
+        },
+        "develop/manifest/external/xedge.rst": {
+            "source": "doc/develop/manifest/external/xedge.rst",
+            "source_sha256": "e2d341d34477f820bfc0ec02d666adcba66e2addd45a4b9a3c3e463c0bac32f5"
+        },
+        "develop/manifest/external/zenoh-pico.rst": {
+            "source": "doc/develop/manifest/external/zenoh-pico.rst",
+            "source_sha256": "8909e587130061c8102d5c6e57915c583e12feea0d5b6c085425364342c9f53a"
+        },
+        "develop/manifest/external/zephelin.rst": {
+            "source": "doc/develop/manifest/external/zephelin.rst",
+            "source_sha256": "519b635861ccb4dbd5c4a00598239f65b11e3f5591d20c0b569a326feb8dc8fe"
+        },
+        "develop/manifest/external/zscilib.rst": {
+            "source": "doc/develop/manifest/external/zscilib.rst",
+            "source_sha256": "b67780aa19035f4de2a6b2a73ca8c28b135853b215bd59d36721ce68d86c18b4"
+        },
+        "develop/manifest/external/zview.rst": {
+            "source": "doc/develop/manifest/external/zview.rst",
+            "source_sha256": "66809a0112ee75a6d962b52d4af4fed81c8766119cf87f03b9ae691e91246fa8"
+        },
+        "develop/manifest/index.rst": {
+            "source": "doc/develop/manifest/index.rst",
+            "source_sha256": "6129b9af16267b7603aea9ef56c22816bfd3b4ff6bedb7c03e4c7f9f24840361"
+        },
+        "develop/modules.rst": {
+            "source": "doc/develop/modules.rst",
+            "source_sha256": "5c3d58c9adff996407a3988563e03739cb5dede38b6940c6235c1bc167052bd0"
+        },
+        "develop/optimizations/footprint.rst": {
+            "source": "doc/develop/optimizations/footprint.rst",
+            "source_sha256": "41e2d355a29c13ecb51e45a588012eee91b3e1e3faed69cc0a1644bb30e4b543"
+        },
+        "develop/optimizations/index.rst": {
+            "source": "doc/develop/optimizations/index.rst",
+            "source_sha256": "89895051780dc98b473a88f2fa46a1526dc9898a230b1b7735f62a98dde9ccf9"
+        },
+        "develop/optimizations/tools.rst": {
+            "source": "doc/develop/optimizations/tools.rst",
+            "source_sha256": "5776d57f078e3ae5fc0fea2ecf54b892184be50f411db2e4e01a66f89403464c"
+        },
+        "develop/sca/clang.rst": {
+            "source": "doc/develop/sca/clang.rst",
+            "source_sha256": "f02091449e7c9d57eb2c88a4559684c399914c6d1dd991308a8b899f02dae359"
+        },
+        "develop/sca/codechecker.rst": {
+            "source": "doc/develop/sca/codechecker.rst",
+            "source_sha256": "1786501e1e14fab9b39c2056a519355331a669efd5e60b35da27ece8da7fa3b3"
+        },
+        "develop/sca/coverity.rst": {
+            "source": "doc/develop/sca/coverity.rst",
+            "source_sha256": "d81c1987376bb832553fc6ccd3c36d50ee60e58ccdf82fae0aeab63e59236485"
+        },
+        "develop/sca/cpptest.rst": {
+            "source": "doc/develop/sca/cpptest.rst",
+            "source_sha256": "43e57c38ec52578cf7782dcba90f7e5d593349ab358cf5a6cc81047f82260b48"
+        },
+        "develop/sca/dtdoctor.rst": {
+            "source": "doc/develop/sca/dtdoctor.rst",
+            "source_sha256": "5407c17955220f4c73f821a9b7da6dc364e6071c2f0abe1e5f840ef132d9e9f8"
+        },
+        "develop/sca/eclair.rst": {
+            "source": "doc/develop/sca/eclair.rst",
+            "source_sha256": "6cb44012190a7117f4a587eed4519cae72c8789fa5b33cd45d513f0bf8fb7b5c"
+        },
+        "develop/sca/gcc.rst": {
+            "source": "doc/develop/sca/gcc.rst",
+            "source_sha256": "56ede3f91440e07f5c667b5af83c889ce41289cb2f1301ff4ee27d04cf0b9dff"
+        },
+        "develop/sca/iar_c_stat.rst": {
+            "source": "doc/develop/sca/iar_c_stat.rst",
+            "source_sha256": "c83e5aedff5e06d04af8813abaa998fba9ee103ebc7403b692179d253c93278f"
+        },
+        "develop/sca/index.rst": {
+            "source": "doc/develop/sca/index.rst",
+            "source_sha256": "f4bac807c4bd38877e69ed61f7c047ad52b2b901601805c312ec461ab24d261b"
+        },
+        "develop/sca/iwyu.rst": {
+            "source": "doc/develop/sca/iwyu.rst",
+            "source_sha256": "2170e97dcac3e4d31989f1811579cabe20772992b296abd8741f6cc5ff5513c1"
+        },
+        "develop/sca/polyspace.rst": {
+            "source": "doc/develop/sca/polyspace.rst",
+            "source_sha256": "04cecbe1bd616992f13cd6cb58fd0232769e571aef046b7c6e252a514a99f1e8"
+        },
+        "develop/sca/sparse.rst": {
+            "source": "doc/develop/sca/sparse.rst",
+            "source_sha256": "40231acb57ae5db055518e34202e3978d0f608e7809d2768f0c7e2837f1d9254"
+        },
+        "develop/test/benchmark.rst": {
+            "source": "doc/develop/test/benchmark.rst",
+            "source_sha256": "eadc751ffb9557f294121dd40320c57b418ae2d72588601724a867b68367d3e5"
+        },
+        "develop/test/bsim.rst": {
+            "source": "doc/develop/test/bsim.rst",
+            "source_sha256": "fd2a39f053c2d66398103e8d536567885d1d72de7616bf9fb0f12f4c69881649"
+        },
+        "develop/test/ci_test_plan.rst": {
+            "source": "doc/develop/test/ci_test_plan.rst",
+            "source_sha256": "ccca2b5f72b6486e7bfe2f5b4fe0c8f82ebfe33ad8de1964c5f3f319b1508d78"
+        },
+        "develop/test/coverage.rst": {
+            "source": "doc/develop/test/coverage.rst",
+            "source_sha256": "d3ddb4f4223f9f86292bd58c5a6eba418f3ea8e473f84c1d4ae37466a5ea7208"
+        },
+        "develop/test/index.rst": {
+            "source": "doc/develop/test/index.rst",
+            "source_sha256": "916842d64e4a6c1104550c55906f1c47bd659fd3053c8ccb6f1f116e4674bc7f"
+        },
+        "develop/test/ztest.rst": {
+            "source": "doc/develop/test/ztest.rst",
+            "source_sha256": "21e758f660e89aec4c359aedfe8dcdb6f70b0abe6eff5d2b4742fd3bdada985f"
+        },
+        "develop/toolchains/arm_compiler_6.rst": {
+            "source": "doc/develop/toolchains/arm_compiler_6.rst",
+            "source_sha256": "6dfc69db4a9d748e408fca66364ff49f6886596fb3065666d4e14e38c7334f92"
+        },
+        "develop/toolchains/arm_toolchain_for_embedded.rst": {
+            "source": "doc/develop/toolchains/arm_toolchain_for_embedded.rst",
+            "source_sha256": "30bd4ef02cd46594b8cc90ad0620f1f77bd91af21bcd5f33f29e39fc9806e6a1"
+        },
+        "develop/toolchains/cadence_xcc.rst": {
+            "source": "doc/develop/toolchains/cadence_xcc.rst",
+            "source_sha256": "f20fa2dc3c77735cef512ebcc634a4ea8ab5cbeb0cd04c52db7d4769c94cb302"
+        },
+        "develop/toolchains/custom_cmake.rst": {
+            "source": "doc/develop/toolchains/custom_cmake.rst",
+            "source_sha256": "9b680fd1acef5582121c0a6a04d5a141ad4f4f45cdd61e08682c366519fbd773"
+        },
+        "develop/toolchains/designware_arc_mwdt.rst": {
+            "source": "doc/develop/toolchains/designware_arc_mwdt.rst",
+            "source_sha256": "f8f2231966852c71760002a061b5b1817dfd9e93d2bf22ef1e3b26fdca3ff386"
+        },
+        "develop/toolchains/eld.rst": {
+            "source": "doc/develop/toolchains/eld.rst",
+            "source_sha256": "62a7163bb0912e51d583898429a3f12a717c5a826c9bee4303220e8cd9275efb"
+        },
+        "develop/toolchains/gnu_arm_embedded.rst": {
+            "source": "doc/develop/toolchains/gnu_arm_embedded.rst",
+            "source_sha256": "c243231c9a04a7bef22c6f843bd3a6be9a6d72318ebda9c8346f0220579e6596"
+        },
+        "develop/toolchains/hexagon_llvm.rst": {
+            "source": "doc/develop/toolchains/hexagon_llvm.rst",
+            "source_sha256": "1bdaf9c5cb4b85ec843b264c00d0fa53cc56fba8725ed23854b4dba88942b087"
+        },
+        "develop/toolchains/host.rst": {
+            "source": "doc/develop/toolchains/host.rst",
+            "source_sha256": "1e1c816a29437c2e91e414bf8653f32fa6dbf86bf905690625ac6e548be06f78"
+        },
+        "develop/toolchains/iar_arm_toolchain.rst": {
+            "source": "doc/develop/toolchains/iar_arm_toolchain.rst",
+            "source_sha256": "df879d32b464572316630dc6e5908c2351bbb4efa163a516b0916641803d75f4"
+        },
+        "develop/toolchains/index.rst": {
+            "source": "doc/develop/toolchains/index.rst",
+            "source_sha256": "f94079ee709eb3647983be001f3f1c8fc43d6893556895068a35f16432e0a69d"
+        },
+        "develop/toolchains/intel_oneapi_toolkit.rst": {
+            "source": "doc/develop/toolchains/intel_oneapi_toolkit.rst",
+            "source_sha256": "494451a89d88d89df776669a13f0b23e1c5408acfb19cf8b9e1434e6c8a22deb"
+        },
+        "develop/toolchains/other_x_compilers.rst": {
+            "source": "doc/develop/toolchains/other_x_compilers.rst",
+            "source_sha256": "fb7106680c8468dbd7ca5d8cb983834b573c48cb2e92e208c5778f251edb1a0f"
+        },
+        "develop/toolchains/xc32_toolchain.rst": {
+            "source": "doc/develop/toolchains/xc32_toolchain.rst",
+            "source_sha256": "f810d8a022a000c7c5be0d4db8307338ac266da3296db671f9f30b57a835f9a0"
+        },
+        "develop/toolchains/zephyr_sdk.rst": {
+            "source": "doc/develop/toolchains/zephyr_sdk.rst",
+            "source_sha256": "b85a33f0e1681dce22fa45e2c2ad0a425a4541bd9dc3c6742e809f77e0310a7e"
+        },
+        "develop/tools/clion.rst": {
+            "source": "doc/develop/tools/clion.rst",
+            "source_sha256": "1c4a89f378bbacd82945719e09f0d93de0460284e62a9ba68f527865769ff5e6"
+        },
+        "develop/tools/coccinelle.rst": {
+            "source": "doc/develop/tools/coccinelle.rst",
+            "source_sha256": "37ce4c94ecebc2193d85267900568e9973d711052df50910160357f1fcc28ad3"
+        },
+        "develop/tools/ide_for_zephyr_vscode_ext.rst": {
+            "source": "doc/develop/tools/ide_for_zephyr_vscode_ext.rst",
+            "source_sha256": "5054683ce1b392b04f84c44b3df8a0d09014cdf4e295e6fea93207d364d3b311"
+        },
+        "develop/tools/index.rst": {
+            "source": "doc/develop/tools/index.rst",
+            "source_sha256": "2e3ccb9e2bce603512abcb1212d0694b490499d5689a75c64bd55199ec2dbc46"
+        },
+        "develop/tools/kapa_ai.rst": {
+            "source": "doc/develop/tools/kapa_ai.rst",
+            "source_sha256": "da6921f50e248db34cae40b1ddf23ed761048cddeb0db8926d154f8bebbd5065"
+        },
+        "develop/tools/stm32cubeide.rst": {
+            "source": "doc/develop/tools/stm32cubeide.rst",
+            "source_sha256": "b9e8dcadf6b874e0655630c4f4a4c833b9e3b20425f5a4faf546edf530077bc8"
+        },
+        "develop/tools/vscode.rst": {
+            "source": "doc/develop/tools/vscode.rst",
+            "source_sha256": "09c6c319080f8dacc8099b79bfe1916882c5a6616840931d54c1863658ee120f"
+        },
+        "develop/tools/workbench_for_zephyr.rst": {
+            "source": "doc/develop/tools/workbench_for_zephyr.rst",
+            "source_sha256": "e47f7bb788ac2656f45f662a53e2f242d4900165d430d69daee2e2955498bbdc"
+        },
+        "develop/twister/commandline.rst": {
+            "source": "doc/develop/twister/commandline.rst",
+            "source_sha256": "cdd751d294f7823de84c102d72dabb087c6643d5cc0629c3aeee2a7b8e2d5276"
+        },
+        "develop/twister/harness/bsim.rst": {
+            "source": "doc/develop/twister/harness/bsim.rst",
+            "source_sha256": "b977cba1564ef1bdfce1baed9d34df53ef373ad61cfc67121d28189ffc29c4c1"
+        },
+        "develop/twister/harness/console.rst": {
+            "source": "doc/develop/twister/harness/console.rst",
+            "source_sha256": "5865b24fecd2fc730ff24997fd77f16b18ae63594a4a722c243e224f05fa4c40"
+        },
+        "develop/twister/harness/ctest.rst": {
+            "source": "doc/develop/twister/harness/ctest.rst",
+            "source_sha256": "99b2247e270fba35e31307da32391c70e03649ff03dc80e19842267bc9faba00"
+        },
+        "develop/twister/harness/display_capture.rst": {
+            "source": "doc/develop/twister/harness/display_capture.rst",
+            "source_sha256": "322c86056ce36d5c9c424fec81b1c557b2d33193e3fa6b7d44c0923c1ab1d510"
+        },
+        "develop/twister/harness/gtest.rst": {
+            "source": "doc/develop/twister/harness/gtest.rst",
+            "source_sha256": "f764110041ad758c857e0e2b80fd1811794cdd8a26efac3d6365f9c28352c263"
+        },
+        "develop/twister/harness/power.rst": {
+            "source": "doc/develop/twister/harness/power.rst",
+            "source_sha256": "03cff6a414de5339b00eb8218f4a0c006240e96b55c587bbe2c34e4eae95384d"
+        },
+        "develop/twister/harness/pytest.rst": {
+            "source": "doc/develop/twister/harness/pytest.rst",
+            "source_sha256": "041235e78cd93fe1f633524c2273e70a387a8df005982cb0f2f371718a2394cc"
+        },
+        "develop/twister/harness/robot.rst": {
+            "source": "doc/develop/twister/harness/robot.rst",
+            "source_sha256": "bcb9ac1ae64a7944a72b6c04380b5b3abc80531bb580869b135c3276025ad7fe"
+        },
+        "develop/twister/harness/script.rst": {
+            "source": "doc/develop/twister/harness/script.rst",
+            "source_sha256": "c4a2cd1b71b935d6c2c3142e9ec77106a21da2f2a8c0413ca9be8bc7e604d964"
+        },
+        "develop/twister/harness/shell.rst": {
+            "source": "doc/develop/twister/harness/shell.rst",
+            "source_sha256": "f043a29ae8a34ca76e105fba4c3a35b454d16e33a898ef3c1027daba3320c267"
+        },
+        "develop/twister/index.rst": {
+            "source": "doc/develop/twister/index.rst",
+            "source_sha256": "da61a86f1be6ed60932441e7af63679fa3c928fb5fcaabb4b6da9bcb9ac6df7e"
+        },
+        "develop/twister/pytest.rst": {
+            "source": "doc/develop/twister/pytest.rst",
+            "source_sha256": "6ad1af5085f21f12b75cb69cbc7cb8de0d0b5f1a7e828c4aa1c3d83a0dc9755f"
+        },
+        "develop/twister/twister_blackbox.rst": {
+            "source": "doc/develop/twister/twister_blackbox.rst",
+            "source_sha256": "79f11c19e9bcf7c10cf2159d4ef7eb8ba326430e1467a16b00f7da1b2b5da8e9"
+        },
+        "develop/twister/twister_statuses.rst": {
+            "source": "doc/develop/twister/twister_statuses.rst",
+            "source_sha256": "4818d1ca3d0bce565f0901f8bf6eeaa8190f23ba50b38ccd4758bd9d72580442"
+        },
+        "develop/west/alias.rst": {
+            "source": "doc/develop/west/alias.rst",
+            "source_sha256": "9b9dbc38db096e7ee2c90ccd1f52cdbc3f7be8c881540f4ddba9b8cb03e16741"
+        },
+        "develop/west/basics.rst": {
+            "source": "doc/develop/west/basics.rst",
+            "source_sha256": "f6d9d22bbc9f83300811dc26bd67232a37d178563e1a1a208b50be8947a26229"
+        },
+        "develop/west/build-flash-debug.rst": {
+            "source": "doc/develop/west/build-flash-debug.rst",
+            "source_sha256": "2fda5fb15b7f2d8ab51260e00507127b644b4b05b4e913d3fc62c3614efc5afe"
+        },
+        "develop/west/built-in.rst": {
+            "source": "doc/develop/west/built-in.rst",
+            "source_sha256": "f48cced5338f94586a9b0f387fdd56989ad59463aafdc6884d18c0326e685027"
+        },
+        "develop/west/config.rst": {
+            "source": "doc/develop/west/config.rst",
+            "source_sha256": "054e0565f5212e324cd212120263044efc91b324659473207821e21073b6295b"
+        },
+        "develop/west/extensions.rst": {
+            "source": "doc/develop/west/extensions.rst",
+            "source_sha256": "96ade58af93a206a3796e696465a2a282834279ba547624fcea84db8d47d7bca"
+        },
+        "develop/west/index.rst": {
+            "source": "doc/develop/west/index.rst",
+            "source_sha256": "380b2c5e06594462929775846a77cdd906ce4e07e9394ee97b79db7159745948"
+        },
+        "develop/west/install.rst": {
+            "source": "doc/develop/west/install.rst",
+            "source_sha256": "0c8b177848eaf7c1b6cc10db46a47d75a128209c4ab06cca131aac9c37b84d92"
+        },
+        "develop/west/manifest.rst": {
+            "source": "doc/develop/west/manifest.rst",
+            "source_sha256": "9a9295d7775908d32c4b4d34be3cdddd998b765b71b729396cf6464902a4c8d5"
+        },
+        "develop/west/release-notes.rst": {
+            "source": "doc/develop/west/release-notes.rst",
+            "source_sha256": "2021122e4225c178469d5cf77ce1c87db579ca406160dfa4a826c4b26705c6be"
+        },
+        "develop/west/sign.rst": {
+            "source": "doc/develop/west/sign.rst",
+            "source_sha256": "5ea3eaca0580887fec02a5bb544e1ab9b66f4690761af24fa98aacacf1d5f794"
+        },
+        "develop/west/troubleshooting.rst": {
+            "source": "doc/develop/west/troubleshooting.rst",
+            "source_sha256": "76a0038b42ed7ab6314eaf70fa6c8d40b897f44e172e8a3c46d4456fe57e4099"
+        },
+        "develop/west/west-apis.rst": {
+            "source": "doc/develop/west/west-apis.rst",
+            "source_sha256": "ac99d2fdc55992be11205d38be07c0cdfb87e9160e616df3f3ff66fceb856cbd"
+        },
+        "develop/west/why.rst": {
+            "source": "doc/develop/west/why.rst",
+            "source_sha256": "90b86a0e413160a3b8014f1b2cd92cb77f7a384321d3108b33ae81ebbd5fd412"
+        },
+        "develop/west/without-west.rst": {
+            "source": "doc/develop/west/without-west.rst",
+            "source_sha256": "b18a93e56c7a027cba2712b7624696afab4bc6bbe9bca414bee57c4070b2de1d"
+        },
+        "develop/west/workspaces.rst": {
+            "source": "doc/develop/west/workspaces.rst",
+            "source_sha256": "b70d5baec69e3347b09374868038c54d0fc66479257b921b3e5af4ac164b21ab"
+        },
+        "develop/west/zephyr-cmds.rst": {
+            "source": "doc/develop/west/zephyr-cmds.rst",
+            "source_sha256": "c343411b541fe8210f3c6ff287483a10b5d503725391fc73b204edc1fdc0c9cc"
+        },
+        "glossary.rst": {
+            "source": "doc/glossary.rst",
+            "source_sha256": "f1b5331f729ebd051cdcc45aea5b8d79fb0b5c8a067161a2c9b425512838eceb"
+        },
+        "hardware/arch/arc-support-status.rst": {
+            "source": "doc/hardware/arch/arc-support-status.rst",
+            "source_sha256": "af7614c5f2763ca32d1370512f1fe0d2943d2fb6d6e69f176b7bc76d5c0a27dc"
+        },
+        "hardware/arch/arm64.rst": {
+            "source": "doc/hardware/arch/arm64.rst",
+            "source_sha256": "07bc9585ac0e23810ea634c6d4b774313d19937a220e5cde50ac85a70540a25a"
+        },
+        "hardware/arch/arm_cortex_m.rst": {
+            "source": "doc/hardware/arch/arm_cortex_m.rst",
+            "source_sha256": "691284f96fb3fd97d0ba9103f72f37d48915f69df4869ee7a9169a1549cfca4a"
+        },
+        "hardware/arch/index.rst": {
+            "source": "doc/hardware/arch/index.rst",
+            "source_sha256": "39c04b29b5f81d3404fac35846d91195d8716f204921d997f91a07ba553a6740"
+        },
+        "hardware/arch/risc-v.rst": {
+            "source": "doc/hardware/arch/risc-v.rst",
+            "source_sha256": "cedb79d5079e387d6d0d5b8fde165f5c546251aa0935bd1decad0e2d37b454a4"
+        },
+        "hardware/arch/semihost.rst": {
+            "source": "doc/hardware/arch/semihost.rst",
+            "source_sha256": "ce022333de58986cbf224065e2707706c75294b24afbe0920ff192986ed29e33"
+        },
+        "hardware/arch/x86.rst": {
+            "source": "doc/hardware/arch/x86.rst",
+            "source_sha256": "9c51707515732b13561f101d6e912ce2f951f1d105625a460b93aa391dddb7a1"
+        },
+        "hardware/arch/xtensa.rst": {
+            "source": "doc/hardware/arch/xtensa.rst",
+            "source_sha256": "eced5a81cc96bdf72282914fbc7b9e452549381adf261c4375db94ddadebda16"
+        },
+        "hardware/barriers/index.rst": {
+            "source": "doc/hardware/barriers/index.rst",
+            "source_sha256": "ef2e37e5a14b2b0f3b9a2b384aa4e590d8ed3eff0f21424599e43be9944a852a"
+        },
+        "hardware/cache/config.rst": {
+            "source": "doc/hardware/cache/config.rst",
+            "source_sha256": "501275d0d2bb34e50325d922624cfba9d40eef6ddb55575bedbdf3933ee62027"
+        },
+        "hardware/cache/guide.rst": {
+            "source": "doc/hardware/cache/guide.rst",
+            "source_sha256": "c047ccab4c88844384f6d01b806c63590fb40cc5eb06f04204f5f6c6a616fcd7"
+        },
+        "hardware/cache/index.rst": {
+            "source": "doc/hardware/cache/index.rst",
+            "source_sha256": "55fd88508ac20b9edc8b70f290fe5527840ed1f9267d0af387731e0242ac34d5"
+        },
+        "hardware/emulator/bus_emulators.rst": {
+            "source": "doc/hardware/emulator/bus_emulators.rst",
+            "source_sha256": "f6c6eb07946604a5e11031108df6d83a0be32780b156f05075ae09c34b431129"
+        },
+        "hardware/emulator/index.rst": {
+            "source": "doc/hardware/emulator/index.rst",
+            "source_sha256": "02c7fe34f8e3728ab8560e1d32a507db49f79677d1a63506d30725564df12f9b"
+        },
+        "hardware/firmware/arm-scmi.rst": {
+            "source": "doc/hardware/firmware/arm-scmi.rst",
+            "source_sha256": "b9dd3f26ec522818557505719422f81b6b6e2a44b462fad0ab17ed1c0a26209a"
+        },
+        "hardware/firmware/index.rst": {
+            "source": "doc/hardware/firmware/index.rst",
+            "source_sha256": "917ffdbec250ef5ec83782cd74c394ee023baa361025870253c9b38ca5c017d1"
+        },
+        "hardware/index.rst": {
+            "source": "doc/hardware/index.rst",
+            "source_sha256": "119328c79be872ae30b56556e96198d2ff2739da11c7d8b20f069a0bec4d4bfc"
+        },
+        "hardware/peripherals/adc.rst": {
+            "source": "doc/hardware/peripherals/adc.rst",
+            "source_sha256": "022f26417ca76958aeba4ab1aca9a7b3796e5482e1a2dea025ed6eabffff0f75"
+        },
+        "hardware/peripherals/analog.rst": {
+            "source": "doc/hardware/peripherals/analog.rst",
+            "source_sha256": "229d3d5204ff8cd64999e661d832e2947ecff68f69163ced8c5d5f924b1d25a3"
+        },
+        "hardware/peripherals/audio/codec.rst": {
+            "source": "doc/hardware/peripherals/audio/codec.rst",
+            "source_sha256": "6931797a1b79f9fd9806edc4d07e777e8a4e7174cd63f39b8315286681e50e53"
+        },
+        "hardware/peripherals/audio/dai.rst": {
+            "source": "doc/hardware/peripherals/audio/dai.rst",
+            "source_sha256": "1fb368506d7220d845581439f338a12109f1e2ff3b98ff3410e9047f6b6e1513"
+        },
+        "hardware/peripherals/audio/dmic.rst": {
+            "source": "doc/hardware/peripherals/audio/dmic.rst",
+            "source_sha256": "01735eac552090db1876e531150b66c8d92d2c84d2390a1d8d89174ce280f953"
+        },
+        "hardware/peripherals/audio/i2s.rst": {
+            "source": "doc/hardware/peripherals/audio/i2s.rst",
+            "source_sha256": "ccd493cf5a15803358b2cc2b81bda7f2ec2e8295bbb33b2b3916ad8cb92451c3"
+        },
+        "hardware/peripherals/audio/index.rst": {
+            "source": "doc/hardware/peripherals/audio/index.rst",
+            "source_sha256": "7825c953527745199ee7f19d05a2acb8640f750b424b9e6e3ec27a68bb6c8124"
+        },
+        "hardware/peripherals/auxdisplay.rst": {
+            "source": "doc/hardware/peripherals/auxdisplay.rst",
+            "source_sha256": "ce308a5792c15d135324be939be1e86981305c5b59eab1e0e2ead6b98631a0a9"
+        },
+        "hardware/peripherals/bbram.rst": {
+            "source": "doc/hardware/peripherals/bbram.rst",
+            "source_sha256": "5250213028ba8de176329409cbe2be54635c7b9733657de68ce6a81c15447a74"
+        },
+        "hardware/peripherals/bc12.rst": {
+            "source": "doc/hardware/peripherals/bc12.rst",
+            "source_sha256": "5cd44eff25b1908cf572b89ae0728bcd6f74985b4335e429f328a9e01d736bad"
+        },
+        "hardware/peripherals/biometrics.rst": {
+            "source": "doc/hardware/peripherals/biometrics.rst",
+            "source_sha256": "1c391d5f88fe557de42ad77f9409c01a444b64046e7b4ec7da931b7af3895a64"
+        },
+        "hardware/peripherals/buzzer.rst": {
+            "source": "doc/hardware/peripherals/buzzer.rst",
+            "source_sha256": "366dcc0669a9321fadb881c69ba901286623c9f9948baa0a8b7ff0e9d1995c98"
+        },
+        "hardware/peripherals/can/controller.rst": {
+            "source": "doc/hardware/peripherals/can/controller.rst",
+            "source_sha256": "a9e6140c297ac2033d822b3f7d3e76d0cdb03d912d1a30445f39bf50388a476a"
+        },
+        "hardware/peripherals/can/index.rst": {
+            "source": "doc/hardware/peripherals/can/index.rst",
+            "source_sha256": "154c284ada120194813954a70610a4c50f0f5327ce7b26339df762a845573bd2"
+        },
+        "hardware/peripherals/can/shell.rst": {
+            "source": "doc/hardware/peripherals/can/shell.rst",
+            "source_sha256": "318dbebc49b3652147fd9f9340adf349856882c819da96d80d88611232d0da6d"
+        },
+        "hardware/peripherals/can/transceiver.rst": {
+            "source": "doc/hardware/peripherals/can/transceiver.rst",
+            "source_sha256": "a53a63e3a6e183f2831bd35a9ca44233ebdb9f466ec8bf6c46d6be0969223b17"
+        },
+        "hardware/peripherals/charger.rst": {
+            "source": "doc/hardware/peripherals/charger.rst",
+            "source_sha256": "9db552370510624a4efb73e2b12beaca25e5ed220e09ce542d97752774f95567"
+        },
+        "hardware/peripherals/clock_control.rst": {
+            "source": "doc/hardware/peripherals/clock_control.rst",
+            "source_sha256": "339fa6eaa6cdd49d9274fe288e176ed622df67f504a3f1a8dac7bdb424781d73"
+        },
+        "hardware/peripherals/clock_monitor.rst": {
+            "source": "doc/hardware/peripherals/clock_monitor.rst",
+            "source_sha256": "d2c9ef3f91801a581280ea0ba434f385fa80a0db27082eea508b6cc0eec7fa25"
+        },
+        "hardware/peripherals/communication.rst": {
+            "source": "doc/hardware/peripherals/communication.rst",
+            "source_sha256": "dd2f36549361d1ef73cf8768f8305f5892b38ff2f8b800de39ff73fc335eb127"
+        },
+        "hardware/peripherals/comparator.rst": {
+            "source": "doc/hardware/peripherals/comparator.rst",
+            "source_sha256": "16ebef6c0d50ef88c3968b59a5d61761a974be959b94e5465fdd763345d3cdc4"
+        },
+        "hardware/peripherals/coredump.rst": {
+            "source": "doc/hardware/peripherals/coredump.rst",
+            "source_sha256": "3961440f6123bcb7b1dda8570a8b6ac04d1a164c58d16dc8d86dcc128a9ef8d6"
+        },
+        "hardware/peripherals/counter.rst": {
+            "source": "doc/hardware/peripherals/counter.rst",
+            "source_sha256": "2f26fa7a734cc49f454f3d1e1780343839b395d4fc08d126aabf1471b37e77f8"
+        },
+        "hardware/peripherals/crc.rst": {
+            "source": "doc/hardware/peripherals/crc.rst",
+            "source_sha256": "006e2ce52570f273dbceb2038a29113ce8c0cccd5988ee077f9b1ca2225c3ac5"
+        },
+        "hardware/peripherals/dac.rst": {
+            "source": "doc/hardware/peripherals/dac.rst",
+            "source_sha256": "680b57654f1e79088f5119833c30a2e84c6914e34b9d525896f5c334597967d5"
+        },
+        "hardware/peripherals/dali.rst": {
+            "source": "doc/hardware/peripherals/dali.rst",
+            "source_sha256": "2112477c8b1371e8fadc79f7f46bad2eebb3af34d4fd21b978b439136f878cb6"
+        },
+        "hardware/peripherals/display/index.rst": {
+            "source": "doc/hardware/peripherals/display/index.rst",
+            "source_sha256": "e7007e945a512df432615e493eb0bc3c02b4b25d108a8e3baf03aec36654c8b3"
+        },
+        "hardware/peripherals/display.rst": {
+            "source": "doc/hardware/peripherals/display.rst",
+            "source_sha256": "d3901b1704021dd246d13c24828549fb0b101ad01fbed693df729b7bded0a58b"
+        },
+        "hardware/peripherals/dma.rst": {
+            "source": "doc/hardware/peripherals/dma.rst",
+            "source_sha256": "0f4b18c3e5d116f061071a021368a65d739f8580656b186beba7a9daf4b23901"
+        },
+        "hardware/peripherals/edac/ibecc.rst": {
+            "source": "doc/hardware/peripherals/edac/ibecc.rst",
+            "source_sha256": "80755439b70cf7ac90d60d594765cf3e1cd97a26df625d16dff32eb2ec37b603"
+        },
+        "hardware/peripherals/edac/index.rst": {
+            "source": "doc/hardware/peripherals/edac/index.rst",
+            "source_sha256": "91f55a728effab7a98a3a31d2c89118bea2a7135c9c591b5581a12ab08362b00"
+        },
+        "hardware/peripherals/eeprom/api.rst": {
+            "source": "doc/hardware/peripherals/eeprom/api.rst",
+            "source_sha256": "3215c1f2b148e9a42823a3f2e8454807185ce71c821c2c4256b09059a588b11f"
+        },
+        "hardware/peripherals/eeprom/index.rst": {
+            "source": "doc/hardware/peripherals/eeprom/index.rst",
+            "source_sha256": "2245514c13ef1cd636e6c24fcd155f58a8136ea1f7c2f4a37eca68f6e31e8e85"
+        },
+        "hardware/peripherals/eeprom/shell.rst": {
+            "source": "doc/hardware/peripherals/eeprom/shell.rst",
+            "source_sha256": "c07f915be3ee6b59425e9b5a5cadd564fe8fe86b067e525419dd9456db16d5b1"
+        },
+        "hardware/peripherals/entropy.rst": {
+            "source": "doc/hardware/peripherals/entropy.rst",
+            "source_sha256": "8f2b952e6f6d44715d4553a05c1e85753c380e50a99982c6a20d0d1fd0aa9f98"
+        },
+        "hardware/peripherals/espi.rst": {
+            "source": "doc/hardware/peripherals/espi.rst",
+            "source_sha256": "f022525f9855454298c5030ec66a3f7a39ad6af3f7fc0499050faa0e8d341704"
+        },
+        "hardware/peripherals/flash.rst": {
+            "source": "doc/hardware/peripherals/flash.rst",
+            "source_sha256": "6ecc6f2ddd29408d163a1b684c87ec183e8dff61867174ce4ff74602fe30738e"
+        },
+        "hardware/peripherals/fuel_gauge.rst": {
+            "source": "doc/hardware/peripherals/fuel_gauge.rst",
+            "source_sha256": "9d55e2f0feca8ef6d681567cc27658011a115120a80ae21a9ef00f18ab8e2fb4"
+        },
+        "hardware/peripherals/gnss.rst": {
+            "source": "doc/hardware/peripherals/gnss.rst",
+            "source_sha256": "c0fc28b0ad9458435b9e31e5a5ee6b36ded56fbaef68dd1942d85b229732c1ac"
+        },
+        "hardware/peripherals/gpio.rst": {
+            "source": "doc/hardware/peripherals/gpio.rst",
+            "source_sha256": "eacf95c092f1ed71eb99f699f240f73f61abf4609024c46beced52a42115b9aa"
+        },
+        "hardware/peripherals/gpio_input.rst": {
+            "source": "doc/hardware/peripherals/gpio_input.rst",
+            "source_sha256": "4b9b182808a2dfcc527117356c91dccee92baf67945b74a9a60a0e470c1a5b1c"
+        },
+        "hardware/peripherals/haptics.rst": {
+            "source": "doc/hardware/peripherals/haptics.rst",
+            "source_sha256": "f4d5d94dae75ae860f2a8bb0bfb06d6aed35124ce01daf98c87e5d35c1b0334f"
+        },
+        "hardware/peripherals/hwinfo.rst": {
+            "source": "doc/hardware/peripherals/hwinfo.rst",
+            "source_sha256": "4809e19bc806f735ca3efb980c280742dfaca7a18cb986a21b96bff1e4ddd4fe"
+        },
+        "hardware/peripherals/hwspinlock.rst": {
+            "source": "doc/hardware/peripherals/hwspinlock.rst",
+            "source_sha256": "67532a7eab3b560373c1dfe4447cb12126b77f6c7b3de7f648ad92d2872ffa97"
+        },
+        "hardware/peripherals/i2c.rst": {
+            "source": "doc/hardware/peripherals/i2c.rst",
+            "source_sha256": "6598bb36a24d99023176db5eb635dd283047f86b3e8d057d168e5336aa357e7b"
+        },
+        "hardware/peripherals/i2c_eeprom_target.rst": {
+            "source": "doc/hardware/peripherals/i2c_eeprom_target.rst",
+            "source_sha256": "32fb926baa7b56e09269013af726d39b37e56fa8ecc7823f7ec5cd890fc120a4"
+        },
+        "hardware/peripherals/i3c.rst": {
+            "source": "doc/hardware/peripherals/i3c.rst",
+            "source_sha256": "f1c339b5d69ed244903dfdce04c4c272d0649567b82df55a854a46a556c0cf3f"
+        },
+        "hardware/peripherals/index.rst": {
+            "source": "doc/hardware/peripherals/index.rst",
+            "source_sha256": "8baceae5cb45b7c81609c78961af4c71a579f6cd6c909e3ac2324777d50a89ea"
+        },
+        "hardware/peripherals/ipm.rst": {
+            "source": "doc/hardware/peripherals/ipm.rst",
+            "source_sha256": "10eb7435e8ede7a044322fb8633ea16b8dc24db3b631464e8bb8ba8c929b6bc3"
+        },
+        "hardware/peripherals/led.rst": {
+            "source": "doc/hardware/peripherals/led.rst",
+            "source_sha256": "1eff530c97eb173f2d3b47386332cc17eb848c272dca664cbb730738bd921fe9"
+        },
+        "hardware/peripherals/lin.rst": {
+            "source": "doc/hardware/peripherals/lin.rst",
+            "source_sha256": "9598a3334573bdbf664aa78b231c1c9e0773607f33af3e95ff4486ec5c5b3dc6"
+        },
+        "hardware/peripherals/mbox.rst": {
+            "source": "doc/hardware/peripherals/mbox.rst",
+            "source_sha256": "7b2abad383b46eb924855f9fcf58a472f8d5c2847e319c790bf944da47020fde"
+        },
+        "hardware/peripherals/mdio.rst": {
+            "source": "doc/hardware/peripherals/mdio.rst",
+            "source_sha256": "c7fc63cfdb9fab3da855d62514208b3d4ac688c5f2b32b8edcc8905b23235d94"
+        },
+        "hardware/peripherals/memc.rst": {
+            "source": "doc/hardware/peripherals/memc.rst",
+            "source_sha256": "c830b182098c972f0dc38f57463a4b56b134556add265b77a2052fb8fc982b82"
+        },
+        "hardware/peripherals/memory_storage.rst": {
+            "source": "doc/hardware/peripherals/memory_storage.rst",
+            "source_sha256": "2d477e87396afd6c292392ac20b4da830442f9da0bd7c0aa86e1dd6f69c36a1d"
+        },
+        "hardware/peripherals/motion_actuation.rst": {
+            "source": "doc/hardware/peripherals/motion_actuation.rst",
+            "source_sha256": "b351c915d53c2e66e83b5241c86a3fce580eb96143ce23030eed929abccc4147"
+        },
+        "hardware/peripherals/mspi.rst": {
+            "source": "doc/hardware/peripherals/mspi.rst",
+            "source_sha256": "ec9e763cce9da5b868691ed1d82af797b8f636a5a1cf4ac75ad92d75d6ab5e32"
+        },
+        "hardware/peripherals/mux.rst": {
+            "source": "doc/hardware/peripherals/mux.rst",
+            "source_sha256": "5a6e8db60498f2104b81a9e5aa55ae7b6a8b5e8dc3d9246f0351813c7dc5cb92"
+        },
+        "hardware/peripherals/opamp.rst": {
+            "source": "doc/hardware/peripherals/opamp.rst",
+            "source_sha256": "50b9e8ba0edac918d84b3bfc8d7125f4bf9951f0836a7100a38b56e8806c37d3"
+        },
+        "hardware/peripherals/otp/api.rst": {
+            "source": "doc/hardware/peripherals/otp/api.rst",
+            "source_sha256": "d4af2f98cf0f15eb8e1661e3dc2759da8d2b2582b782ac82da3fba3495ef526c"
+        },
+        "hardware/peripherals/otp/index.rst": {
+            "source": "doc/hardware/peripherals/otp/index.rst",
+            "source_sha256": "3ab3281626007fa7c5f8fcf61fdf30bde1d8f313b200014a0d07db241b208bab"
+        },
+        "hardware/peripherals/pcie.rst": {
+            "source": "doc/hardware/peripherals/pcie.rst",
+            "source_sha256": "f3847b91e5e2addc81b2e8dfc662be840d7db20a7c0e81a6b0127aee95e0d4c6"
+        },
+        "hardware/peripherals/peci.rst": {
+            "source": "doc/hardware/peripherals/peci.rst",
+            "source_sha256": "319a00690a6ee46329957f67c208c9e8f499bef24a29f34738505919a156dfe6"
+        },
+        "hardware/peripherals/power.rst": {
+            "source": "doc/hardware/peripherals/power.rst",
+            "source_sha256": "9d9198a586e52cd2d7bd947c97b7ed3e9851929119be6dcfea2104117423723b"
+        },
+        "hardware/peripherals/ps2.rst": {
+            "source": "doc/hardware/peripherals/ps2.rst",
+            "source_sha256": "f8bd89aab77defd269a304e31cd887d986706e597ba641954974fbe41c0b2f89"
+        },
+        "hardware/peripherals/psi5.rst": {
+            "source": "doc/hardware/peripherals/psi5.rst",
+            "source_sha256": "f46fd84be0ae354cd9cad712ca23cda0b1ccef22bd0366545c502e87fa2572c1"
+        },
+        "hardware/peripherals/pulse_io.rst": {
+            "source": "doc/hardware/peripherals/pulse_io.rst",
+            "source_sha256": "8e94ab6f1248cf46b7025048d723d1f725e698eface1a00f5690ceb86281f87d"
+        },
+        "hardware/peripherals/pwm.rst": {
+            "source": "doc/hardware/peripherals/pwm.rst",
+            "source_sha256": "cdcc3795b79280c7a02dd39344513b3179b76068610add6bb51fab641d4e19db"
+        },
+        "hardware/peripherals/regulators.rst": {
+            "source": "doc/hardware/peripherals/regulators.rst",
+            "source_sha256": "285d30dbbfc8e269feab425695af3da81f663c45ab0320d478ee0395794ae806"
+        },
+        "hardware/peripherals/reset.rst": {
+            "source": "doc/hardware/peripherals/reset.rst",
+            "source_sha256": "a5832134b82fe6879edf24cf7f102925dbe1e9bd5d88751c5b06912a0f694424"
+        },
+        "hardware/peripherals/retained_mem.rst": {
+            "source": "doc/hardware/peripherals/retained_mem.rst",
+            "source_sha256": "ba4ad1acf582db7c5bd19b025c53f2f2e94ee927bd76fb5e1c2f6153b76dec80"
+        },
+        "hardware/peripherals/rtc.rst": {
+            "source": "doc/hardware/peripherals/rtc.rst",
+            "source_sha256": "f9f25edbafe36d8a146e408aa7e80f4eb8211f3c083d42886b38f4f9e99c815c"
+        },
+        "hardware/peripherals/sdhc.rst": {
+            "source": "doc/hardware/peripherals/sdhc.rst",
+            "source_sha256": "f03e5437bcb98162d2cd8206b1d765135b1e2d6a6193485e9e5822786da9f622"
+        },
+        "hardware/peripherals/sensor/attributes.rst": {
+            "source": "doc/hardware/peripherals/sensor/attributes.rst",
+            "source_sha256": "6165dee20a059cefe177f5284dfc3c1d4db9e2ecf334e94b649c6c08b164f27f"
+        },
+        "hardware/peripherals/sensor/channels.rst": {
+            "source": "doc/hardware/peripherals/sensor/channels.rst",
+            "source_sha256": "e54ca4c83628622c8f9e6f09ee45cf6ca8a2b837b1e51565acccadb00fc04f6d"
+        },
+        "hardware/peripherals/sensor/device_tree.rst": {
+            "source": "doc/hardware/peripherals/sensor/device_tree.rst",
+            "source_sha256": "04c50bfb9e7cd2eb6e5e2c432b986adda998c1a0ea31c823571588a94b6a5597"
+        },
+        "hardware/peripherals/sensor/fetch_and_get.rst": {
+            "source": "doc/hardware/peripherals/sensor/fetch_and_get.rst",
+            "source_sha256": "8990d84926857a32a7d30a9f4ac7f1d71eaf9d9e15cc24da838948ab73da5bd8"
+        },
+        "hardware/peripherals/sensor/index.rst": {
+            "source": "doc/hardware/peripherals/sensor/index.rst",
+            "source_sha256": "745bc256331e47bac766f067ebd258165b07cb50a1c760a7af20483fa6ae96e5"
+        },
+        "hardware/peripherals/sensor/power_management.rst": {
+            "source": "doc/hardware/peripherals/sensor/power_management.rst",
+            "source_sha256": "02297b29624a38f7aff967977d4773b2acf64fcbd2abaeaed65c53a01857f452"
+        },
+        "hardware/peripherals/sensor/read_and_decode.rst": {
+            "source": "doc/hardware/peripherals/sensor/read_and_decode.rst",
+            "source_sha256": "b01c72262a9f441b4bf612c185c9aa0403e935361cfcce4786324b6a985dd484"
+        },
+        "hardware/peripherals/sensor/triggers.rst": {
+            "source": "doc/hardware/peripherals/sensor/triggers.rst",
+            "source_sha256": "6dbcd27fc6f28bacd828b2de863d5adb159f5e974173881fd20ce6585e32c81b"
+        },
+        "hardware/peripherals/sensors.rst": {
+            "source": "doc/hardware/peripherals/sensors.rst",
+            "source_sha256": "8542c1c99e7a5461368b06955fc93bfbf36a4716e5d0e498b3c4e859bd98ffbf"
+        },
+        "hardware/peripherals/sent.rst": {
+            "source": "doc/hardware/peripherals/sent.rst",
+            "source_sha256": "d1a69e0c4d112e2283b0445cd35dbee8cf063503ddb266e95d93d8a09eae4673"
+        },
+        "hardware/peripherals/smbus.rst": {
+            "source": "doc/hardware/peripherals/smbus.rst",
+            "source_sha256": "43fffc9ab3aa6e1400123e1619090baf45d67b0591e661337a00b09fe8edc875"
+        },
+        "hardware/peripherals/spi.rst": {
+            "source": "doc/hardware/peripherals/spi.rst",
+            "source_sha256": "c8b6611899faf73f32b6bf6638c30e4a95fae55f1913834d578742b5e051b64b"
+        },
+        "hardware/peripherals/stepper/index.rst": {
+            "source": "doc/hardware/peripherals/stepper/index.rst",
+            "source_sha256": "e5fbae1048ad65c97ee34266e816502073d2760deb18da7788be8231931414e2"
+        },
+        "hardware/peripherals/stepper/individual_controller_driver.rst": {
+            "source": "doc/hardware/peripherals/stepper/individual_controller_driver.rst",
+            "source_sha256": "2b795bd956fe10d66f7cb6bbd42d8b1700355c3f1b67a571d977a807bd4a0223"
+        },
+        "hardware/peripherals/stepper/integrated_controller_driver.rst": {
+            "source": "doc/hardware/peripherals/stepper/integrated_controller_driver.rst",
+            "source_sha256": "a033fce0604d910cb389fe5b653f4bdb2d732fd20b881b1e13733302cb505151"
+        },
+        "hardware/peripherals/system_diagnostics.rst": {
+            "source": "doc/hardware/peripherals/system_diagnostics.rst",
+            "source_sha256": "b786302004422fc32523ea7b39e16e3f2484ced127ddea39fb01cf80b4815618"
+        },
+        "hardware/peripherals/tcpc.rst": {
+            "source": "doc/hardware/peripherals/tcpc.rst",
+            "source_sha256": "376ebbe21894b42cbd2be5109a5a2010118d92589f9e960dd03d346c57194c7b"
+        },
+        "hardware/peripherals/tgpio.rst": {
+            "source": "doc/hardware/peripherals/tgpio.rst",
+            "source_sha256": "c97c28fd87a859ee422639002526dcfee10301a55408b421b9d75ebd4f6f245e"
+        },
+        "hardware/peripherals/timing.rst": {
+            "source": "doc/hardware/peripherals/timing.rst",
+            "source_sha256": "f73890be0d0cd5bd7802006d9f0267b9a7979856580cbc94e80448eed73f1d67"
+        },
+        "hardware/peripherals/uart.rst": {
+            "source": "doc/hardware/peripherals/uart.rst",
+            "source_sha256": "e4062b4dcc1c374a11c1b26969ff4cde67b588a32af389fc814c93ddcbb359ca"
+        },
+        "hardware/peripherals/usbc_vbus.rst": {
+            "source": "doc/hardware/peripherals/usbc_vbus.rst",
+            "source_sha256": "39c655130d980375ab9357b1e84d6b3791b3f7b5aaaad95feca29b75f6926c15"
+        },
+        "hardware/peripherals/video.rst": {
+            "source": "doc/hardware/peripherals/video.rst",
+            "source_sha256": "88914a7bc6e105ac4191808afbb978e41a3af6e39b7fc133c746da367bffcdac"
+        },
+        "hardware/peripherals/w1.rst": {
+            "source": "doc/hardware/peripherals/w1.rst",
+            "source_sha256": "9988a17838f0628d977e523ec0e9a7065a149e221fff52c5fe50c475331d7083"
+        },
+        "hardware/peripherals/watchdog.rst": {
+            "source": "doc/hardware/peripherals/watchdog.rst",
+            "source_sha256": "73c55417e2f2d805a46d4c24f22fbbc6f28f914b5865d32ae86d816a3088744d"
+        },
+        "hardware/peripherals/wuc.rst": {
+            "source": "doc/hardware/peripherals/wuc.rst",
+            "source_sha256": "a07de21df44ecdb0a371cea06f910168abc20695b5a598368065349c373a017e"
+        },
+        "hardware/pinctrl/index.rst": {
+            "source": "doc/hardware/pinctrl/index.rst",
+            "source_sha256": "22de464f298f214f9af8a78e10a42f19af76af0ae9e4101b0e64a7e29669acb3"
+        },
+        "hardware/porting/arch.rst": {
+            "source": "doc/hardware/porting/arch.rst",
+            "source_sha256": "f4149b024e50c1186f1915d61c65a34f7869711854da195dccd903f85eca8c8f"
+        },
+        "hardware/porting/board_porting.rst": {
+            "source": "doc/hardware/porting/board_porting.rst",
+            "source_sha256": "c664bacca815722623ae2a0e176e4b7603d93abf062e14bffc9606a198d4815c"
+        },
+        "hardware/porting/index.rst": {
+            "source": "doc/hardware/porting/index.rst",
+            "source_sha256": "91106b79d6bd7b856548e318102fd32887587fa54a19263cc7ca99a47115d3c9"
+        },
+        "hardware/porting/shields.rst": {
+            "source": "doc/hardware/porting/shields.rst",
+            "source_sha256": "2524bacc5c7118aa56b78271f4c9f61904d456785fe88b7dce46aea887c8bb1e"
+        },
+        "hardware/porting/soc_porting.rst": {
+            "source": "doc/hardware/porting/soc_porting.rst",
+            "source_sha256": "fe748109c0881d8b917e606fb247ea3ec8f7c5d32c43e75c6f212f39f9c0e0f2"
+        },
+        "hardware/virtualization/index.rst": {
+            "source": "doc/hardware/virtualization/index.rst",
+            "source_sha256": "dcf249452e71ae58c6cbe82cd61ca593e3f027b261aa2ee17a5ff8866b0df088"
+        },
+        "hardware/virtualization/virtio.rst": {
+            "source": "doc/hardware/virtualization/virtio.rst",
+            "source_sha256": "2c42fe2e21f47cf275885d637e2842eb69f208bbc62f17395d737259d2a6f5ab"
+        },
+        "index.rst": {
+            "source": "doc/index.rst",
+            "source_sha256": "1ee2df74df09e31b890f5aacb3e77eb8b509f357659a120e86e669af611becd9"
+        },
+        "introduction/index.rst": {
+            "source": "doc/introduction/index.rst",
+            "source_sha256": "a57e78546d7607dc355d7f4479ee138e7a51d4f3b9f041b0507a7fb4fd519dbe"
+        },
+        "kconfig.rst": {
+            "source": "doc/kconfig.rst",
+            "source_sha256": "e0444382b896f2a6b67a339e259f7330491143a5e6d7f50ce07779b77923f2f9"
+        },
+        "kernel/cleanup.rst": {
+            "source": "doc/kernel/cleanup.rst",
+            "source_sha256": "9d6ee42800d7713d7fff5c6acc924a43a82ceb1ebf01625c57fdd97d428ab74e"
+        },
+        "kernel/code-relocation.rst": {
+            "source": "doc/kernel/code-relocation.rst",
+            "source_sha256": "7775043dc7c5ad996257ae0a75d4278f8e74c2e00f08a50d24cea4929295e10f"
+        },
+        "kernel/data_structures/dlist.rst": {
+            "source": "doc/kernel/data_structures/dlist.rst",
+            "source_sha256": "773af2ec581dedcd10ee4aa0c424546802498f695fee21caf084c2420d174ade"
+        },
+        "kernel/data_structures/index.rst": {
+            "source": "doc/kernel/data_structures/index.rst",
+            "source_sha256": "2fbde84dc8447d0883810cf788e99f532bbe40fa7732e1eef23188582a8fcba0"
+        },
+        "kernel/data_structures/min_heap.rst": {
+            "source": "doc/kernel/data_structures/min_heap.rst",
+            "source_sha256": "d4ad4944aaaf6ea7a8781aa7be4e8b0acef6daa95c8330db378e3cf85615cd3e"
+        },
+        "kernel/data_structures/mpsc_lockfree.rst": {
+            "source": "doc/kernel/data_structures/mpsc_lockfree.rst",
+            "source_sha256": "4397884f938b46d3e6b40a582e155a273158cc49fcdf2001a3c4b7285f6c3eed"
+        },
+        "kernel/data_structures/mpsc_pbuf.rst": {
+            "source": "doc/kernel/data_structures/mpsc_pbuf.rst",
+            "source_sha256": "a49e5dcce34bd9fcb9ee75110587af0b965f07d736ba6bb59833e42d6bbe2c84"
+        },
+        "kernel/data_structures/rbtree.rst": {
+            "source": "doc/kernel/data_structures/rbtree.rst",
+            "source_sha256": "c15b602cc00cd1444f2349ab1abcd1d3fa3dc480f92fd188477d7af6d56f5081"
+        },
+        "kernel/data_structures/ring_buffers.rst": {
+            "source": "doc/kernel/data_structures/ring_buffers.rst",
+            "source_sha256": "2450bba891d84f0bef3623be531af32c4f39b7fd27f25076ef99df63ab86f3a2"
+        },
+        "kernel/data_structures/ringq.rst": {
+            "source": "doc/kernel/data_structures/ringq.rst",
+            "source_sha256": "b48542d4e13dbe7c366fd8ef1adb296ead24cc4d17d36d70d543918aa0f85201"
+        },
+        "kernel/data_structures/slist.rst": {
+            "source": "doc/kernel/data_structures/slist.rst",
+            "source_sha256": "ed6f75805e8ae7cc63d8644c4b5f6526fb762f5b86636a90fba3c6f7aaf48d45"
+        },
+        "kernel/data_structures/spsc_lockfree.rst": {
+            "source": "doc/kernel/data_structures/spsc_lockfree.rst",
+            "source_sha256": "831f6bedc7459cd4a68499d3e4422b7b669c17a388deb6508c7b805f65234a9e"
+        },
+        "kernel/data_structures/spsc_pbuf.rst": {
+            "source": "doc/kernel/data_structures/spsc_pbuf.rst",
+            "source_sha256": "e3fbcaba1fd60172958b3cb957d032ffba6cab5db00e6589a5a969b4d4cf67df"
+        },
+        "kernel/drivers/index.rst": {
+            "source": "doc/kernel/drivers/index.rst",
+            "source_sha256": "e7e0ad0a7473cd955973fda081e24cc60a0c5ae20c63c79bb8f8cad8955118ca"
+        },
+        "kernel/index.rst": {
+            "source": "doc/kernel/index.rst",
+            "source_sha256": "fdb17fa68fe01d071131d63cd71d7a72ae2f902248087380fca032b76ae48964"
+        },
+        "kernel/iterable_sections/index.rst": {
+            "source": "doc/kernel/iterable_sections/index.rst",
+            "source_sha256": "b682b74e6a1f21848598a540932cf1fe7dc611a02585d26f2249b69a1ece5a8e"
+        },
+        "kernel/memory_management/demand_paging.rst": {
+            "source": "doc/kernel/memory_management/demand_paging.rst",
+            "source_sha256": "1e5e01362e0a40008d48a45172df83e05a1cb86055a64d0416d50dc7aaf5cd50"
+        },
+        "kernel/memory_management/heap.rst": {
+            "source": "doc/kernel/memory_management/heap.rst",
+            "source_sha256": "40554a8567773899a831b92b0bcdfe89efb4fa2aad4c21abe91cd34a4aec13ea"
+        },
+        "kernel/memory_management/index.rst": {
+            "source": "doc/kernel/memory_management/index.rst",
+            "source_sha256": "73e48015b5192c74176371249fd8fdbf1100fbe07887d015ce5836fa1b88c215"
+        },
+        "kernel/memory_management/shared_multi_heap.rst": {
+            "source": "doc/kernel/memory_management/shared_multi_heap.rst",
+            "source_sha256": "cf43b695844ffdad6e6d95fdafba1f5e2c67c0c68a9e6ecb3674407541c7bbc3"
+        },
+        "kernel/memory_management/slabs.rst": {
+            "source": "doc/kernel/memory_management/slabs.rst",
+            "source_sha256": "432cabcd313c24583e53198b0ffab17faa3dd097b9df86dc250c317355c44a9f"
+        },
+        "kernel/memory_management/sys_mem_blocks.rst": {
+            "source": "doc/kernel/memory_management/sys_mem_blocks.rst",
+            "source_sha256": "a11312dbe30713ffbf0dae88aae3734ed872bcb32aeabf1332b7f470c9b82504"
+        },
+        "kernel/memory_management/virtual_memory.rst": {
+            "source": "doc/kernel/memory_management/virtual_memory.rst",
+            "source_sha256": "837becf9154d11a7f9e01e0f771d9c72f859644fb17a823d46f84cac458959f0"
+        },
+        "kernel/object_cores/index.rst": {
+            "source": "doc/kernel/object_cores/index.rst",
+            "source_sha256": "308df3fb2846cb164e5d0047976325ca8ee6eb2ff0b495f469ad88fb8831d774"
+        },
+        "kernel/services/data_passing/fifos.rst": {
+            "source": "doc/kernel/services/data_passing/fifos.rst",
+            "source_sha256": "d4fd8f4a22445657afbceae744415cfcd7b391dc1797d7190fbc431be578e3ad"
+        },
+        "kernel/services/data_passing/lifos.rst": {
+            "source": "doc/kernel/services/data_passing/lifos.rst",
+            "source_sha256": "c42d9ec2355041116e9ad5b2931507d4461fb069fc651e9b4cbd11959feb69ed"
+        },
+        "kernel/services/data_passing/mailboxes.rst": {
+            "source": "doc/kernel/services/data_passing/mailboxes.rst",
+            "source_sha256": "7151224d33b49839976ca5ac0af2853ea1d22372c9402f7f343f9c0b268a2875"
+        },
+        "kernel/services/data_passing/message_queues.rst": {
+            "source": "doc/kernel/services/data_passing/message_queues.rst",
+            "source_sha256": "f271b5c0e29ac45f21896920133467e79184376883ca86a64bca6e301296df0f"
+        },
+        "kernel/services/data_passing/pipes.rst": {
+            "source": "doc/kernel/services/data_passing/pipes.rst",
+            "source_sha256": "aeea6c69870f8a16e21394403ed52bccec70df0b1196b3e6293bea75b737db3c"
+        },
+        "kernel/services/data_passing/queues.rst": {
+            "source": "doc/kernel/services/data_passing/queues.rst",
+            "source_sha256": "0411d7d95c9659323a6b3016a1f68a1b999ed2fcb45ef24c767aea15bba5981f"
+        },
+        "kernel/services/data_passing/stacks.rst": {
+            "source": "doc/kernel/services/data_passing/stacks.rst",
+            "source_sha256": "7be88b6548e08a5099c7f6df552fe43bf9b5f0a5d112d0bb9faa245461cb39c6"
+        },
+        "kernel/services/index.rst": {
+            "source": "doc/kernel/services/index.rst",
+            "source_sha256": "7582d21c979d98fb20ccd8942ff0eb176211c57ef2e9cdb12032d8957c145783"
+        },
+        "kernel/services/interrupts.rst": {
+            "source": "doc/kernel/services/interrupts.rst",
+            "source_sha256": "614d29187353e58ccb42433f305fe91814e71e96e593bb056c7ec1f799c2afb2"
+        },
+        "kernel/services/other/atomic.rst": {
+            "source": "doc/kernel/services/other/atomic.rst",
+            "source_sha256": "501f421c7b37cd41ce1e5b56d76f9b9ed52fa2d70823f7fdbcf30df95a707929"
+        },
+        "kernel/services/other/fatal.rst": {
+            "source": "doc/kernel/services/other/fatal.rst",
+            "source_sha256": "65c1c9b69959ea0a6dc0321ca8179913d7b5df445760d4f09c2d0e0953f27e7b"
+        },
+        "kernel/services/other/float.rst": {
+            "source": "doc/kernel/services/other/float.rst",
+            "source_sha256": "4be0c2ff198710996ff05338bc3fc1db62228a7b5ca96ebc66013a4dede3979a"
+        },
+        "kernel/services/other/thread_local_storage.rst": {
+            "source": "doc/kernel/services/other/thread_local_storage.rst",
+            "source_sha256": "204b778fa5c1c05945c9aaecb163ca90e24c1e349d7cf3de7b0dd7705fd5a34a"
+        },
+        "kernel/services/other/version.rst": {
+            "source": "doc/kernel/services/other/version.rst",
+            "source_sha256": "79b3d3624d8c8639da71bb6f5ddc727608bb47ed1071131fa0bcb00e705ee302"
+        },
+        "kernel/services/polling.rst": {
+            "source": "doc/kernel/services/polling.rst",
+            "source_sha256": "ab2c52e37d978de83fb338a4eea795ffb049589222be69b716a7118353ed8899"
+        },
+        "kernel/services/scheduling/index.rst": {
+            "source": "doc/kernel/services/scheduling/index.rst",
+            "source_sha256": "857f10fff7c4c10bd7a1b9fa50d48a14b8c819f8d236f669461d8217b2930d1b"
+        },
+        "kernel/services/smp/smp.rst": {
+            "source": "doc/kernel/services/smp/smp.rst",
+            "source_sha256": "1e3f3e9e3ce91fe6386e5e1295e36ca711ff3bafb1da8e7699837a1977edd165"
+        },
+        "kernel/services/synchronization/condvar.rst": {
+            "source": "doc/kernel/services/synchronization/condvar.rst",
+            "source_sha256": "5488c9cc90944cefe9774df48d2e582f3c004794fb9c3a6fe32f90882eb07b95"
+        },
+        "kernel/services/synchronization/events.rst": {
+            "source": "doc/kernel/services/synchronization/events.rst",
+            "source_sha256": "7933543f36d5799fa13ab5f0b7731c0c22740075fd523e1aff6819737eb2214b"
+        },
+        "kernel/services/synchronization/mutexes.rst": {
+            "source": "doc/kernel/services/synchronization/mutexes.rst",
+            "source_sha256": "81a0f8df67b5885f578037f9a36f0faa910bbd7dd6048ca495d0ab2d71438cae"
+        },
+        "kernel/services/synchronization/semaphores.rst": {
+            "source": "doc/kernel/services/synchronization/semaphores.rst",
+            "source_sha256": "b235e6804899e4b2f987b723f15bce76c7820d2bd159d437389cb8984bba4636"
+        },
+        "kernel/services/synchronization/spinlocks.rst": {
+            "source": "doc/kernel/services/synchronization/spinlocks.rst",
+            "source_sha256": "be6548c3bc92770bf067959d2efcaf944383a57efb1775e277b40413ce967c58"
+        },
+        "kernel/services/threads/index.rst": {
+            "source": "doc/kernel/services/threads/index.rst",
+            "source_sha256": "10f2fea35bc0faad3a99d77338328133c34c0ab5e4234c2f6af290b7fba0af4b"
+        },
+        "kernel/services/threads/nothread.rst": {
+            "source": "doc/kernel/services/threads/nothread.rst",
+            "source_sha256": "6c299d139b7829e8d895a20b1f736adf45e2892cc4b701211e68fae627ccfca0"
+        },
+        "kernel/services/threads/system_threads.rst": {
+            "source": "doc/kernel/services/threads/system_threads.rst",
+            "source_sha256": "5bc2c703fdfdede6275f82dfb35da864abe6d6b793cb573ce6981aabc594c713"
+        },
+        "kernel/services/threads/workqueue.rst": {
+            "source": "doc/kernel/services/threads/workqueue.rst",
+            "source_sha256": "52aa4d52f94fd2086b68b08d1f55ea041a65694f7e7bf692449ae406e05521c4"
+        },
+        "kernel/services/timing/clocks.rst": {
+            "source": "doc/kernel/services/timing/clocks.rst",
+            "source_sha256": "060e5fc9def8ba8712dea485a782234f741caacd2b677e5c3bf092d264b0bfba"
+        },
+        "kernel/services/timing/system_timer_drivers.rst": {
+            "source": "doc/kernel/services/timing/system_timer_drivers.rst",
+            "source_sha256": "b32145d44f2c54290c4ece0f8ea34b9a9e84ddc12d0d60ffe4f8edb53a5b90c3"
+        },
+        "kernel/services/timing/timers.rst": {
+            "source": "doc/kernel/services/timing/timers.rst",
+            "source_sha256": "10524244124f786febaef2569e8d9e6fe3bc05ababd2b0462edf5b5c76fcb4a8"
+        },
+        "kernel/timeutil.rst": {
+            "source": "doc/kernel/timeutil.rst",
+            "source_sha256": "133d6374fdf3d79d621b56caf9c31a3ea997361573dd63d414e21553a8cd65e7"
+        },
+        "kernel/timing_functions/index.rst": {
+            "source": "doc/kernel/timing_functions/index.rst",
+            "source_sha256": "7423ad83ab9c77d4f0cabfd97b728ebac30d52f3bf73473eadfa64c54159e408"
+        },
+        "kernel/usermode/index.rst": {
+            "source": "doc/kernel/usermode/index.rst",
+            "source_sha256": "7b599611dd64421aac6786f236d68a8842ce49e1c31958a9e0ff812ba95fe35c"
+        },
+        "kernel/usermode/kernelobjects.rst": {
+            "source": "doc/kernel/usermode/kernelobjects.rst",
+            "source_sha256": "bebee03f2c25fd1f3105cc397e2698d41d18e6fb5c7baf1771ff25d46818f5e3"
+        },
+        "kernel/usermode/memory_domain.rst": {
+            "source": "doc/kernel/usermode/memory_domain.rst",
+            "source_sha256": "7f6e39fa70c18cd735510e17ddefed67b619c019397cca362b776016465541c1"
+        },
+        "kernel/usermode/mpu_stack_objects.rst": {
+            "source": "doc/kernel/usermode/mpu_stack_objects.rst",
+            "source_sha256": "879aa163e5594d0084f8785bb448e3c2b01359abd20c6b3fa6d7b8a4df99ffe3"
+        },
+        "kernel/usermode/mpu_userspace.rst": {
+            "source": "doc/kernel/usermode/mpu_userspace.rst",
+            "source_sha256": "bfa6260ae2d6eb008f60d40a2a19aeba68345f1af4fea8069e9f0bb22bac9b22"
+        },
+        "kernel/usermode/overview.rst": {
+            "source": "doc/kernel/usermode/overview.rst",
+            "source_sha256": "49f53b465d70f2831bff500fc02819f568385164f3f322333bdf894af57275bd"
+        },
+        "kernel/usermode/syscalls.rst": {
+            "source": "doc/kernel/usermode/syscalls.rst",
+            "source_sha256": "5bc7ab11564fc1e20d715350ce6daa32dec03cae1d4239f09f682b479cf71f03"
+        },
+        "kernel/util/index.rst": {
+            "source": "doc/kernel/util/index.rst",
+            "source_sha256": "98623c34b5673f0774042c6a426924c918e954350b5fc583f6616e87f5df860b"
+        },
+        "project/code_flow.rst": {
+            "source": "doc/project/code_flow.rst",
+            "source_sha256": "9b8f5a7b48411d2c4f4157bf987a8900f83ad1f652d6d3e0876af9eef16e7522"
+        },
+        "project/communication.rst": {
+            "source": "doc/project/communication.rst",
+            "source_sha256": "811411982e212299ca0cbd081d3a434f77d8e8d1e47cba7d017897991953e6eb"
+        },
+        "project/dev_env_and_tools.rst": {
+            "source": "doc/project/dev_env_and_tools.rst",
+            "source_sha256": "87da0508de26a27c6eb5024df39a62da09f2202e0c71c412cde0ddf52b3a0f0a"
+        },
+        "project/documentation.rst": {
+            "source": "doc/project/documentation.rst",
+            "source_sha256": "afb76693fd6b4b6673281c9629417a5565152911d2bb8bb23ad220f11aba79c1"
+        },
+        "project/index.rst": {
+            "source": "doc/project/index.rst",
+            "source_sha256": "e0270a36b830f26509e4f37af54d2455a6f1cac006acb4011f9682af72222b1c"
+        },
+        "project/issues.rst": {
+            "source": "doc/project/issues.rst",
+            "source_sha256": "a3ee945547fa21336428f481cabde071f03e6d27831b95584fd9f1f0185d3c30"
+        },
+        "project/project_roles.rst": {
+            "source": "doc/project/project_roles.rst",
+            "source_sha256": "365cffeb91cc455c5cf2cd16ba98f25cb0c04a4c09d5266bde92a14f61c22c16"
+        },
+        "project/proposals.rst": {
+            "source": "doc/project/proposals.rst",
+            "source_sha256": "124ce796eb66786b0991170f58280671b38d4676cf137359cbac042f27858c65"
+        },
+        "project/release_process.rst": {
+            "source": "doc/project/release_process.rst",
+            "source_sha256": "fa585ccc304528aaed21576cd852270b944f29f9fad2abb36d8212281b6d8b88"
+        },
+        "project/tsc.rst": {
+            "source": "doc/project/tsc.rst",
+            "source_sha256": "11d7006d1ad7e97b7810db7dd13eac7f4545e00de26eb2c36e64b167a881eb11"
+        },
+        "project/working_groups.rst": {
+            "source": "doc/project/working_groups.rst",
+            "source_sha256": "2617f197c372cbc87945563488bb5605c4373fa820aa7d60453f8e5b17520875"
+        },
+        "releases/eol_releases.rst": {
+            "source": "doc/releases/eol_releases.rst",
+            "source_sha256": "8746ca3cb27274ef2ea2f1387aa7f0d3e0a8c2c1f1a61f9da2ed5521b84d63af"
+        },
+        "releases/index.rst": {
+            "source": "doc/releases/index.rst",
+            "source_sha256": "8190e279bf52e9e7e2497ff34be98f93e2917f3a692d0f3c9f839ce5fb480270"
+        },
+        "releases/migration-guide-3.7.rst": {
+            "source": "doc/releases/migration-guide-3.7.rst",
+            "source_sha256": "b008008234f90a38805cd0d8ddf7b1d802764ff6602c75052a50845d96a12300"
+        },
+        "releases/migration-guide-4.2.rst": {
+            "source": "doc/releases/migration-guide-4.2.rst",
+            "source_sha256": "3c151b50f4702b6778e6a8d301d04c10ef8eb30ddf9c66a87ade75a38d6af43a"
+        },
+        "releases/migration-guide-4.3.rst": {
+            "source": "doc/releases/migration-guide-4.3.rst",
+            "source_sha256": "fccf8a94f5550126c0cec1cd4a72cb8438650c5ec402394c6915b30eb760324a"
+        },
+        "releases/migration-guide-4.4.rst": {
+            "source": "doc/releases/migration-guide-4.4.rst",
+            "source_sha256": "d233a41bb750abd433efac67b434dd59ab41047cf208014f4e1f4dc185701ebe"
+        },
+        "releases/migration-guide-4.5.rst": {
+            "source": "doc/releases/migration-guide-4.5.rst",
+            "source_sha256": "b08a10e50a6597533502bea3d0dd4dc33d8969dbdd6838fcdcd3f280a8e57b01"
+        },
+        "releases/release-notes-3.7.rst": {
+            "source": "doc/releases/release-notes-3.7.rst",
+            "source_sha256": "aa4e46d18b02585c7ae2d106e0a398b54ed66d531a4b59b9299efe751f19e49e"
+        },
+        "releases/release-notes-4.2.rst": {
+            "source": "doc/releases/release-notes-4.2.rst",
+            "source_sha256": "8024be6f94fc3f89933b18a9fe9b336f0e2a238c6a3e882cc473a18d0f76f156"
+        },
+        "releases/release-notes-4.3.rst": {
+            "source": "doc/releases/release-notes-4.3.rst",
+            "source_sha256": "ef737cb00f708ae0f5c6886f40ffcc3e3825dbefc4f26b03a3698ccea1e6472c"
+        },
+        "releases/release-notes-4.4.rst": {
+            "source": "doc/releases/release-notes-4.4.rst",
+            "source_sha256": "60237ef4aef8c50790e861449aba59a27a09bd2fcf0e013bf2afba1efb51a546"
+        },
+        "releases/release-notes-4.5.rst": {
+            "source": "doc/releases/release-notes-4.5.rst",
+            "source_sha256": "6b2f4245b988ffb6f0598c1d7ac4c5a6fc86505bb84683f1226232af7eec1d29"
+        },
+        "safety/index.rst": {
+            "source": "doc/safety/index.rst",
+            "source_sha256": "31b60381c136c5f080a5b009ef659a518845c1eba38d1eafa060ebfd71a3dbee"
+        },
+        "safety/safety_overview.rst": {
+            "source": "doc/safety/safety_overview.rst",
+            "source_sha256": "1143093433232647c470b8f71c1615a6faa05af8cd28aebbe0b026e810087021"
+        },
+        "safety/safety_requirements/getting_started/create_your_first_requirement.rst": {
+            "source": "doc/safety/safety_requirements/getting_started/create_your_first_requirement.rst",
+            "source_sha256": "072df11230114e82e7b23f1763469fddce15017c63dfb7a93b735f2f42cb1b1f"
+        },
+        "safety/safety_requirements/getting_started/getting_started_with_requirements.rst": {
+            "source": "doc/safety/safety_requirements/getting_started/getting_started_with_requirements.rst",
+            "source_sha256": "a02e17f67f767e42d054a42f40bd1d13df117eca81e9d0ec880caa5f620649eb"
+        },
+        "safety/safety_requirements/getting_started/index.rst": {
+            "source": "doc/safety/safety_requirements/getting_started/index.rst",
+            "source_sha256": "a9c80cb556a0de4aaeccb646c2e072e7e598e16be9e154cd59e9287b7636d05f"
+        },
+        "safety/safety_requirements/index.rst": {
+            "source": "doc/safety/safety_requirements/index.rst",
+            "source_sha256": "f8b9fa6a11a6fa222c08a8e9c17fced5c1a45b39539690e1b03011fdcdd1d9a4"
+        },
+        "safety/safety_requirements/requirements_catalog.rst": {
+            "source": "doc/safety/safety_requirements/requirements_catalog.rst",
+            "source_sha256": "ece08dea686770f8a0532e506c9c27b961b3d19de00b979f9fdcf22d6c90cc62"
+        },
+        "safety/safety_requirements/safety_requirements.rst": {
+            "source": "doc/safety/safety_requirements/safety_requirements.rst",
+            "source_sha256": "387e7982988133acf523f4a27330d29d779cf341724849fc0615a5b985f05f41"
+        },
+        "safety/safety_requirements/safety_requirements_checklist.rst": {
+            "source": "doc/safety/safety_requirements/safety_requirements_checklist.rst",
+            "source_sha256": "7433a998de9433e3c0901fc4b4d30677be3aa24d4511e80733bf18ad39d95bec"
+        },
+        "security/control-flow-integrity.rst": {
+            "source": "doc/security/control-flow-integrity.rst",
+            "source_sha256": "e5ab4f921d844dd7bb459ce559ff32e55417d47d34acda9b8f34e6c872a4f240"
+        },
+        "security/hardening-tool.rst": {
+            "source": "doc/security/hardening-tool.rst",
+            "source_sha256": "81452b3a41470753f3c9e50acc42bfe8b1ec50c38b13dc367d2e89405af751ab"
+        },
+        "security/index.rst": {
+            "source": "doc/security/index.rst",
+            "source_sha256": "4bb8d2721494f95d7cdb0e73c4bd1c9f7e0ef354a1bd1d53a4e4f616d783ed1f"
+        },
+        "security/reporting.rst": {
+            "source": "doc/security/reporting.rst",
+            "source_sha256": "cfe7af17449f929ff35e131be7af32b449fed7d4cea89cb18ff1f1de145f211b"
+        },
+        "security/secure-coding.rst": {
+            "source": "doc/security/secure-coding.rst",
+            "source_sha256": "63dbbee01984dd2726841ee1c2bf385d6b47049a713885dcae66890d37b7c8de"
+        },
+        "security/security-citations.rst": {
+            "source": "doc/security/security-citations.rst",
+            "source_sha256": "386ea674e2ce3c5df272103d59e646465dbec2bc8628aa532c7bc21e01962a70"
+        },
+        "security/security-overview.rst": {
+            "source": "doc/security/security-overview.rst",
+            "source_sha256": "81564fd23a57ab0235de5ae636197f0ef4c21b006eb07ef56b024e8d93ce3170"
+        },
+        "security/sensor-threat.rst": {
+            "source": "doc/security/sensor-threat.rst",
+            "source_sha256": "27ddfa3cb40a70569434d0bdb8038bb65e14e968108bf4f8b31f0cc7859b9cf6"
+        },
+        "security/standards/cyber-resilience-act.rst": {
+            "source": "doc/security/standards/cyber-resilience-act.rst",
+            "source_sha256": "3ad4294ca699a54536357e0bc847dbf72e65d046a4f7f7798e5c55b8417265af"
+        },
+        "security/standards/etsi-303645.rst": {
+            "source": "doc/security/standards/etsi-303645.rst",
+            "source_sha256": "bd0443274453144e768e4816346bbc69a07c00d6b89e96a6593a97f6fb5d8561"
+        },
+        "security/standards/index.rst": {
+            "source": "doc/security/standards/index.rst",
+            "source_sha256": "9bfa0bedc6060ce459d540399833b1598cde97f172df0e9287d053b0aa5b2200"
+        },
+        "security/vulnerabilities/2017.rst": {
+            "source": "doc/security/vulnerabilities/2017.rst",
+            "source_sha256": "dad99f8e64fc8cdb849aa72829823a1f7f12f7e525b2798c41eaf7f65318d47c"
+        },
+        "security/vulnerabilities/2019.rst": {
+            "source": "doc/security/vulnerabilities/2019.rst",
+            "source_sha256": "ee9d00bfaa83252081290d5bdf27b0b0a48e2931cfcd9372ddc99aadb81fe539"
+        },
+        "security/vulnerabilities/2020.rst": {
+            "source": "doc/security/vulnerabilities/2020.rst",
+            "source_sha256": "1f27b868089463354fd177067753ebc98242d4da7a4607690d846ac69548b0ae"
+        },
+        "security/vulnerabilities/2021.rst": {
+            "source": "doc/security/vulnerabilities/2021.rst",
+            "source_sha256": "87ef67fa476fb92d4a1c4c348cdc121a3fb94559e4a16b9721fa6ed7f9ebc032"
+        },
+        "security/vulnerabilities/2022.rst": {
+            "source": "doc/security/vulnerabilities/2022.rst",
+            "source_sha256": "8c9939b4a967e0ee1fea70dbff3be5ae2f518249fc85be3d47dc494e6d6f8fdc"
+        },
+        "security/vulnerabilities/2023.rst": {
+            "source": "doc/security/vulnerabilities/2023.rst",
+            "source_sha256": "c639e431be746c3f34bcdbd10dd1879716d719c637bd3a54656ba0cb73ca31b1"
+        },
+        "security/vulnerabilities/2024.rst": {
+            "source": "doc/security/vulnerabilities/2024.rst",
+            "source_sha256": "71edc2ba99ad6ecb9936cb134d807dcb754687fe4dacbae0493374887169d09e"
+        },
+        "security/vulnerabilities/2025.rst": {
+            "source": "doc/security/vulnerabilities/2025.rst",
+            "source_sha256": "2c64835a7078f3349d1c46483731160ddcf3138cb5ffd0796cb3450060298aa3"
+        },
+        "security/vulnerabilities.rst": {
+            "source": "doc/security/vulnerabilities.rst",
+            "source_sha256": "40f4e43659aec60cbbfa0f26b11cdaea6a65b20210c28d278262c852949b45f7"
+        },
+        "services/algorithms.rst": {
+            "source": "doc/services/algorithms.rst",
+            "source_sha256": "e50fb48f9cd18036ac3d73a94b63183b2e13c856ce0c5b9483202bed7ba2d07d"
+        },
+        "services/authentication/fido2/index.rst": {
+            "source": "doc/services/authentication/fido2/index.rst",
+            "source_sha256": "e44bc7e58bc62f6bac13b20a94a7999669ca2be8752e618c7ced01d547c9f947"
+        },
+        "services/authentication/index.rst": {
+            "source": "doc/services/authentication/index.rst",
+            "source_sha256": "0c0d47d3b18c2147cfe9acb449038d8941b77fdcc975166a01a4d122279ea59c"
+        },
+        "services/binary_descriptors/index.rst": {
+            "source": "doc/services/binary_descriptors/index.rst",
+            "source_sha256": "069a3ab3bea6543bba96be049ef98679a9503467fd4cc49854400b99975612dc"
+        },
+        "services/connectivity/bluetooth/api/att.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/att.rst",
+            "source_sha256": "0ed00e508988eb5b921a61b4bf433d1c06f38823aa48a64b1b226d863a9ca759"
+        },
+        "services/connectivity/bluetooth/api/audio/audio.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/audio/audio.rst",
+            "source_sha256": "b3f3e96c427f94ce934821f5c84c8b56a02f5df526942a28a181ef4ac8d718f9"
+        },
+        "services/connectivity/bluetooth/api/audio/bap.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/audio/bap.rst",
+            "source_sha256": "b4beae509f51386d59c3d574dbb49a8e047be3bd903c5bf018493bee57fb2c36"
+        },
+        "services/connectivity/bluetooth/api/audio/bluetooth-le-audio-arch.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/audio/bluetooth-le-audio-arch.rst",
+            "source_sha256": "587a5d0566a2a8d7b4402291b2e2e81fa7724814f2d94f68d88c10040daba721"
+        },
+        "services/connectivity/bluetooth/api/audio/cap.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/audio/cap.rst",
+            "source_sha256": "68f2717324175e4ec5893e4a9b671a4314a99b98f9b2ed8c2c0b88858e76e558"
+        },
+        "services/connectivity/bluetooth/api/audio/coordinated_sets.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/audio/coordinated_sets.rst",
+            "source_sha256": "bdef9d99884bdfe2de79294670901c894b3d28d267991ce952e226396c3b1e34"
+        },
+        "services/connectivity/bluetooth/api/audio/media.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/audio/media.rst",
+            "source_sha256": "51935d2f8429926998e08b73e62308dc893be8fc32855912f9cd463b64587ed5"
+        },
+        "services/connectivity/bluetooth/api/audio/microphone.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/audio/microphone.rst",
+            "source_sha256": "6d4645c3847792a347cbb3650a5f82d9c72e2519aca80f80ba06b0efe8ff78ef"
+        },
+        "services/connectivity/bluetooth/api/audio/volume.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/audio/volume.rst",
+            "source_sha256": "a781bcad2b8b643ca36e195176d0b3f3896972c225bd8616ec1aea22f347f9f2"
+        },
+        "services/connectivity/bluetooth/api/classic/a2dp.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/classic/a2dp.rst",
+            "source_sha256": "e357088919a5ce446c556736db98cb13b7d044181933b7838bf952ffb13e23ea"
+        },
+        "services/connectivity/bluetooth/api/classic/avrcp.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/classic/avrcp.rst",
+            "source_sha256": "1daecdaf8c94c41dbe3d768bd51f2fa7540a1c3a4763fe34a6e14ed5ac48ea40"
+        },
+        "services/connectivity/bluetooth/api/classic/bip.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/classic/bip.rst",
+            "source_sha256": "3db115772d21f6d55419936a3d4809909da2b81904755bbdb126fa73dcd6c05a"
+        },
+        "services/connectivity/bluetooth/api/classic/goep.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/classic/goep.rst",
+            "source_sha256": "a96bbaf374fbba183d527d1593c8203dcdd3f711cdf909944ad1438a58b8f886"
+        },
+        "services/connectivity/bluetooth/api/classic/hfp.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/classic/hfp.rst",
+            "source_sha256": "7375c26e70908d2a78950cf8c4a1927b8bf9228bb5145dd82271c315c0ca08d6"
+        },
+        "services/connectivity/bluetooth/api/classic/l2cap_br.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/classic/l2cap_br.rst",
+            "source_sha256": "3b7185ca2ae05137de56316b4aa18716e917cf551c9e00574a5f62315f564fbe"
+        },
+        "services/connectivity/bluetooth/api/classic/rfcomm.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/classic/rfcomm.rst",
+            "source_sha256": "4e238090d89bc26513742a6dd465e52cced825f427cb26e355c5529fa95e0550"
+        },
+        "services/connectivity/bluetooth/api/classic/sdp.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/classic/sdp.rst",
+            "source_sha256": "b5b8529f982721d0b6c2ef8ec97934d2f43bbd7c4f7f47e469b12470dfea80d7"
+        },
+        "services/connectivity/bluetooth/api/connection_mgmt.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/connection_mgmt.rst",
+            "source_sha256": "e06d2fe2cc24146301c5390e1b0b527e7cd6965db5a6dcf4e9ab7fea1bc051d3"
+        },
+        "services/connectivity/bluetooth/api/controller.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/controller.rst",
+            "source_sha256": "c2d99628fd7fed299794157d6d47ad121fe96b6b80cff53b543d3f4271f6b3af"
+        },
+        "services/connectivity/bluetooth/api/crypto.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/crypto.rst",
+            "source_sha256": "6fc0478aee4d810da312ac973828cd02c7eb24eed41b73fdb7427964cf223e8c"
+        },
+        "services/connectivity/bluetooth/api/data_buffer.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/data_buffer.rst",
+            "source_sha256": "2a15205c2c225034200ec6a325b54c59bea9b9fc1c051f987cf42e6fc775446b"
+        },
+        "services/connectivity/bluetooth/api/gap.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/gap.rst",
+            "source_sha256": "7e6fa1c5ce243f0971ba94b2946314d2bf2c91e324577a77b304a7ac820f256f"
+        },
+        "services/connectivity/bluetooth/api/gatt.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/gatt.rst",
+            "source_sha256": "d4b782431a83592ef528fa65f52efbab4cffc0e44e67755dc4249afce53ee47d"
+        },
+        "services/connectivity/bluetooth/api/hci_drivers.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/hci_drivers.rst",
+            "source_sha256": "8cc8fba50362fbc288ea4f42eff93f335d1544473b21384e5a2520526494c1fc"
+        },
+        "services/connectivity/bluetooth/api/hci_pkt.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/hci_pkt.rst",
+            "source_sha256": "04150e818ba7e46229ad13d7c4cfd0556aff047f862b63f0a36840d5c83acff2"
+        },
+        "services/connectivity/bluetooth/api/hci_raw.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/hci_raw.rst",
+            "source_sha256": "9b85ff3d53d3cd406c1d9440252bada98d31faa6e1e4175c159da04547ed24e8"
+        },
+        "services/connectivity/bluetooth/api/index.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/index.rst",
+            "source_sha256": "572d41df090b247145b85ac4784aedf1a641b1fb8e1e749bd884ec57d3f56105"
+        },
+        "services/connectivity/bluetooth/api/l2cap.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/l2cap.rst",
+            "source_sha256": "9f0910867e00e12ba14dc2f0bfe0a4cb1cfb203af204b7ea4861600ad9f365c2"
+        },
+        "services/connectivity/bluetooth/api/mesh/access.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/access.rst",
+            "source_sha256": "2c174f962a0984facd28749a7714d157a37d3663b3d230dfce98a2ebeec3c84c"
+        },
+        "services/connectivity/bluetooth/api/mesh/blob.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/blob.rst",
+            "source_sha256": "ad75776b04b4c64f87b221b3d0e2fd8afe8fb30749fa5e1e1dccdaaabd1e6b97"
+        },
+        "services/connectivity/bluetooth/api/mesh/blob_cli.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/blob_cli.rst",
+            "source_sha256": "c78c64265f668dadf5a623d66beb604618db0ccee1b9f9bd7415791c4377ddb5"
+        },
+        "services/connectivity/bluetooth/api/mesh/blob_flash.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/blob_flash.rst",
+            "source_sha256": "8f075aca90acc715d9428376d17fb8bf9c843b97a2d3b0617f99af4657f553c2"
+        },
+        "services/connectivity/bluetooth/api/mesh/blob_srv.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/blob_srv.rst",
+            "source_sha256": "7b35e63dc4f2558decb0e0f8f997f9608cac07e12d321efa5544100192398103"
+        },
+        "services/connectivity/bluetooth/api/mesh/brg_cfg.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/brg_cfg.rst",
+            "source_sha256": "ace79e961f536cdaa19ac6a99835670e3fa2196662b2f0b60d010ecdfb27f15b"
+        },
+        "services/connectivity/bluetooth/api/mesh/brg_cfg_cli.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/brg_cfg_cli.rst",
+            "source_sha256": "eb14aaca22d5e4d483a30e00359861c3d28dace57eda21071a2cf93b0cb137d1"
+        },
+        "services/connectivity/bluetooth/api/mesh/brg_cfg_srv.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/brg_cfg_srv.rst",
+            "source_sha256": "bf9fd77bf9d57bbc0de27cb7c6f680e68e676a06ec900acb0e28a800bb9b43a7"
+        },
+        "services/connectivity/bluetooth/api/mesh/cdb_usage.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/cdb_usage.rst",
+            "source_sha256": "115114952ce7e42124a9eac06c18e00413e87a7abf48f4c580f363196a2e1086"
+        },
+        "services/connectivity/bluetooth/api/mesh/cfg.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/cfg.rst",
+            "source_sha256": "67a98ad36d482ecdd714d8f68c3fd32aa23ef3b2b0b064ef2edb93b11fab81bb"
+        },
+        "services/connectivity/bluetooth/api/mesh/cfg_cli.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/cfg_cli.rst",
+            "source_sha256": "47a8a19a22c9cba6c5e0241f19cc8cf0958ef6d57b386801564bf7b15d6336ae"
+        },
+        "services/connectivity/bluetooth/api/mesh/cfg_srv.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/cfg_srv.rst",
+            "source_sha256": "018a7fc018eeab35856f4ec13c23783550788d838f5b817ccf9083d70a0627ec"
+        },
+        "services/connectivity/bluetooth/api/mesh/core.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/core.rst",
+            "source_sha256": "30f40d16f8e22ef70f94fa8eeeb8fb134640a5f59f5b4d2f54ba145b6ee03a2a"
+        },
+        "services/connectivity/bluetooth/api/mesh/dfd_srv.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/dfd_srv.rst",
+            "source_sha256": "1b0bf7acf02d718ba0df47eb1e7c0abec5559beffa0b1283b02b5848531e87a6"
+        },
+        "services/connectivity/bluetooth/api/mesh/dfu.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/dfu.rst",
+            "source_sha256": "3f656cfdb742c2cdaddbdf763149f13a6a27602a6c25caf081475483efcf7485"
+        },
+        "services/connectivity/bluetooth/api/mesh/dfu_cli.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/dfu_cli.rst",
+            "source_sha256": "a6c8b23f4e67e57e84d6e238400163483529b4b75b0c25a9cb489eff908f4a3e"
+        },
+        "services/connectivity/bluetooth/api/mesh/dfu_srv.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/dfu_srv.rst",
+            "source_sha256": "ec416f3a0cca6606ff9dd40eaab926009ca6cf173568c240b4f41cadd00b4bc5"
+        },
+        "services/connectivity/bluetooth/api/mesh/health_cli.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/health_cli.rst",
+            "source_sha256": "07483dce432cc4db452a2d53816c652e5f540c30c3de819a0420b99d41e5fef8"
+        },
+        "services/connectivity/bluetooth/api/mesh/health_srv.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/health_srv.rst",
+            "source_sha256": "ee68098ecde01d374dbf132d94ac3cee31b9e3ef50e319ed9266ed5a2a1eca5c"
+        },
+        "services/connectivity/bluetooth/api/mesh/heartbeat.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/heartbeat.rst",
+            "source_sha256": "b00d3f16c6ecacffbbe901c5fe647ef6679b01e9ac495aa6a70ba08fab8c96cf"
+        },
+        "services/connectivity/bluetooth/api/mesh/lcd_cli.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/lcd_cli.rst",
+            "source_sha256": "0cd95c9a23623880540f55b4eac08acf0152bfeda6561ca8b5eff398fe207f66"
+        },
+        "services/connectivity/bluetooth/api/mesh/lcd_srv.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/lcd_srv.rst",
+            "source_sha256": "3133e485009e78860ddbca70681b8b19da05d92d2830a36b9833207d64f45182"
+        },
+        "services/connectivity/bluetooth/api/mesh/models.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/models.rst",
+            "source_sha256": "6c304b0af23671347a4be1c4cbd2246e5046c0bc4065125739a4a779114de15d"
+        },
+        "services/connectivity/bluetooth/api/mesh/msg.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/msg.rst",
+            "source_sha256": "c548391dd457ba3ead0f7f7af7f90ddb6d161abf91889821408cb7ac90c732ae"
+        },
+        "services/connectivity/bluetooth/api/mesh/od_cli.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/od_cli.rst",
+            "source_sha256": "e083fa2d2b8420216b9897c140ea6ff857958593f147b918ef54eebeef9e8ae8"
+        },
+        "services/connectivity/bluetooth/api/mesh/od_srv.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/od_srv.rst",
+            "source_sha256": "58d3745d096cbedce93366d3d960ca78a04a72c0d84c783b1108d639184889e9"
+        },
+        "services/connectivity/bluetooth/api/mesh/op_agg_cli.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/op_agg_cli.rst",
+            "source_sha256": "d957a357acf398b678747d3811531c54e54659c9a72fb97b7b7063fe3ca7ee94"
+        },
+        "services/connectivity/bluetooth/api/mesh/op_agg_srv.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/op_agg_srv.rst",
+            "source_sha256": "cb1d1a58892c9a185a3b6a772c07c488be1ca403c98a0a89f674758627b3fc9b"
+        },
+        "services/connectivity/bluetooth/api/mesh/priv_beacon_cli.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/priv_beacon_cli.rst",
+            "source_sha256": "f638f03c2d8b5a4656a40a73e27db2cfacc7fdb49c6889778586c7dfc9479f2b"
+        },
+        "services/connectivity/bluetooth/api/mesh/priv_beacon_srv.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/priv_beacon_srv.rst",
+            "source_sha256": "e07031a3bf44514ee75fe89d434b5726ba349a91e5b728069000997979c12c0a"
+        },
+        "services/connectivity/bluetooth/api/mesh/provisioning.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/provisioning.rst",
+            "source_sha256": "2bee52b23ae0333a357d28a404e4c9a2ec26f9a802c1dcafbb2570697b13691b"
+        },
+        "services/connectivity/bluetooth/api/mesh/proxy.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/proxy.rst",
+            "source_sha256": "e5d84a4c53ab641c3bb42b06de6995ba72b172818705244047aa72f8951c6c21"
+        },
+        "services/connectivity/bluetooth/api/mesh/rpr_cli.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/rpr_cli.rst",
+            "source_sha256": "aa71330194c1f7e8937fcd3e4c15a33be70697b00748ee82120f33586269e5a9"
+        },
+        "services/connectivity/bluetooth/api/mesh/rpr_srv.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/rpr_srv.rst",
+            "source_sha256": "2302bc21b04391cc6d87e5de4da45ba9239168cc8f51336ff2f1b7e96fd93867"
+        },
+        "services/connectivity/bluetooth/api/mesh/sar_cfg.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/sar_cfg.rst",
+            "source_sha256": "d596774669e88d6207ad6e02f9a5c7b1eed974afaeca8bd719c2e31b63834589"
+        },
+        "services/connectivity/bluetooth/api/mesh/sar_cfg_cli.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/sar_cfg_cli.rst",
+            "source_sha256": "b83df960869993fa03490a4bad62ec1df8d68dc9b6601e2369cc658bc01035fd"
+        },
+        "services/connectivity/bluetooth/api/mesh/sar_cfg_srv.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/sar_cfg_srv.rst",
+            "source_sha256": "efe2c89fa1600da673254b007a8c434808af3b62c3c340d33f14bcfa0b4185ac"
+        },
+        "services/connectivity/bluetooth/api/mesh/shell.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/shell.rst",
+            "source_sha256": "6df7e448f1be7a91ee969d782f3d9b0d1129c5c75aa7bea447cc4a3d8f127f9b"
+        },
+        "services/connectivity/bluetooth/api/mesh/srpl_cli.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/srpl_cli.rst",
+            "source_sha256": "230225abe4bcb9a83b7aca9b277f5b1841ff75b06e5a336b1b6d62de239a49bb"
+        },
+        "services/connectivity/bluetooth/api/mesh/srpl_srv.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/srpl_srv.rst",
+            "source_sha256": "05caf3ce052fd4f4a99831ad805c86814f1c55cf439da3fd0206efc47fab8d02"
+        },
+        "services/connectivity/bluetooth/api/mesh/statistic.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh/statistic.rst",
+            "source_sha256": "e1a37d954c9fa24b76eaaa1f07122451b29d117d24c694aa267150ed138e210c"
+        },
+        "services/connectivity/bluetooth/api/mesh.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/mesh.rst",
+            "source_sha256": "23e38a4dc94cb4c0b7cea32b9d29149c1ed8c4adfa2360e426dd4ba8b43928a5"
+        },
+        "services/connectivity/bluetooth/api/services.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/services.rst",
+            "source_sha256": "55b8a55f79df3a926d72f75918b83db69c6db0297240fc0328bf11e4f459d7a9"
+        },
+        "services/connectivity/bluetooth/api/uuid.rst": {
+            "source": "doc/services/connectivity/bluetooth/api/uuid.rst",
+            "source_sha256": "8aa07259a3ea825f2796ce64d59450b39a27d879bb419170147faf63b409392f"
+        },
+        "services/connectivity/bluetooth/autopts/autopts-linux.rst": {
+            "source": "doc/services/connectivity/bluetooth/autopts/autopts-linux.rst",
+            "source_sha256": "81008a9242d134cfe0c14e64bece3e323bc3c25b59db2eeb7344211c77e24d3a"
+        },
+        "services/connectivity/bluetooth/autopts/autopts-win10.rst": {
+            "source": "doc/services/connectivity/bluetooth/autopts/autopts-win10.rst",
+            "source_sha256": "b1e7f7aa81a8ea54385866fc372315a042952e7fc2f96045182607e82b7b7aa2"
+        },
+        "services/connectivity/bluetooth/bluetooth-arch.rst": {
+            "source": "doc/services/connectivity/bluetooth/bluetooth-arch.rst",
+            "source_sha256": "4548b78ae791f47ce9c712a5944eecfeff95f80473a50645be85f0a3c63a2b2e"
+        },
+        "services/connectivity/bluetooth/bluetooth-ctlr-arch.rst": {
+            "source": "doc/services/connectivity/bluetooth/bluetooth-ctlr-arch.rst",
+            "source_sha256": "941ebe9f518ef403b445e469f2e83c469a17339f01d352c5711f9099fec7f176"
+        },
+        "services/connectivity/bluetooth/bluetooth-dev.rst": {
+            "source": "doc/services/connectivity/bluetooth/bluetooth-dev.rst",
+            "source_sha256": "38536fa69b34b7746db4208c0a347be70cdcf9d47fce7ae3e9f55e3e3a0b1e71"
+        },
+        "services/connectivity/bluetooth/bluetooth-le-host.rst": {
+            "source": "doc/services/connectivity/bluetooth/bluetooth-le-host.rst",
+            "source_sha256": "0eb6631f2b2e539f0471264be62a407c4368c0778e555cc19ffde7861cef1b8e"
+        },
+        "services/connectivity/bluetooth/bluetooth-qual.rst": {
+            "source": "doc/services/connectivity/bluetooth/bluetooth-qual.rst",
+            "source_sha256": "792305e51671ead7f94f1bda9ceb72e8ab886da6bee788a182e94fd9c5c60ebe"
+        },
+        "services/connectivity/bluetooth/bluetooth-shell.rst": {
+            "source": "doc/services/connectivity/bluetooth/bluetooth-shell.rst",
+            "source_sha256": "2fa6417e055de254b065605217e4fa370c2067b9c557d9c4e0d3046c671d8112"
+        },
+        "services/connectivity/bluetooth/bluetooth-tools.rst": {
+            "source": "doc/services/connectivity/bluetooth/bluetooth-tools.rst",
+            "source_sha256": "5c03b7ff6a6010c357c0b6b6b53532f3db02de5a8ebaf26cf298a54a822093d9"
+        },
+        "services/connectivity/bluetooth/features.rst": {
+            "source": "doc/services/connectivity/bluetooth/features.rst",
+            "source_sha256": "366378d45c6d5d0055560d19d27b33d382756283cbbfc64d5f25a7c3760c14c7"
+        },
+        "services/connectivity/bluetooth/index.rst": {
+            "source": "doc/services/connectivity/bluetooth/index.rst",
+            "source_sha256": "2eadecd4991be629ffbd56d6b35b00200994535d0d485feac2c3167d7ad9a5a8"
+        },
+        "services/connectivity/bluetooth/shell/audio/bap.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/audio/bap.rst",
+            "source_sha256": "4ff8dcc77819185405307afc29e018b5a692b0fbfc5be1d5c5c3c537d5efadaa"
+        },
+        "services/connectivity/bluetooth/shell/audio/bap_broadcast_assistant.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/audio/bap_broadcast_assistant.rst",
+            "source_sha256": "b460b94eae7851e6dd913be3911f6e58b5d4cf6b0055c3876da48d72282679ec"
+        },
+        "services/connectivity/bluetooth/shell/audio/bap_scan_delegator.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/audio/bap_scan_delegator.rst",
+            "source_sha256": "d6922e9fb24ac51a7c7c93fab3a7b4f4b1f4b2f4d40fd19092d4e880168e4e64"
+        },
+        "services/connectivity/bluetooth/shell/audio/cap.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/audio/cap.rst",
+            "source_sha256": "fb9ce55f210df04dbc5b51cce19061b42958c1fbdd593a651337b4380c022b27"
+        },
+        "services/connectivity/bluetooth/shell/audio/ccp.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/audio/ccp.rst",
+            "source_sha256": "b02a71102835983ac27dd8db440bf5441b1bfe1cd810fe3a3f5680d9d030eb17"
+        },
+        "services/connectivity/bluetooth/shell/audio/csip.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/audio/csip.rst",
+            "source_sha256": "d834eeb9e8d844ff8052d80165117a73f8397077c3277feb74703749671f66fa"
+        },
+        "services/connectivity/bluetooth/shell/audio/gmap.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/audio/gmap.rst",
+            "source_sha256": "5bf183c5ce6eae20bdcf5eba283aedd53338db23fbc844ed56718eb99fdd2e28"
+        },
+        "services/connectivity/bluetooth/shell/audio/mcp.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/audio/mcp.rst",
+            "source_sha256": "ad2610a04f8eb8211bd4e92bf987d756728a8d15d339eba9d17c130df62f6238"
+        },
+        "services/connectivity/bluetooth/shell/audio/pbp.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/audio/pbp.rst",
+            "source_sha256": "433dc3ac56ef4fa03f6f0ecf1b5969701c25c414024ac51e37bf159337a0c643"
+        },
+        "services/connectivity/bluetooth/shell/audio/tbs.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/audio/tbs.rst",
+            "source_sha256": "809d0e874352a0d32c522f7e68dca54bb2cf33d1253ded3208297a8d1166bb2f"
+        },
+        "services/connectivity/bluetooth/shell/audio/tmap.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/audio/tmap.rst",
+            "source_sha256": "37750ae242a1f43abf0dddb1c50960df323e4172a8df86db8fbf485aa0b50f05"
+        },
+        "services/connectivity/bluetooth/shell/classic/a2dp.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/classic/a2dp.rst",
+            "source_sha256": "9be00280aab1467a819b29148c720067981a41ba00ba0ce4474f484dc026c6c7"
+        },
+        "services/connectivity/bluetooth/shell/classic/avrcp.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/classic/avrcp.rst",
+            "source_sha256": "8e367c77cbe9d86fb1445cbc35acf2dd32ca950c6d4af2d16f5499deda22e86f"
+        },
+        "services/connectivity/bluetooth/shell/classic/goep.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/classic/goep.rst",
+            "source_sha256": "0eeb703feb1db570d8660762f5952cdd0a85c880d07f5dddd7b0071ecf4728f8"
+        },
+        "services/connectivity/bluetooth/shell/classic/hfp.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/classic/hfp.rst",
+            "source_sha256": "8f52a905aab63fd881ebbac365d0408befe5585f3802f356a01ea9f02b4427aa"
+        },
+        "services/connectivity/bluetooth/shell/classic/l2cap.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/classic/l2cap.rst",
+            "source_sha256": "37d47eb3c7197342c245738106a1bc1f1a410e3a771c0eb7ed5bf2c600f9e970"
+        },
+        "services/connectivity/bluetooth/shell/classic/map.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/classic/map.rst",
+            "source_sha256": "4efae9d1edebaa6aa23992d43d828b91c35fa911a068422c930551076da5e4eb"
+        },
+        "services/connectivity/bluetooth/shell/classic/pbap.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/classic/pbap.rst",
+            "source_sha256": "b102abc19d47057d965c7177226a656288b26960057edea3a2b307b9b26608ad"
+        },
+        "services/connectivity/bluetooth/shell/classic/spp.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/classic/spp.rst",
+            "source_sha256": "366b7e234d6b993f2ced87d6ae0be5be9d150b89c57354d9d6cd145cc978c81f"
+        },
+        "services/connectivity/bluetooth/shell/host/gap.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/host/gap.rst",
+            "source_sha256": "20a3c3ca0063fd583b22a5d0df9f61b78fe79a285abb22b8e0726fa05a03961f"
+        },
+        "services/connectivity/bluetooth/shell/host/gatt.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/host/gatt.rst",
+            "source_sha256": "2b320e1d4a9e91a632f31b0ecd2da362bf55809d951114b3e169083ab3e30121"
+        },
+        "services/connectivity/bluetooth/shell/host/iso.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/host/iso.rst",
+            "source_sha256": "a2bbaba82b3907a400f1d3cc66f7070aa66eca648ddeca04a390dee4744d341e"
+        },
+        "services/connectivity/bluetooth/shell/host/l2cap.rst": {
+            "source": "doc/services/connectivity/bluetooth/shell/host/l2cap.rst",
+            "source_sha256": "3212506affadbe15485ce2ef132a403e6220f1f992bdc6156cc95335951c1ba4"
+        },
+        "services/connectivity/canbus/index.rst": {
+            "source": "doc/services/connectivity/canbus/index.rst",
+            "source_sha256": "4e27c09617fee54acabbdb86a9826e9f1eaad6be52b3c25db2d1ea067796ac4a"
+        },
+        "services/connectivity/canbus/isotp.rst": {
+            "source": "doc/services/connectivity/canbus/isotp.rst",
+            "source_sha256": "8f979b731bd29c85db6e288942d7bc351e1d18d602c9e6d6d72bd9ebb1613f68"
+        },
+        "services/connectivity/index.rst": {
+            "source": "doc/services/connectivity/index.rst",
+            "source_sha256": "06f6c2095b0fd3b2bec7a76aa427f4dc4763e999f78395a60dd77c31f25bcd42"
+        },
+        "services/connectivity/lora_lorawan/index.rst": {
+            "source": "doc/services/connectivity/lora_lorawan/index.rst",
+            "source_sha256": "0e528e8f9154505ea1fd98defb4efcdad15ab3ea26414bb17265e3dcc7cd5d3c"
+        },
+        "services/connectivity/modbus/index.rst": {
+            "source": "doc/services/connectivity/modbus/index.rst",
+            "source_sha256": "0caefaa78315a1ccdd3d494e421ee5199dd2c17b499d29b5172b88a251b1c0a3"
+        },
+        "services/connectivity/modem/index.rst": {
+            "source": "doc/services/connectivity/modem/index.rst",
+            "source_sha256": "e3ac4c1c5be081520e28201f78062fc2d863c0529e58585b0027740b3ba38b06"
+        },
+        "services/connectivity/networking/api/8021Qav.rst": {
+            "source": "doc/services/connectivity/networking/api/8021Qav.rst",
+            "source_sha256": "87b62ea70dbfa5c8b48feeec0ea4a64ed1cecf0f2de66f0e9bbc772a98552e66"
+        },
+        "services/connectivity/networking/api/apis.rst": {
+            "source": "doc/services/connectivity/networking/api/apis.rst",
+            "source_sha256": "06996a1c65ecf8dba78dea9fefbe0f968d33fedc0a4177effe81b8451c8a3634"
+        },
+        "services/connectivity/networking/api/buf_mgmt.rst": {
+            "source": "doc/services/connectivity/networking/api/buf_mgmt.rst",
+            "source_sha256": "603da2079a78674f528088d8ef569ecb70d6234f17edad6e2333a40ab2b4ef0e"
+        },
+        "services/connectivity/networking/api/capture.rst": {
+            "source": "doc/services/connectivity/networking/api/capture.rst",
+            "source_sha256": "d581e23d695749a5a473cfe4541b56293364de3545c9a18ba11c2079f7f016a6"
+        },
+        "services/connectivity/networking/api/coap.rst": {
+            "source": "doc/services/connectivity/networking/api/coap.rst",
+            "source_sha256": "f8c214590fd59f98ddc923203a70d0d55a6bc72054d5f19db2173b4d4bae5b9f"
+        },
+        "services/connectivity/networking/api/coap_client.rst": {
+            "source": "doc/services/connectivity/networking/api/coap_client.rst",
+            "source_sha256": "52a5850173acdab4e7740932f65a38d0fbda5f639eb46c7171513c3e0bb0a95e"
+        },
+        "services/connectivity/networking/api/coap_oscore.rst": {
+            "source": "doc/services/connectivity/networking/api/coap_oscore.rst",
+            "source_sha256": "f90ebfb31145d9f8e64ac769fd08cb88e3a5bbd80ce7f47213a6e05716ce661a"
+        },
+        "services/connectivity/networking/api/coap_server.rst": {
+            "source": "doc/services/connectivity/networking/api/coap_server.rst",
+            "source_sha256": "9c9cb66e20fabd830df3c0b8534f280499b813e424b2e2bfad69a60881e865d1"
+        },
+        "services/connectivity/networking/api/dhcpv4.rst": {
+            "source": "doc/services/connectivity/networking/api/dhcpv4.rst",
+            "source_sha256": "28408c9b7fb2240158c4599755707cc1a3bc53c1eaa3fd7cecd729ab86f4b9ab"
+        },
+        "services/connectivity/networking/api/dhcpv6.rst": {
+            "source": "doc/services/connectivity/networking/api/dhcpv6.rst",
+            "source_sha256": "bbfd53b69ed4153104814ecb5201239f012f2daaf2ad0dae759e658eca23b428"
+        },
+        "services/connectivity/networking/api/dns_resolve.rst": {
+            "source": "doc/services/connectivity/networking/api/dns_resolve.rst",
+            "source_sha256": "6b1f034f2ddd23bdfd1df8d988e52afda30b14e8d6b07278c7f660362f1fd963"
+        },
+        "services/connectivity/networking/api/dplpmtud.rst": {
+            "source": "doc/services/connectivity/networking/api/dplpmtud.rst",
+            "source_sha256": "4d35304b741ac572ff235775d7b67b35a4fb4a90b07bb28e7554f6d8ca35d7ff"
+        },
+        "services/connectivity/networking/api/ethernet.rst": {
+            "source": "doc/services/connectivity/networking/api/ethernet.rst",
+            "source_sha256": "088465a25685153e06e103434d88c17137121a8df0140f13d6d16675cac54d12"
+        },
+        "services/connectivity/networking/api/ethernet_mgmt.rst": {
+            "source": "doc/services/connectivity/networking/api/ethernet_mgmt.rst",
+            "source_sha256": "e2d7e65f18c1dc0711e031594d4417fba75d82f83fa01d42e001d3491cb08d2a"
+        },
+        "services/connectivity/networking/api/ftp_client.rst": {
+            "source": "doc/services/connectivity/networking/api/ftp_client.rst",
+            "source_sha256": "740e186d74bae4e9bd31866c06ff6e0636e0a3a3574f0b39eb59d4b2762cbe6f"
+        },
+        "services/connectivity/networking/api/gptp.rst": {
+            "source": "doc/services/connectivity/networking/api/gptp.rst",
+            "source_sha256": "62ab773eca8da95bf0074131ead7562de6ca79b809e9b2cdc73506ce9e7e557e"
+        },
+        "services/connectivity/networking/api/http_client.rst": {
+            "source": "doc/services/connectivity/networking/api/http_client.rst",
+            "source_sha256": "369c97d8b35ce324c04e407663d0eb930b1454e3c481f68df5c12b21dd27b3fc"
+        },
+        "services/connectivity/networking/api/http_server.rst": {
+            "source": "doc/services/connectivity/networking/api/http_server.rst",
+            "source_sha256": "71382486c50a701e19939e2a4dea709d9f235368337c777630f99ec1c192639a"
+        },
+        "services/connectivity/networking/api/ieee802154.rst": {
+            "source": "doc/services/connectivity/networking/api/ieee802154.rst",
+            "source_sha256": "c771e0a7b66c196b4914780e116057629532b6ea3eb7ed8bf21f19d21064e7fe"
+        },
+        "services/connectivity/networking/api/index.rst": {
+            "source": "doc/services/connectivity/networking/api/index.rst",
+            "source_sha256": "fef992f2ef88792051f4db16b0a3a3e92f4892b9123e932258a4a24709fe380b"
+        },
+        "services/connectivity/networking/api/ip_4_6.rst": {
+            "source": "doc/services/connectivity/networking/api/ip_4_6.rst",
+            "source_sha256": "7e9c5e44e160de7422cb5d4834eccdcd2b547094a7355b9046302f597f53bdd9"
+        },
+        "services/connectivity/networking/api/latmon.rst": {
+            "source": "doc/services/connectivity/networking/api/latmon.rst",
+            "source_sha256": "e57b4b3c6da9dbc996016c261de34e3b80d1a37cf37e5d740787a75637030fa1"
+        },
+        "services/connectivity/networking/api/lldp.rst": {
+            "source": "doc/services/connectivity/networking/api/lldp.rst",
+            "source_sha256": "8f3ff1fd00341cc9b288c4d52cd97832c93dd229107f3290aaad2f5572de2ac1"
+        },
+        "services/connectivity/networking/api/lwm2m.rst": {
+            "source": "doc/services/connectivity/networking/api/lwm2m.rst",
+            "source_sha256": "22c34d6f7c859e986e6c8c043577ff2939d72c5f34b9b22187a87e6baeadfc99"
+        },
+        "services/connectivity/networking/api/mac_config.rst": {
+            "source": "doc/services/connectivity/networking/api/mac_config.rst",
+            "source_sha256": "de42731641e2fc20c29c707229de949a351d0f5c7aa5d7321b831cad6ebbce73"
+        },
+        "services/connectivity/networking/api/mcp.rst": {
+            "source": "doc/services/connectivity/networking/api/mcp.rst",
+            "source_sha256": "a07923fdcd9731c8a6e871fa5c6a515e718f029f7d2df6560961af41d464cf3c"
+        },
+        "services/connectivity/networking/api/mqtt.rst": {
+            "source": "doc/services/connectivity/networking/api/mqtt.rst",
+            "source_sha256": "4b62e2c28ae6d2221284c0837959d6c7a5e9ad188ee5e283525c4f93dd7b435b"
+        },
+        "services/connectivity/networking/api/mqtt_sn.rst": {
+            "source": "doc/services/connectivity/networking/api/mqtt_sn.rst",
+            "source_sha256": "5bee79847d1a5caf7ae8004f38597d906882a52358ccae592edf8eba94c2a956"
+        },
+        "services/connectivity/networking/api/net_config.rst": {
+            "source": "doc/services/connectivity/networking/api/net_config.rst",
+            "source_sha256": "562346a444ed2b827bfb012bd3f3cc391dda61928345fc4c0a4ae428a6e9230e"
+        },
+        "services/connectivity/networking/api/net_context.rst": {
+            "source": "doc/services/connectivity/networking/api/net_context.rst",
+            "source_sha256": "a16f9c6888b2b2fd6cefc44522f8488dbfeaab08ecd4ae2e816f96d303161988"
+        },
+        "services/connectivity/networking/api/net_core.rst": {
+            "source": "doc/services/connectivity/networking/api/net_core.rst",
+            "source_sha256": "ca0d73028b1e43ca28f778a66df6ce4f4a8dc7e693e7ddda5f1faa4a064ca9c8"
+        },
+        "services/connectivity/networking/api/net_hostname.rst": {
+            "source": "doc/services/connectivity/networking/api/net_hostname.rst",
+            "source_sha256": "438e98ebd51ac6545a75f83fc071f48ffffa0e6f4ef4cf241f3500035aed4edf"
+        },
+        "services/connectivity/networking/api/net_if.rst": {
+            "source": "doc/services/connectivity/networking/api/net_if.rst",
+            "source_sha256": "26c8d0b131e83c0eb33c81afe2153615f30ae5c8775f8972b66bb5401c9e8470"
+        },
+        "services/connectivity/networking/api/net_l2.rst": {
+            "source": "doc/services/connectivity/networking/api/net_l2.rst",
+            "source_sha256": "4f20829cb499c394c7936a394cf86ecb868ced23694cd483513b7de075c38cbe"
+        },
+        "services/connectivity/networking/api/net_linkaddr.rst": {
+            "source": "doc/services/connectivity/networking/api/net_linkaddr.rst",
+            "source_sha256": "5c47e6fec25cf179d49e45c256eee38ff700751f05d88c216d594672b21a800b"
+        },
+        "services/connectivity/networking/api/net_mgmt.rst": {
+            "source": "doc/services/connectivity/networking/api/net_mgmt.rst",
+            "source_sha256": "61187f4d79349b932667937213c590f1f6fdb85d8a28829f4d8c710eb287b8e7"
+        },
+        "services/connectivity/networking/api/net_offload.rst": {
+            "source": "doc/services/connectivity/networking/api/net_offload.rst",
+            "source_sha256": "cb089741bb475970de846c8c59dca8f8264ff0d41f1b7b84ad0ee91d554d7c7e"
+        },
+        "services/connectivity/networking/api/net_pkt.rst": {
+            "source": "doc/services/connectivity/networking/api/net_pkt.rst",
+            "source_sha256": "b7f80bb20ff8ab78aab4889cdf03086c9579acacfe836c66d9bf45d6146fab2c"
+        },
+        "services/connectivity/networking/api/net_pkt_filter.rst": {
+            "source": "doc/services/connectivity/networking/api/net_pkt_filter.rst",
+            "source_sha256": "e0eb462360170bbf938f3ee09cfdd6e6d9a748240ef9025fbffb5f01b89bcebb"
+        },
+        "services/connectivity/networking/api/net_shell.rst": {
+            "source": "doc/services/connectivity/networking/api/net_shell.rst",
+            "source_sha256": "f74db9ca865b44b4d631bddb98e61eb51fadc0460ff7eec87fe4d479539f3df5"
+        },
+        "services/connectivity/networking/api/net_stats.rst": {
+            "source": "doc/services/connectivity/networking/api/net_stats.rst",
+            "source_sha256": "7aa2d0f33a3f16dc785dff3b8fa9c03f7ebdf89d49a0f426fd784194b3b80f6d"
+        },
+        "services/connectivity/networking/api/net_tech.rst": {
+            "source": "doc/services/connectivity/networking/api/net_tech.rst",
+            "source_sha256": "d16450da7ca104f81460e3c71864c4dde77dab290ff73f5f94f96d05983e077d"
+        },
+        "services/connectivity/networking/api/net_time.rst": {
+            "source": "doc/services/connectivity/networking/api/net_time.rst",
+            "source_sha256": "64b46159db51fc8699c6cfe259f825577b68e7fc777015947dd66cfc8a59b14e"
+        },
+        "services/connectivity/networking/api/net_timeout.rst": {
+            "source": "doc/services/connectivity/networking/api/net_timeout.rst",
+            "source_sha256": "fbe87267f6d3a5419445fdd155586d73e9774dac0dae5ca0e67b22c162ba930d"
+        },
+        "services/connectivity/networking/api/ocpp.rst": {
+            "source": "doc/services/connectivity/networking/api/ocpp.rst",
+            "source_sha256": "4c408cd3374a3def45c9aa9195f62334d43c9c0ca7eeb61c6cddeb17988a31d2"
+        },
+        "services/connectivity/networking/api/ppp.rst": {
+            "source": "doc/services/connectivity/networking/api/ppp.rst",
+            "source_sha256": "362c875869c24dd66aa08f9905987158116f7fcecd344eeb15df9a63b2e53f43"
+        },
+        "services/connectivity/networking/api/promiscuous.rst": {
+            "source": "doc/services/connectivity/networking/api/promiscuous.rst",
+            "source_sha256": "1789df6a2d7f1ee5f922ba652b04846cad28642fe1ba9e5ef839b905d9de2851"
+        },
+        "services/connectivity/networking/api/protocols.rst": {
+            "source": "doc/services/connectivity/networking/api/protocols.rst",
+            "source_sha256": "62bf86419e61db8deb9295fde26e1913a11d5751fcd37873d016ae993c9818ad"
+        },
+        "services/connectivity/networking/api/ptp.rst": {
+            "source": "doc/services/connectivity/networking/api/ptp.rst",
+            "source_sha256": "40be164e2b793ebbd4a8bcd2dda5a8b30077a7e5b205a11e98469015d63c3863"
+        },
+        "services/connectivity/networking/api/ptp_time.rst": {
+            "source": "doc/services/connectivity/networking/api/ptp_time.rst",
+            "source_sha256": "c573b6a2fed1fd158a98d1ec46f14f3164ae5aec7e7e942a07a1c451f88b8f3e"
+        },
+        "services/connectivity/networking/api/quic.rst": {
+            "source": "doc/services/connectivity/networking/api/quic.rst",
+            "source_sha256": "f979f4e5d31f5f59c43c8dbb37b398b580fff9baf982594524ed9a9daf5593c5"
+        },
+        "services/connectivity/networking/api/sntp.rst": {
+            "source": "doc/services/connectivity/networking/api/sntp.rst",
+            "source_sha256": "1124df0d3e7ed525e35bcead811eb90d562982171a11a6123a81a0270cc432b0"
+        },
+        "services/connectivity/networking/api/socket_service.rst": {
+            "source": "doc/services/connectivity/networking/api/socket_service.rst",
+            "source_sha256": "ffa2ccc02794aaea7ab04d221488f0485f89d9835206f6c322b593a8b636d5ac"
+        },
+        "services/connectivity/networking/api/sockets.rst": {
+            "source": "doc/services/connectivity/networking/api/sockets.rst",
+            "source_sha256": "200d28c7a48778fedc5a5981bfe59e4ba2503dba9c4eb31a38d6d4d619b8e09b"
+        },
+        "services/connectivity/networking/api/socks5.rst": {
+            "source": "doc/services/connectivity/networking/api/socks5.rst",
+            "source_sha256": "967f5940b5e0f37a5a63e5030d475c75b909dbc15ab1fc5c36e136456c57bbd9"
+        },
+        "services/connectivity/networking/api/system_mgmt.rst": {
+            "source": "doc/services/connectivity/networking/api/system_mgmt.rst",
+            "source_sha256": "a35c5c7caa298f28c29cc408e10ac8231e032389a860af2c6dfc56796e498551"
+        },
+        "services/connectivity/networking/api/tftp.rst": {
+            "source": "doc/services/connectivity/networking/api/tftp.rst",
+            "source_sha256": "588f554aaeb487903fc09730b02193ae2f70a86526a4ce77fb88cb5f8200e4ff"
+        },
+        "services/connectivity/networking/api/thread.rst": {
+            "source": "doc/services/connectivity/networking/api/thread.rst",
+            "source_sha256": "9f95a4228920fee8db34c8ae9757ce4e12957df38b31aeea6d236e0e1e8e1be1"
+        },
+        "services/connectivity/networking/api/tls_credentials_shell.rst": {
+            "source": "doc/services/connectivity/networking/api/tls_credentials_shell.rst",
+            "source_sha256": "3b15052f33f33263fd110f5c2a8cb39b4b8d6a4cc8a014c6e36e9a4d78ac17ef"
+        },
+        "services/connectivity/networking/api/traffic-class.rst": {
+            "source": "doc/services/connectivity/networking/api/traffic-class.rst",
+            "source_sha256": "b2b4fee42d8a62138644dbfd5ff0edfe1cadadc4c5a9ef7dc2ac0c98306415bb"
+        },
+        "services/connectivity/networking/api/trickle.rst": {
+            "source": "doc/services/connectivity/networking/api/trickle.rst",
+            "source_sha256": "add3acd8cc29b858f36bf94b718476af743d307288a55dcc518b46fd83b810f1"
+        },
+        "services/connectivity/networking/api/tsn.rst": {
+            "source": "doc/services/connectivity/networking/api/tsn.rst",
+            "source_sha256": "43d1599d948f2504fb43cfb0106ddeb4d3327c93ae276d84581470661b84837c"
+        },
+        "services/connectivity/networking/api/vlan.rst": {
+            "source": "doc/services/connectivity/networking/api/vlan.rst",
+            "source_sha256": "95e3d88cd1061b3dc94766d8e432cede18336f7328033c0d9a50627c53e500e5"
+        },
+        "services/connectivity/networking/api/websocket.rst": {
+            "source": "doc/services/connectivity/networking/api/websocket.rst",
+            "source_sha256": "b9809486fc73a2e316e58f207f070f648c6e99a70c95ee426859006e866f4039"
+        },
+        "services/connectivity/networking/api/wifi.rst": {
+            "source": "doc/services/connectivity/networking/api/wifi.rst",
+            "source_sha256": "95699f35e9be6dbfa8265d1767ea6a9aa03b19e67af017ba63bfe2824549ac64"
+        },
+        "services/connectivity/networking/api/wifi_credentials.rst": {
+            "source": "doc/services/connectivity/networking/api/wifi_credentials.rst",
+            "source_sha256": "6b7e5dc867be273ea4d6be81780a113e734f7e6297ffe2b0bcd19fa5c814bb61"
+        },
+        "services/connectivity/networking/api/wifi_crypto.rst": {
+            "source": "doc/services/connectivity/networking/api/wifi_crypto.rst",
+            "source_sha256": "6966a02c972623d5468d0b67ba327eb740a91ac1c5acb0be3ccaef970b7c0dcf"
+        },
+        "services/connectivity/networking/api/zperf.rst": {
+            "source": "doc/services/connectivity/networking/api/zperf.rst",
+            "source_sha256": "9bc3ce496b4b82bf83ad858aafffc1ee1bb40563bee081a02283617be61fcbff"
+        },
+        "services/connectivity/networking/armfvp_user_networking_setup.rst": {
+            "source": "doc/services/connectivity/networking/armfvp_user_networking_setup.rst",
+            "source_sha256": "e08a4862be90438d863ae5033b4ebedadd348f6ae131b3b5964f137387305341"
+        },
+        "services/connectivity/networking/conformance/architecture.rst": {
+            "source": "doc/services/connectivity/networking/conformance/architecture.rst",
+            "source_sha256": "51553865c4338851685839eaa472ea32429ccefb0a30f0cf6ef6d66582a85433"
+        },
+        "services/connectivity/networking/conformance/index.rst": {
+            "source": "doc/services/connectivity/networking/conformance/index.rst",
+            "source_sha256": "de6eccac3ab5591f235611c3b0c8463064724e8c1d4c2cae5c9585745dc5775a"
+        },
+        "services/connectivity/networking/conformance/usage.rst": {
+            "source": "doc/services/connectivity/networking/conformance/usage.rst",
+            "source_sha256": "e08182bfa452be3b5f6478d071f5367c796193bb956a42fc71e76a16035e7f81"
+        },
+        "services/connectivity/networking/conn_mgr/implementation.rst": {
+            "source": "doc/services/connectivity/networking/conn_mgr/implementation.rst",
+            "source_sha256": "10acd5f3f01f75f6b7e3faef24ab26ff6fe64b5263018dd51856c3260893e602"
+        },
+        "services/connectivity/networking/conn_mgr/index.rst": {
+            "source": "doc/services/connectivity/networking/conn_mgr/index.rst",
+            "source_sha256": "6f6f8f5470eb4e2953c0fe6d9eab8887c4f4f7b1e9202dcb3f4df40546c1c150"
+        },
+        "services/connectivity/networking/conn_mgr/main.rst": {
+            "source": "doc/services/connectivity/networking/conn_mgr/main.rst",
+            "source_sha256": "af156067fddbe576b9b39a9df6fe1a8a48628581ebea48d546149cff220c3a8f"
+        },
+        "services/connectivity/networking/dsa.rst": {
+            "source": "doc/services/connectivity/networking/dsa.rst",
+            "source_sha256": "b87bf0d5d21514f58a64cc31bec48350b0f4ce79c31744625c89b355c660ef78"
+        },
+        "services/connectivity/networking/eth_bridge_native_sim_setup.rst": {
+            "source": "doc/services/connectivity/networking/eth_bridge_native_sim_setup.rst",
+            "source_sha256": "dbc83bcc52ab8e53215e5acecbce96aeb4c75b02670de8dad5044a48a5754a3a"
+        },
+        "services/connectivity/networking/index.rst": {
+            "source": "doc/services/connectivity/networking/index.rst",
+            "source_sha256": "c94a35b324e610d037adfc3f6f6ee0557ef133332c536608103aa98938d0e77d"
+        },
+        "services/connectivity/networking/native_sim_setup.rst": {
+            "source": "doc/services/connectivity/networking/native_sim_setup.rst",
+            "source_sha256": "cbf07dffb36167b4a2432ccde9b2703640f47372fb8a93a1320940df6b5128f1"
+        },
+        "services/connectivity/networking/net-stack-architecture.rst": {
+            "source": "doc/services/connectivity/networking/net-stack-architecture.rst",
+            "source_sha256": "6e700dc7b32c792e13cb0e4decbe4f897ce21ad9384fafa62847f1c54c12cd5b"
+        },
+        "services/connectivity/networking/net_config_guide.rst": {
+            "source": "doc/services/connectivity/networking/net_config_guide.rst",
+            "source_sha256": "0603e6724983d987b408705209fe7e2641ac91f8a1a3998767bc750b34e5457c"
+        },
+        "services/connectivity/networking/net_pkt_processing_stats.rst": {
+            "source": "doc/services/connectivity/networking/net_pkt_processing_stats.rst",
+            "source_sha256": "51a0a05ed582d072c4402094fe55e368c11f0c6b9a1428563f3b8855157fc7b4"
+        },
+        "services/connectivity/networking/network_monitoring.rst": {
+            "source": "doc/services/connectivity/networking/network_monitoring.rst",
+            "source_sha256": "e1ec9a69f576df9f43425d42b39070dcd3cea33b4a4edd7caf63e1e44c938364"
+        },
+        "services/connectivity/networking/network_tracing.rst": {
+            "source": "doc/services/connectivity/networking/network_tracing.rst",
+            "source_sha256": "5710a57f3cf6179a14abcb65fb37d985ac08153c7e6a78199bf0c01150f90660"
+        },
+        "services/connectivity/networking/networking_with_host.rst": {
+            "source": "doc/services/connectivity/networking/networking_with_host.rst",
+            "source_sha256": "8197a9bdbfc5db8e06326d2291a31af9f8141b54210ec9ea5fc06d8d6c369eff"
+        },
+        "services/connectivity/networking/networking_with_multiple_instances.rst": {
+            "source": "doc/services/connectivity/networking/networking_with_multiple_instances.rst",
+            "source_sha256": "be2daaabe3f6c2f7842e62c3c1e8bf967f448d2e48c4cc8da9584b34f7904d5e"
+        },
+        "services/connectivity/networking/overview.rst": {
+            "source": "doc/services/connectivity/networking/overview.rst",
+            "source_sha256": "3f14669574548b24b625c773a39c6b70ccf36630449abb1e77ad0dc6fb7b4642"
+        },
+        "services/connectivity/networking/qemu_802154_setup.rst": {
+            "source": "doc/services/connectivity/networking/qemu_802154_setup.rst",
+            "source_sha256": "84d4b3414e61c3f63f60cfc81bed3457fb19e3cac4fa034e1099e432493f3190"
+        },
+        "services/connectivity/networking/qemu_eth_setup.rst": {
+            "source": "doc/services/connectivity/networking/qemu_eth_setup.rst",
+            "source_sha256": "78d298789fc512ad361b9e3309b7c94479d0ac239c968ca693ee2b4b4f2c79c6"
+        },
+        "services/connectivity/networking/qemu_setup.rst": {
+            "source": "doc/services/connectivity/networking/qemu_setup.rst",
+            "source_sha256": "69cd383e2d94f89c10cec3c0930b7c9107a05b58adf1cc2b85bb9ea62db13e53"
+        },
+        "services/connectivity/networking/qemu_user_setup.rst": {
+            "source": "doc/services/connectivity/networking/qemu_user_setup.rst",
+            "source_sha256": "c4cfcfd36c63f3943bbe651d3538e58a7a1772a6a2c169a18907cf593d33d636"
+        },
+        "services/connectivity/networking/usbnet_setup.rst": {
+            "source": "doc/services/connectivity/networking/usbnet_setup.rst",
+            "source_sha256": "d4f0f023e09fc728c115a1ba1fa55cf8209dfa7c63afd9824b1a0b95e43d88fb"
+        },
+        "services/connectivity/usb/api/hid.rst": {
+            "source": "doc/services/connectivity/usb/api/hid.rst",
+            "source_sha256": "ca3c2c0d81d04991e7d22af2a2e41faa59565f318bea5251032ac2e5757e20de"
+        },
+        "services/connectivity/usb/device/api/index.rst": {
+            "source": "doc/services/connectivity/usb/device/api/index.rst",
+            "source_sha256": "e7749852f17dd15ed962273f188e87848bb27bf04f830234e0d8b0f62bbb7d0d"
+        },
+        "services/connectivity/usb/device/api/usb_dc.rst": {
+            "source": "doc/services/connectivity/usb/device/api/usb_dc.rst",
+            "source_sha256": "0fc085919643cce987d7061b15105981fd7a02c195c2921d18b287e72f4568e9"
+        },
+        "services/connectivity/usb/device/api/usb_device.rst": {
+            "source": "doc/services/connectivity/usb/device/api/usb_device.rst",
+            "source_sha256": "636c68d5d8a9bffad64e6bdcde162a6f760d0deae778cdb385d9c8661deedd59"
+        },
+        "services/connectivity/usb/device/api/usb_device_bos.rst": {
+            "source": "doc/services/connectivity/usb/device/api/usb_device_bos.rst",
+            "source_sha256": "f7ca6d0af6566dd4e86d9388b7e095bde5c2bfcec4743d99c6d4fabef483b8f9"
+        },
+        "services/connectivity/usb/device/api/usb_device_hid.rst": {
+            "source": "doc/services/connectivity/usb/device/api/usb_device_hid.rst",
+            "source_sha256": "b0149d7657756276c32f2a77af5f6781cc3735c05400ce7f77cb032d5925d57e"
+        },
+        "services/connectivity/usb/device/usb_device.rst": {
+            "source": "doc/services/connectivity/usb/device/usb_device.rst",
+            "source_sha256": "b265d62e6f5a845cc4ab7f8623fd0c3b06d6cd7c9b248769fc268c34e9468d40"
+        },
+        "services/connectivity/usb/device_next/api/index.rst": {
+            "source": "doc/services/connectivity/usb/device_next/api/index.rst",
+            "source_sha256": "7bebaa130e7a1a9b1af5c8b84aecc4a04ca6e12c27363f003b56f937e2676a62"
+        },
+        "services/connectivity/usb/device_next/api/uac2_device.rst": {
+            "source": "doc/services/connectivity/usb/device_next/api/uac2_device.rst",
+            "source_sha256": "cd6d0e78f04025bc6d59a2c7114dcec131a13528020725ecc612d7635d038c18"
+        },
+        "services/connectivity/usb/device_next/api/udc.rst": {
+            "source": "doc/services/connectivity/usb/device_next/api/udc.rst",
+            "source_sha256": "ab015f9f1a688475adaae3cfb1f89ca295a5899b89cd1f0a9a2522b31e455e7a"
+        },
+        "services/connectivity/usb/device_next/api/usbd.rst": {
+            "source": "doc/services/connectivity/usb/device_next/api/usbd.rst",
+            "source_sha256": "3ef645b9841390ba9cb9a5b29b15bf0c08563d37f8f50d65cad013acabb6088e"
+        },
+        "services/connectivity/usb/device_next/api/usbd_dfu.rst": {
+            "source": "doc/services/connectivity/usb/device_next/api/usbd_dfu.rst",
+            "source_sha256": "da1d6ee1d12f0b5f03870b5618bdd9a75077693331bcec76255e53a7c563d6ef"
+        },
+        "services/connectivity/usb/device_next/api/usbd_hid_device.rst": {
+            "source": "doc/services/connectivity/usb/device_next/api/usbd_hid_device.rst",
+            "source_sha256": "121c7d59b8d599e9fae1f1cb2ad9947ec2f288af7a953d9c42ba3aff532e5b2b"
+        },
+        "services/connectivity/usb/device_next/api/usbd_midi2.rst": {
+            "source": "doc/services/connectivity/usb/device_next/api/usbd_midi2.rst",
+            "source_sha256": "b1ff9bbddf7eb9efc6a2878742e2a0d5c111d14ee409f6d803afa0cdf22a5b90"
+        },
+        "services/connectivity/usb/device_next/api/usbd_msc_device.rst": {
+            "source": "doc/services/connectivity/usb/device_next/api/usbd_msc_device.rst",
+            "source_sha256": "f032b456cdab31c4ca7321b41f23beac5f678fb9ee21805d6244c776159fb26e"
+        },
+        "services/connectivity/usb/device_next/cdc_acm.rst": {
+            "source": "doc/services/connectivity/usb/device_next/cdc_acm.rst",
+            "source_sha256": "e1979b2c51243e208e8cc142564910e5866cfe382aaad96d225ce89edda05443"
+        },
+        "services/connectivity/usb/device_next/usb_device.rst": {
+            "source": "doc/services/connectivity/usb/device_next/usb_device.rst",
+            "source_sha256": "d70ad66762567b6e81c3f695e2c955d36b42600966b020bcf56eb04c4722b164"
+        },
+        "services/connectivity/usb/device_next/vid_pid.rst": {
+            "source": "doc/services/connectivity/usb/device_next/vid_pid.rst",
+            "source_sha256": "28ebe23593b95aba73c738d5d551f4502ab011554e9df444667ce7f2c99a4477"
+        },
+        "services/connectivity/usb/guidelines.rst": {
+            "source": "doc/services/connectivity/usb/guidelines.rst",
+            "source_sha256": "9aa6592420fbc24715fd835f81ed15863eaec55626530eb993192bb450457165"
+        },
+        "services/connectivity/usb/host/api/index.rst": {
+            "source": "doc/services/connectivity/usb/host/api/index.rst",
+            "source_sha256": "53637dfc85d8cd466722b889da0a1749f7587b85ec194353316b3240b1924898"
+        },
+        "services/connectivity/usb/host/api/uhc.rst": {
+            "source": "doc/services/connectivity/usb/host/api/uhc.rst",
+            "source_sha256": "d49606bbb8be8993ce2857db641b944454ad3f51f2cc13bbd1057aaa6371f73d"
+        },
+        "services/connectivity/usb/host/usbip.rst": {
+            "source": "doc/services/connectivity/usb/host/usbip.rst",
+            "source_sha256": "cf91e7436b2e5b83005dfc00ce86477ad264ef8e19dc6e24ebcc91a4e70edf1c"
+        },
+        "services/connectivity/usb/index.rst": {
+            "source": "doc/services/connectivity/usb/index.rst",
+            "source_sha256": "5c5586c09087ec338c134adae88d99e5bd49a14dfdb1b2b876f874736752f803"
+        },
+        "services/connectivity/usb/pd/ucds.rst": {
+            "source": "doc/services/connectivity/usb/pd/ucds.rst",
+            "source_sha256": "ff3d5f26b339164273474b1d070b334af48e2820ea3e2a2028b240ecf4f24370"
+        },
+        "services/console.rst": {
+            "source": "doc/services/console.rst",
+            "source_sha256": "0b6d6439af31925e0bebb8452785707c326bdff992cfda1217e557adf8573f34"
+        },
+        "services/cpu_freq/index.rst": {
+            "source": "doc/services/cpu_freq/index.rst",
+            "source_sha256": "d562b7b2333ebab9ca6df4231f71f4e8df54fcfd75ae4c79585032fc7407a713"
+        },
+        "services/cpu_freq/policies/index.rst": {
+            "source": "doc/services/cpu_freq/policies/index.rst",
+            "source_sha256": "204c2fba280f36cc7840186fc0e5ec8109aaa56598dca914a9320852b7cca223"
+        },
+        "services/cpu_freq/policies/on_demand.rst": {
+            "source": "doc/services/cpu_freq/policies/on_demand.rst",
+            "source_sha256": "2f98debec947b1fcac8f71b006f3d7223e34b78a62d664891b20e849af97a0c0"
+        },
+        "services/cpu_freq/policies/pressure.rst": {
+            "source": "doc/services/cpu_freq/policies/pressure.rst",
+            "source_sha256": "ea978060765997ab877e0903940430544e562be4d980c6e068ee8d52ffa8975c"
+        },
+        "services/cpu_freq/policies/timing_noise.rst": {
+            "source": "doc/services/cpu_freq/policies/timing_noise.rst",
+            "source_sha256": "8b9bcf656c63d10afb5c4f382b5c67c41915d6583c9270b01f01bb3948ca0ade"
+        },
+        "services/cpu_freq/thermal_cap.rst": {
+            "source": "doc/services/cpu_freq/thermal_cap.rst",
+            "source_sha256": "ea898084d446080d9d676fe2e2a6b0fd03fe892c0461b7d79e43c035785b5361"
+        },
+        "services/cpu_load/index.rst": {
+            "source": "doc/services/cpu_load/index.rst",
+            "source_sha256": "37d4be346ac43ae568fe3bd5973cc4f9ba049c4b790288c15725707732731dcd"
+        },
+        "services/crc/index.rst": {
+            "source": "doc/services/crc/index.rst",
+            "source_sha256": "a85f0461f566aedd4ccb36313b5f8a304ac9e620c022b3cf476fa3a27d374287"
+        },
+        "services/crypto/api/index.rst": {
+            "source": "doc/services/crypto/api/index.rst",
+            "source_sha256": "65e857a5e88166461a49751fbef2fe65b4004bad434dc5d509bccdcc28d209c1"
+        },
+        "services/crypto/index.rst": {
+            "source": "doc/services/crypto/index.rst",
+            "source_sha256": "8be34fdb2f9e13f7b8c3df59167700147f6aa1206e246d94ff119fa990d33cb8"
+        },
+        "services/crypto/psa_crypto.rst": {
+            "source": "doc/services/crypto/psa_crypto.rst",
+            "source_sha256": "e459665adbf68b0fa99f9744c124b07fafcf22eddb8efaa1d23e7f857ec29683"
+        },
+        "services/crypto/random/index.rst": {
+            "source": "doc/services/crypto/random/index.rst",
+            "source_sha256": "0e1fa292b48d243e5e537d58411d3e8257327ee46be9c44747a7c3e433777627"
+        },
+        "services/debugging/coredump.rst": {
+            "source": "doc/services/debugging/coredump.rst",
+            "source_sha256": "b6085a64bf2163f956e7dd6ed8b2b3008de35c3dbe0f45cc1e6a65729cad18b8"
+        },
+        "services/debugging/cs_trace_defmt.rst": {
+            "source": "doc/services/debugging/cs_trace_defmt.rst",
+            "source_sha256": "5c2567252677048239be71df8c519a09515b1e78962697027a270df5c5555a2d"
+        },
+        "services/debugging/debugmon.rst": {
+            "source": "doc/services/debugging/debugmon.rst",
+            "source_sha256": "1e5ef805260332868f246dc569488e7832aa5e23c0063c556faf77e71d10d496"
+        },
+        "services/debugging/gdbstub.rst": {
+            "source": "doc/services/debugging/gdbstub.rst",
+            "source_sha256": "f2c06d04440f15c1e1c370d1a6f6a4ee898a056e8d4fb0008670e9e3e9c05cf5"
+        },
+        "services/debugging/index.rst": {
+            "source": "doc/services/debugging/index.rst",
+            "source_sha256": "f429286d45f9a47411605a9ac009c55744abe32e89a7370bba63e70de2ce8233"
+        },
+        "services/debugging/mipi_stp_decoder.rst": {
+            "source": "doc/services/debugging/mipi_stp_decoder.rst",
+            "source_sha256": "6aa6ed5312ded67ffa8775af5240025a8fc3d483d0e000eab8e7dcf76fe60fc2"
+        },
+        "services/debugging/symtab.rst": {
+            "source": "doc/services/debugging/symtab.rst",
+            "source_sha256": "0c7f992795ae432b8fd91fb58c493d4c54889ca8ae388d8f04be6094f082f933"
+        },
+        "services/debugging/thread-analyzer.rst": {
+            "source": "doc/services/debugging/thread-analyzer.rst",
+            "source_sha256": "a2bd409a9fec852e00c013c1c7f163b9c9e30b318e25311c703144b2d172be3b"
+        },
+        "services/debugging/zyclictest.rst": {
+            "source": "doc/services/debugging/zyclictest.rst",
+            "source_sha256": "72e39c034dfaf6b85e075686b96cb37548951205fac3832f8943972ced5490d3"
+        },
+        "services/device_mgmt/dfu.rst": {
+            "source": "doc/services/device_mgmt/dfu.rst",
+            "source_sha256": "2659c6988f9729a18db66c9db21389a999052edef9e888ddf6c173365aec3184"
+        },
+        "services/device_mgmt/ec_host_cmd.rst": {
+            "source": "doc/services/device_mgmt/ec_host_cmd.rst",
+            "source_sha256": "ae344c4212711213911b2fc55a23f99998c7938015588dfb06acfeaa8847d7d0"
+        },
+        "services/device_mgmt/index.rst": {
+            "source": "doc/services/device_mgmt/index.rst",
+            "source_sha256": "b7f6fff3a4d8896f4582c50bd3da3186cddab7177c775a81aef7754eb9ea4ccf"
+        },
+        "services/device_mgmt/mcumgr.rst": {
+            "source": "doc/services/device_mgmt/mcumgr.rst",
+            "source_sha256": "42815ff2f2783642bb75a11691d5e4317a917d35ed254719e4bdcc875b684495"
+        },
+        "services/device_mgmt/mcumgr_callbacks.rst": {
+            "source": "doc/services/device_mgmt/mcumgr_callbacks.rst",
+            "source_sha256": "74345b661ebf9d0c0c918ffc0be28482d39d9ab1bc2b665f69934ac0fe5e0c3b"
+        },
+        "services/device_mgmt/mcumgr_handlers.rst": {
+            "source": "doc/services/device_mgmt/mcumgr_handlers.rst",
+            "source_sha256": "b3e61b4540c033f130e8dde798b909e98d030cdebf18ce00348217eb07758df0"
+        },
+        "services/device_mgmt/ota.rst": {
+            "source": "doc/services/device_mgmt/ota.rst",
+            "source_sha256": "ed0a0f8d86dd5d8fc1e08460c6bf095bb007eb1c30dc60b673c71d32f2da45f6"
+        },
+        "services/device_mgmt/smp_groups/smp_group_0.rst": {
+            "source": "doc/services/device_mgmt/smp_groups/smp_group_0.rst",
+            "source_sha256": "707219a1bde631be0f1b5cfb651d4ba577fb8d59cc4d0416e6cb13d5e882130a"
+        },
+        "services/device_mgmt/smp_groups/smp_group_1.rst": {
+            "source": "doc/services/device_mgmt/smp_groups/smp_group_1.rst",
+            "source_sha256": "2d1952e444be94a8d73519c0e71c80ede6932b529ab7b63ba9def8f3f9661d71"
+        },
+        "services/device_mgmt/smp_groups/smp_group_10.rst": {
+            "source": "doc/services/device_mgmt/smp_groups/smp_group_10.rst",
+            "source_sha256": "da9664e9457f14f1ecfbfcf8f1eb7399b34ce57c3c604e343f27a9f58bcfa97c"
+        },
+        "services/device_mgmt/smp_groups/smp_group_11.rst": {
+            "source": "doc/services/device_mgmt/smp_groups/smp_group_11.rst",
+            "source_sha256": "d847f380c8f39a3cc248f4f04909acd0d65e6bbe7456f9ffafde7242ff285b01"
+        },
+        "services/device_mgmt/smp_groups/smp_group_2.rst": {
+            "source": "doc/services/device_mgmt/smp_groups/smp_group_2.rst",
+            "source_sha256": "a47be9fc59d90178f316815520d2baef3cfe34dda2ce0651256ae9c3ff918b75"
+        },
+        "services/device_mgmt/smp_groups/smp_group_3.rst": {
+            "source": "doc/services/device_mgmt/smp_groups/smp_group_3.rst",
+            "source_sha256": "7f7a53b54863e193edf83900bc3435caa25a35f859d89f52fd4c885855411166"
+        },
+        "services/device_mgmt/smp_groups/smp_group_63.rst": {
+            "source": "doc/services/device_mgmt/smp_groups/smp_group_63.rst",
+            "source_sha256": "0933451f22d125d959d15672cbb58073688ee6298ec0c956d4445c84fe75e624"
+        },
+        "services/device_mgmt/smp_groups/smp_group_8.rst": {
+            "source": "doc/services/device_mgmt/smp_groups/smp_group_8.rst",
+            "source_sha256": "f78c64bd30ddef44314175e22833557c242f772012706565844822cc2704cf5f"
+        },
+        "services/device_mgmt/smp_groups/smp_group_9.rst": {
+            "source": "doc/services/device_mgmt/smp_groups/smp_group_9.rst",
+            "source_sha256": "561fae65b8054921730ad8cb7b3dcf28e810505fa8ff6bdce13771e542e9276c"
+        },
+        "services/device_mgmt/smp_protocol.rst": {
+            "source": "doc/services/device_mgmt/smp_protocol.rst",
+            "source_sha256": "4c6d744c8a837e4c58fb88d8ddfba5979120812f046cd89c7589dfcc7be24efa"
+        },
+        "services/device_mgmt/smp_transport.rst": {
+            "source": "doc/services/device_mgmt/smp_transport.rst",
+            "source_sha256": "d6d2d7ac430fb259e281baa7a53cf0a07c2c9c542ba89ae93ffd7e1e3faef159"
+        },
+        "services/dsp/index.rst": {
+            "source": "doc/services/dsp/index.rst",
+            "source_sha256": "ab9fd859dd3e0ca807b38a300afd93b9a7051a0c0f7a1830bbf5d31192924c45"
+        },
+        "services/formatted_output.rst": {
+            "source": "doc/services/formatted_output.rst",
+            "source_sha256": "6aa6f807f2ba7134706922e028d9824dfc62eb36fda9ce066e49c7fc1a549504"
+        },
+        "services/frameworks.rst": {
+            "source": "doc/services/frameworks.rst",
+            "source_sha256": "bf769298758c108de5924c3311444ecad84c1fabb286522107c13d874fcb8410"
+        },
+        "services/index.rst": {
+            "source": "doc/services/index.rst",
+            "source_sha256": "19b8a8feffac18e8fd1fb6457171e05edd1eab5693b54be5b80e185d62d5131d"
+        },
+        "services/input/gpio-kbd.rst": {
+            "source": "doc/services/input/gpio-kbd.rst",
+            "source_sha256": "fe4318a5520a5df332bbe23912aceb87a6655fefbca5e85f416af0df0c4acafc"
+        },
+        "services/input/index.rst": {
+            "source": "doc/services/input/index.rst",
+            "source_sha256": "5ecc235a042a60f1b1606784db4e6f9105d9e114bee61914e53d0a4101d14c64"
+        },
+        "services/instrumentation/index.rst": {
+            "source": "doc/services/instrumentation/index.rst",
+            "source_sha256": "e0f258540b8fb58752838ad78a92f704629db53235c4b35e081230548165ed16"
+        },
+        "services/io.rst": {
+            "source": "doc/services/io.rst",
+            "source_sha256": "5bc7d7e8079807c59e035369bd87e9812a10f2bd8e3d3041ad8841c306a63e14"
+        },
+        "services/ipc/index.rst": {
+            "source": "doc/services/ipc/index.rst",
+            "source_sha256": "a44ad70ddc8fc2c8428cd492d573b60fb175156cd864286e232a4aa0116a86f5"
+        },
+        "services/ipc/ipc_service/backends/ipc_service_icbmsg.rst": {
+            "source": "doc/services/ipc/ipc_service/backends/ipc_service_icbmsg.rst",
+            "source_sha256": "0b0f29589ee3e90608b8b69f57baf1e2b3427332952ce1665827a08c637fea55"
+        },
+        "services/ipc/ipc_service/backends/ipc_service_icmsg.rst": {
+            "source": "doc/services/ipc/ipc_service/backends/ipc_service_icmsg.rst",
+            "source_sha256": "338da293a3c252c6fe1f39dd35e300b16908c450e863342cdb3db48f983428f2"
+        },
+        "services/ipc/ipc_service/ipc_service.rst": {
+            "source": "doc/services/ipc/ipc_service/ipc_service.rst",
+            "source_sha256": "8234ba219fe5afcba560fafbae06e1fdb4831d299100815a565cc4ee76585c68"
+        },
+        "services/jwt/index.rst": {
+            "source": "doc/services/jwt/index.rst",
+            "source_sha256": "02410fc115d6b7d1ea3715083da451067e66d476f9a0f92a0c0afbb0ea6352ee"
+        },
+        "services/llext/api.rst": {
+            "source": "doc/services/llext/api.rst",
+            "source_sha256": "9268d2b7269cfe781827133844bfd47da81adbb63bc04bae442efd715ebad09d"
+        },
+        "services/llext/build.rst": {
+            "source": "doc/services/llext/build.rst",
+            "source_sha256": "113fd83345cb0a598e888c8218bdbd86620aaf9c89c067f18c4d5fa39981ebd7"
+        },
+        "services/llext/config.rst": {
+            "source": "doc/services/llext/config.rst",
+            "source_sha256": "eb1143059394b061524649e7d7585f2afba926a2bf9b2a5ecab1f6cc8ab46fae"
+        },
+        "services/llext/debug.rst": {
+            "source": "doc/services/llext/debug.rst",
+            "source_sha256": "38a7d69faaed5da102146cb9781f491ce783c9500650739fbbd8691ef0774475"
+        },
+        "services/llext/index.rst": {
+            "source": "doc/services/llext/index.rst",
+            "source_sha256": "b9bf2e6b378df3721fcf72ee0eecf85f18efecd19005c57bcad6d5da650a4cdb"
+        },
+        "services/llext/load.rst": {
+            "source": "doc/services/llext/load.rst",
+            "source_sha256": "60031dc047296ebc2db188ed16f5c2806acfef62a412d0b3f5746826c4436b3a"
+        },
+        "services/logging/cs_stm.rst": {
+            "source": "doc/services/logging/cs_stm.rst",
+            "source_sha256": "a918e4ca73eb62b0ac46dc10e1457492916cc2650bfe10bf33d5506a3d882f81"
+        },
+        "services/logging/index.rst": {
+            "source": "doc/services/logging/index.rst",
+            "source_sha256": "3d89e139d12724f2a576cedb498543f9c11fdffa7606d1a08db0b0b981f3802b"
+        },
+        "services/mem_mgmt/index.rst": {
+            "source": "doc/services/mem_mgmt/index.rst",
+            "source_sha256": "46bb523d77d750eb85ed83730adbe5aa4ce1f4ebe3becb992f846275b5fd8a82"
+        },
+        "services/memory_management.rst": {
+            "source": "doc/services/memory_management.rst",
+            "source_sha256": "4228592593416c105c6768b1b7614dfacb40a9014a0c53cbf4cd3ba4a8ffe81e"
+        },
+        "services/messaging.rst": {
+            "source": "doc/services/messaging.rst",
+            "source_sha256": "2738e6c629bc2830b21ecc5c5cd4af6d1fc5909dc7a70530fe55056535f043ce"
+        },
+        "services/mpipe/index.rst": {
+            "source": "doc/services/mpipe/index.rst",
+            "source_sha256": "dd7458f5acc3360fa530f62b77337a916578cfa3b19bc28b575077d42f21a285"
+        },
+        "services/net_buf/index.rst": {
+            "source": "doc/services/net_buf/index.rst",
+            "source_sha256": "79cd2576e6f9fb367f1b34a0cd33f9febe3d2b0bb03190e71d8f27e3025bd6a1"
+        },
+        "services/notify.rst": {
+            "source": "doc/services/notify.rst",
+            "source_sha256": "9ec288d002c6eb8e33c2dd87aa277c69b8722852630ce562f662566c772ea715"
+        },
+        "services/observability.rst": {
+            "source": "doc/services/observability.rst",
+            "source_sha256": "e914165a639f68d2bc9cd86bb9f26ed05ea62b35dc4a5d5fa27a237368da32e4"
+        },
+        "services/pm/api/index.rst": {
+            "source": "doc/services/pm/api/index.rst",
+            "source_sha256": "42bcbfcc908e4273fcfc3e18fff746f63959c8d37abc547fe6eb2bf41b409509"
+        },
+        "services/pm/device.rst": {
+            "source": "doc/services/pm/device.rst",
+            "source_sha256": "f87ef1934a7e218867923eb999149ac5e1905f199596222a2daa34d695f2de8f"
+        },
+        "services/pm/device_runtime.rst": {
+            "source": "doc/services/pm/device_runtime.rst",
+            "source_sha256": "133523503d51bb909295f1578b2b9ba6307af55383e74790f43fe9bfc213a8c7"
+        },
+        "services/pm/index.rst": {
+            "source": "doc/services/pm/index.rst",
+            "source_sha256": "957e23090c80d791c31762921eaa6733d2e9b435fbc1cf4094f38751a2634f7c"
+        },
+        "services/pm/overview.rst": {
+            "source": "doc/services/pm/overview.rst",
+            "source_sha256": "7e32e9eb38cf69e98a17fc9e646628f617ae9d7d2e31b10c77cab28ca5d91248"
+        },
+        "services/pm/power_domain.rst": {
+            "source": "doc/services/pm/power_domain.rst",
+            "source_sha256": "4f28e593a3e29efee14f721f95db577e45a1309c90759107d52973145377802f"
+        },
+        "services/pm/system.rst": {
+            "source": "doc/services/pm/system.rst",
+            "source_sha256": "b51ccf02e363903d73e455186ac5ce6610e6ea1afa0df311dd753bfc97febbc3"
+        },
+        "services/portability/cmsis_rtos_v1.rst": {
+            "source": "doc/services/portability/cmsis_rtos_v1.rst",
+            "source_sha256": "2e8c6f87058e030c4524b39a5a5a1e916dd759cbf97a9e126327467aa0c6a539"
+        },
+        "services/portability/cmsis_rtos_v2.rst": {
+            "source": "doc/services/portability/cmsis_rtos_v2.rst",
+            "source_sha256": "185f28280c68d006bee4ba63c5edebb465bc70c4fe2a765951d92448c7d45583"
+        },
+        "services/portability/index.rst": {
+            "source": "doc/services/portability/index.rst",
+            "source_sha256": "8984ed150f452b4d40317529ff4e90ddb575f826ee849c9b94a6c02976ff43c6"
+        },
+        "services/portability/posix/aep/index.rst": {
+            "source": "doc/services/portability/posix/aep/index.rst",
+            "source_sha256": "bc20b7bfd4adf4f5927725a1aabafe095db21b6ec8649269e9548fcdf9c4187d"
+        },
+        "services/portability/posix/conformance/index.rst": {
+            "source": "doc/services/portability/posix/conformance/index.rst",
+            "source_sha256": "f7e85e35745addc4bec233bdc714064a546306ae3142e243483cc808c655fe29"
+        },
+        "services/portability/posix/implementation/index.rst": {
+            "source": "doc/services/portability/posix/implementation/index.rst",
+            "source_sha256": "8eec79fae4864b6c5b64ea93ec72f55519820ca3bad236bb8504a5957e1374e6"
+        },
+        "services/portability/posix/index.rst": {
+            "source": "doc/services/portability/posix/index.rst",
+            "source_sha256": "2251e6ddca8a20d9d4176d68faebee5b540174a0c00fa59576932d7ef1d4b4ba"
+        },
+        "services/portability/posix/kconfig/index.rst": {
+            "source": "doc/services/portability/posix/kconfig/index.rst",
+            "source_sha256": "d83ec5bb7970be9c3245f43dd9628a5c415827ad3ae7d750cb8f835deaa6fa15"
+        },
+        "services/portability/posix/option_groups/index.rst": {
+            "source": "doc/services/portability/posix/option_groups/index.rst",
+            "source_sha256": "9ecd75d3de866f866ee3983465ebcff0c62dea82621f56468709d7d8e899d090"
+        },
+        "services/portability/posix/overview/index.rst": {
+            "source": "doc/services/portability/posix/overview/index.rst",
+            "source_sha256": "999fb88b9293e9d824d4ed0229b158ee83f20652f282a2fe343de037626b6d2b"
+        },
+        "services/power_management.rst": {
+            "source": "doc/services/power_management.rst",
+            "source_sha256": "0015f8a90659e5e72e75236d9b73d9fd15fc08cdddc11a541eb885ad2aa44dfd"
+        },
+        "services/poweroff.rst": {
+            "source": "doc/services/poweroff.rst",
+            "source_sha256": "f3312f975765e3fd4d1b383c274d94e357d448b9494a812c9941b70af0fbee9f"
+        },
+        "services/profiling/index.rst": {
+            "source": "doc/services/profiling/index.rst",
+            "source_sha256": "173d52e6801401f585f685067e8f8f5dc71c8e4cd93cc4fcf2c72cc9636c25b5"
+        },
+        "services/profiling/perf.rst": {
+            "source": "doc/services/profiling/perf.rst",
+            "source_sha256": "aff317d12335ff9e9432b3c1c920813294ab7605f45e4da2eac4378314cd75d8"
+        },
+        "services/resource_management/index.rst": {
+            "source": "doc/services/resource_management/index.rst",
+            "source_sha256": "d9f9dbeb77b2d672367e28a3a1258608465261aa77c53b52254cbe8795cbf83d"
+        },
+        "services/rtio/index.rst": {
+            "source": "doc/services/rtio/index.rst",
+            "source_sha256": "81cd5e9674ef03ce8a27e90a700ab86aad22137301d0a2fafa9e982a9ff5183d"
+        },
+        "services/security.rst": {
+            "source": "doc/services/security.rst",
+            "source_sha256": "d2d3424d695f5fb8450524592f69364b18e8b46c533168e5caa61a322d4a02c5"
+        },
+        "services/sensing/index.rst": {
+            "source": "doc/services/sensing/index.rst",
+            "source_sha256": "d06cba5864da082345e812eb75b8e958313bd2280f28bbf7cfc0c5e4f8651c43"
+        },
+        "services/serialization/cbor.rst": {
+            "source": "doc/services/serialization/cbor.rst",
+            "source_sha256": "917a3e68a41ef8fda65b0704685e6173bcba308f02f030d651c8cfafe3641927"
+        },
+        "services/serialization/index.rst": {
+            "source": "doc/services/serialization/index.rst",
+            "source_sha256": "4546dabae5206c2b1f661503648cf951af685253fbc5dbcc3d108f8e7782867c"
+        },
+        "services/serialization/json.rst": {
+            "source": "doc/services/serialization/json.rst",
+            "source_sha256": "a634ff8fe2772e1868fc9732a1622d94d77a0b0ba2775681a23a2b3171210d40"
+        },
+        "services/serialization/nanopb.rst": {
+            "source": "doc/services/serialization/nanopb.rst",
+            "source_sha256": "521e045ae90c08a8b6669d4a781acb39e90dfd1c3722323a3235b9d0a7ab0950"
+        },
+        "services/shell/index.rst": {
+            "source": "doc/services/shell/index.rst",
+            "source_sha256": "60f6b51e21b58707381f591f9c81528ebd87a18c6bf34455bd23faca06ce5e35"
+        },
+        "services/smf/index.rst": {
+            "source": "doc/services/smf/index.rst",
+            "source_sha256": "37e27f3a27affed60598b82d3d8367c833c505a41bc488d146cffb96504c271f"
+        },
+        "services/storage/disk/access.rst": {
+            "source": "doc/services/storage/disk/access.rst",
+            "source_sha256": "6ed45306f591207be34082e4cda74ff16c12219f7e3388c46c9e6f4e2d377c4c"
+        },
+        "services/storage/disk/nvme.rst": {
+            "source": "doc/services/storage/disk/nvme.rst",
+            "source_sha256": "1e8ccd612d7c0e39a280986290ecae40d33afa776aced1903405d70b7752afc6"
+        },
+        "services/storage/disk/virtio_blk.rst": {
+            "source": "doc/services/storage/disk/virtio_blk.rst",
+            "source_sha256": "c87f3578bee0f559410c071ddd623ff6aeda60d43a44a6a544dcaa94b530a5d8"
+        },
+        "services/storage/fcb/fcb.rst": {
+            "source": "doc/services/storage/fcb/fcb.rst",
+            "source_sha256": "060ef088202c63bada02148ec4faa03845c48dec771a0d6468c6c2a0abf4254b"
+        },
+        "services/storage/file_system/index.rst": {
+            "source": "doc/services/storage/file_system/index.rst",
+            "source_sha256": "d1774fede7f2115e89de205b05fe552b031043162c9224eaad9bbbd4ff7b96a6"
+        },
+        "services/storage/flash_map/flash_map.rst": {
+            "source": "doc/services/storage/flash_map/flash_map.rst",
+            "source_sha256": "94fc6265fac89e7868b663074298035b49ee15addeae7b10155db44f8d6fc56f"
+        },
+        "services/storage/index.rst": {
+            "source": "doc/services/storage/index.rst",
+            "source_sha256": "c942c34f9ae0d90c3ce8a66233f0d4dbaf49c826e8cee5d55669547eb852dc7e"
+        },
+        "services/storage/nvmem/index.rst": {
+            "source": "doc/services/storage/nvmem/index.rst",
+            "source_sha256": "d5cd94fbe3828234a7e31db9421f36b3f54f75e8e0142776a7fd924a87777069"
+        },
+        "services/storage/nvs/nvs.rst": {
+            "source": "doc/services/storage/nvs/nvs.rst",
+            "source_sha256": "02d8117e306d8b998df1e7ad5c2b3d0073a2e5b40c66b96348112cb81460f887"
+        },
+        "services/storage/retention/blinfo.rst": {
+            "source": "doc/services/storage/retention/blinfo.rst",
+            "source_sha256": "fa146fdc3da7f55545f3ff1bc96bdc301e0164972f0e94d231af5051de2907a9"
+        },
+        "services/storage/retention/index.rst": {
+            "source": "doc/services/storage/retention/index.rst",
+            "source_sha256": "160c8487f7e4ccecf3c8072b9828b38a2231a061db818be0566fb221b724fbdd"
+        },
+        "services/storage/secure_storage/index.rst": {
+            "source": "doc/services/storage/secure_storage/index.rst",
+            "source_sha256": "c81b4cba326f1a7094b0754814c2756ca6215f9dc5d3bb5f059cb34a2b9189c9"
+        },
+        "services/storage/settings/index.rst": {
+            "source": "doc/services/storage/settings/index.rst",
+            "source_sha256": "c9c4671c19101e2ed1a922ff169e64c6c4bfa5b9622c4c07dcfeff9979b6949a"
+        },
+        "services/storage/stream/stream_flash.rst": {
+            "source": "doc/services/storage/stream/stream_flash.rst",
+            "source_sha256": "ddc7ea4b11f17b779375c301397fc618d33447ac303b6d0b73461d936448417e"
+        },
+        "services/storage/zms/zms.rst": {
+            "source": "doc/services/storage/zms/zms.rst",
+            "source_sha256": "80a92a3c8392595668e69756041381f8ab16750409f69d1cbe5c62bc2c553838"
+        },
+        "services/task_wdt/index.rst": {
+            "source": "doc/services/task_wdt/index.rst",
+            "source_sha256": "83d0ebe1fe235ead7da69a27dc06c899584e5aadb4c3a922388c6824d0877555"
+        },
+        "services/tfm/build.rst": {
+            "source": "doc/services/tfm/build.rst",
+            "source_sha256": "27af01989891bc138c4c3856fc40fed02a05cefb4dcae0aa11a83f7d3d40441e"
+        },
+        "services/tfm/index.rst": {
+            "source": "doc/services/tfm/index.rst",
+            "source_sha256": "28f3b9d227a74cfe8f395b8d9aaf7c932e95dc2a8cdabb6e87171b6a6e0e042d"
+        },
+        "services/tfm/integration.rst": {
+            "source": "doc/services/tfm/integration.rst",
+            "source_sha256": "0c0bd323204d53c8f71a733b89ed7f385bb6f8f0029b932fb472bd2fe64df8ed"
+        },
+        "services/tfm/overview.rst": {
+            "source": "doc/services/tfm/overview.rst",
+            "source_sha256": "384e014f06ea47ffcc8fed92d78f98e048fb6f48dafd470629b2c4863e6cb9c3"
+        },
+        "services/tfm/requirements.rst": {
+            "source": "doc/services/tfm/requirements.rst",
+            "source_sha256": "1a8e9e1bdc7f63a8e3426dd9dfcad4ee33d211e12b22a5e6f4c6b1388e76ac81"
+        },
+        "services/tfm/testsuites.rst": {
+            "source": "doc/services/tfm/testsuites.rst",
+            "source_sha256": "c437741d060a235a804aca4c5f028a9301195a213a381af5441d43beb2213818"
+        },
+        "services/tracing/index.rst": {
+            "source": "doc/services/tracing/index.rst",
+            "source_sha256": "63aac3136f04f0d4ba48a7a9ee7025a380f85224769a56504e8943e4eccf224c"
+        },
+        "services/uuid/index.rst": {
+            "source": "doc/services/uuid/index.rst",
+            "source_sha256": "f6b20a9f835784a7e25280d50c8ac534aaaba7bed6fac00d7ad66639b16f2fc3"
+        },
+        "services/virtualization/index.rst": {
+            "source": "doc/services/virtualization/index.rst",
+            "source_sha256": "655300c5938cd8df5264ae184e369b202509775796e993653c46a3869dc07e1e"
+        },
+        "services/virtualization/ivshmem.rst": {
+            "source": "doc/services/virtualization/ivshmem.rst",
+            "source_sha256": "fd209b7bd1dd856d821ef462a19687757d0f9b50405cfdbdccc261c3e794c5a5"
+        },
+        "services/zbus/index.rst": {
+            "source": "doc/services/zbus/index.rst",
+            "source_sha256": "ab6ab47bd388f19a5fc19e0a955e372fc7b005d7ded70ab6838d8f0a4d7c1ea0"
+        },
+        "README.rst": {
+            "source": "README.rst",
+            "source_sha256": "f2bc73e25fd06244470d27897a0deb2938aaa81ce57253f087b5e9c1404a500c"
+        },
+        "samples/index.rst": {
+            "source": "samples/index.rst",
+            "source_sha256": "54744a802c7a6c6d7f2ce4fe33ce627b57f5e5bc92bd0004652c69c04feecb6d"
+        },
+        "boards/index.rst": {
+            "source": "boards/index.rst",
+            "source_sha256": "90bcc5d91d43f868293a6eafea81227a5075cf2f59c98ed67700c990abaf38b1"
+        },
+        "samples/application_development/application_development.rst": {
+            "source": "samples/application_development/application_development.rst",
+            "source_sha256": "f7cee6cc58e2bbe0684edae15b64979c05884d4989df8a3f0ec08c4aa81d4785"
+        },
+        "samples/hello_world/README.rst": {
+            "source": "samples/hello_world/README.rst",
+            "source_sha256": "91d19b896c01ec1386f9785308229301db750a5a9885f07cda6414dfb373ce1e"
+        },
+        "samples/application_development/external_lib/README.rst": {
+            "source": "samples/application_development/external_lib/README.rst",
+            "source_sha256": "414f615e9df09219f20cdaecab57280e192784be0e6202a9fdde7ddfc6b8d147"
+        },
+        "build/dts/index.rst": {
+            "source": "doc/build/dts/index.rst",
+            "source_sha256": "d0274e46597aa81b119af9463e7a132c37e9f6ee1d9ad7b9efe83a0d4b865d55"
+        },
+        "build/index.rst": {
+            "source": "doc/build/index.rst",
+            "source_sha256": "3d6daced7d58f1eeb6a2424975515f3da39fe19a7896893b67e0fa48ce3c7561"
+        },
+        "samples/application_development/code_relocation_nocopy/README.rst": {
+            "source": "samples/application_development/code_relocation_nocopy/README.rst",
+            "source_sha256": "c3f49306b9d6cc430d195de0473779de57e09a667053aa5abd911602ec4eea74"
+        }
+    },
+    "base_revision": "510cbce85da7e45879ad84a4bc4a4af3b02074e6"
+}

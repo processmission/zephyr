@@ -1,0 +1,36 @@
+{# SPDX-FileCopyrightText: Copyright The Process Mission #}
+{# SPDX-FileCopyrightText: Copyright The Zephyr Project Contributors
+   SPDX-License-Identifier: Apache-2.0 #}
+{# Add rst-badge after rst-versions for small badge style. #}
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="文档版本">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Zephyr 项目</span>
+      版本： {{ current_version if is_release else '最新开发版' }}
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      <dl>
+        <dt>文档发布版本</dt>
+        {% for slug, url in versions %}
+          <dd><a href="{{ url }}">{{ '最新开发版' if slug == 'latest' else slug }}</a></dd>
+        {% endfor %}
+      </dl>
+      <dl>
+        <dt>下载</dt>
+        {% set prefix = current_version if is_release else "latest" %}
+        <dd><a href="/{{ prefix }}/zephyr.pdf">PDF</a></dd>
+      </dl>
+      <dl>
+        <dt>Zephyr 官方链接</dt>
+          <dd>
+            <a href="https://www.zephyrproject.org/">项目主页</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/sdk-ng/releases">SDK</a>
+          </dd>
+          <dd>
+            <a href="https://github.com/zephyrproject-rtos/zephyr/releases">发布版本</a>
+          </dd>
+      </dl>
+    </div>
+  </div>

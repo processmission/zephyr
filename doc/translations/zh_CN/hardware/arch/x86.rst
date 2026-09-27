@@ -1,0 +1,76 @@
+.. SPDX-FileCopyrightText: Copyright The Process Mission
+
+..
+   SPDX-FileCopyrightText: Copyright The Zephyr Project Contributors
+   SPDX-License-Identifier: Apache-2.0
+
+.. _x86_developer_guide:
+
+x86 开发者指南
+##############
+
+概述
+****
+
+本页介绍为基于 x86 的平台进行开发时需要了解的一些事项。
+
+虚拟内存
+********
+
+在启动的极早期阶段，页表就会被加载，因此从技术上讲，内核是在虚拟地址空间中执行的。默认情况下，物理内存与虚拟内存采用恒等映射，因此看起来像是在物理地址空间中执行。物理地址空间由 dts 中的 :c:macro:`DT_CHOSEN_SRAM_ADDR` 和 :c:macro:`DT_CHOSEN_SRAM_SIZE` 指定，而虚拟地址空间由 :kconfig:option:`CONFIG_KERNEL_VM_BASE` 和 :kconfig:option:`CONFIG_KERNEL_VM_SIZE` 指定。请注意，:kconfig:option:`CONFIG_SRAM_OFFSET` 控制 Zephyr 内核在内存中的放置位置，其在虚拟地址空间中对应的选项是 :kconfig:option:`CONFIG_KERNEL_VM_OFFSET` 。
+
+将虚拟地址空间与物理地址空间分离
+================================
+
+在 32 位 x86 上，可以将物理地址空间与虚拟地址空间分离。代码和数据按虚拟地址空间进行链接，但仍加载到物理内存中。不过，在启动过程中，执行 :file:`arch/x86/core/ia32/crt0.S` 中的 ``vm_enter`` 之前，代码和数据必须已就绪，且可通过物理地址空间寻址。执行 ``vm_enter`` 之后，代码通过虚拟地址执行，数据也可以通过其虚拟地址引用。这是因为页表生成脚本（ :file:`arch/x86/gen_mmu.py` ）除了将虚拟地址映射到物理内存外，还会在页目录级别对物理地址建立恒等映射。在启动过程的后续阶段，:c:func:`z_x86_mmu_init()` 会清除页目录级别用于恒等映射的条目，从而移除物理内存的恒等映射。为实现用户空间隔离，必须解除此映射，否则用户空间就能够通过物理地址访问受限内存。由于恒等映射是在页目录级别建立的，因此无需为页表分配额外空间。不过，额外的页目录表仍可能需要额外空间。
+
+虚拟地址空间的位置存在以下限制：
+
+- 物理地址空间与虚拟地址空间必须互不重叠。这是因为页目录表中的条目将被清除。如果两个地址空间重叠，就会清除虚拟地址所需的条目。
+
+  - 如果启用了 :kconfig:option:`CONFIG_X86_PAE` （ ``=y`` ），则每个地址空间必须位于各自独立的 1GB 区域内，因为 PDP（页目录指针）的每个条目覆盖 1GB 内存。例如：
+
+    - 假设 ``CONFIG_SRAM_OFFSET`` 和 ``CONFIG_KERNEL_VM_OFFSET`` 均为 ``0x0`` 。
+
+    - ``DT_CHOSEN_SRAM_ADDR == 0x00000000`` 和 ``CONFIG_KERNEL_VM_BASE = 0x40000000`` 的组合有效，而
+
+    - ``DT_CHOSEN_SRAM_ADDR == 0x00000000`` 和 ``CONFIG_KERNEL_VM_BASE = 0x20000000`` 的组合无效。
+
+  - 如果禁用了 :kconfig:option:`CONFIG_X86_PAE` （ ``=n`` ），则每个地址空间必须位于各自独立的 4MB 区域内，因为 PD（页目录）的每个条目覆盖 4MB 内存。
+
+  - ``DT_CHOSEN_SRAM_ADDR`` 和 ``CONFIG_KERNEL_VM_BASE`` 还必须分别与目标区域的起始地址对齐。
+
+在构建时指定额外的内存映射
+**************************
+
+页表生成脚本（ :file:`arch/x86/gen_mmu.py` ）使用第一轮链接生成的内核映像，为代码执行和数据访问生成所需的多级页表。可以向该脚本传递额外的命令行参数，以生成额外的内存映射。这适用于静态映射和/或启动极早期阶段的设备 MMIO 访问。要向脚本传递额外的命令行参数，请在开发板配置文件中填充名为 ``X86_EXTRA_GEN_MMU_ARGUMENTS`` 的 CMake 列表。示例如下：
+
+.. code-block:: cmake
+
+   set(X86_EXTRA_GEN_MMU_ARGUMENTS
+       --map 0xA0000000,0x2000
+       --map 0x80000000,0x400000,LWUX,0xB0000000)
+
+参数 ``--map`` 接受以下格式的值： ``<physical address>,<size>[,<flags:LUWX>[,<virtual address>]]`` ，其中：
+
+- ``<physical address>`` 是映射的物理地址。（必填）
+
+- ``<size>`` 是待映射区域的大小。（必填）
+
+- ``<flags>`` 是与映射关联的标志：（可选）
+
+  - ``L`` ：页目录级别的大页。
+
+  - ``U`` ：允许用户空间访问。
+
+  - ``W`` ：可读写。
+
+  - ``X`` ：允许执行。
+
+  - ``D`` ：禁用缓存。
+
+    - 默认使用小页（4KB），仅允许特权态访问，只读且禁止执行。
+
+- ``<virtual address`` 是映射的虚拟地址。（可选）
+
+请注意，指定额外的内存映射会使预分配的页表（包括内核页表和各内存域的页表）需要更大的存储空间。需要使用 :kconfig:option:`CONFIG_X86_EXTRA_PAGE_TABLE_PAGES` 指定为页表额外预留的内存页数。如果预留空间与所需空间不完全一致，``gen_mmu.py`` 脚本会输出一条消息，指出该 Kconfig 选项应设置的值。

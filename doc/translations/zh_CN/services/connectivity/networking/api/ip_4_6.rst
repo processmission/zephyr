@@ -1,0 +1,24 @@
+.. SPDX-FileCopyrightText: Copyright The Process Mission
+
+..
+   SPDX-FileCopyrightText: Copyright The Zephyr Project Contributors
+   SPDX-License-Identifier: Apache-2.0
+
+.. _ip_4_6_interface:
+
+IPv4/IPv6 原语与辅助函数
+########################
+
+.. contents::
+    :local:
+    :depth: 2
+
+概述
+****
+
+用于 IP 地址和 IP 协议的各种宏定义和辅助函数。
+
+API 参考
+********
+
+.. doxygengroup:: ip_4_6

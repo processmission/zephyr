@@ -1,0 +1,45 @@
+.. SPDX-FileCopyrightText: Copyright The Process Mission
+
+..
+   SPDX-FileCopyrightText: Copyright The Zephyr Project Contributors
+   SPDX-License-Identifier: Apache-2.0
+
+.. _vulnerabilities_2017:
+
+CVE-2017
+########
+
+:cve:`2017-14199`
+-----------------
+
+在 :code:`getaddrinfo()` 中存在缓冲区溢出。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-12 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-12>`_
+
+- `1.11.0 的修复 PR6158 <https://github.com/zephyrproject-rtos/zephyr/pull/6158>`_
+
+:cve:`2017-14201`
+-----------------
+
+由于误用栈变量，shell DNS 命令可能导致不可预测的结果。
+
+Zephyr shell 中存在释放后使用漏洞，允许通过串口或 telnet 连接的用户造成拒绝服务，并可能实现远程代码执行。
+
+此问题已在 v1.14.0 版本中修复。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-17 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-17>`_
+
+- `v1.14.0 的修复 PR13260 <https://github.com/zephyrproject-rtos/zephyr/pull/13260>`_
+
+:cve:`2017-14202`
+-----------------
+
+shell 实现未防范缓冲区溢出，导致不可预测的行为。
+
+Zephyr shell 组件中存在内存缓冲区边界内操作限制不当漏洞，允许通过串口或 telnet 连接的用户造成崩溃，并可能实现任意代码执行。
+
+此问题已在 v1.14.0 版本中修复。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-18 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-18>`_
+
+- `v1.14.0 的修复 PR13048 <https://github.com/zephyrproject-rtos/zephyr/pull/13048>`_

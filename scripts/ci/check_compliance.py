@@ -1603,6 +1603,10 @@ Missing SoC names or CONFIG_SOC vs soc.yml out of sync:
             ":!/doc/develop/manifest/external",
             ":!/doc/security/vulnerabilities.rst",
             ":!/doc/security/vulnerabilities",
+            ":(exclude,glob)doc/translations/*/releases/**",
+            ":(exclude,glob)doc/translations/*/develop/manifest/external/**",
+            ":(exclude,glob)doc/translations/*/security/vulnerabilities.rst",
+            ":(exclude,glob)doc/translations/*/security/vulnerabilities/**",
             cwd=GIT_TOP,
         )
 

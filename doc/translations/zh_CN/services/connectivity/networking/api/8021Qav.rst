@@ -1,0 +1,106 @@
+.. SPDX-FileCopyrightText: Copyright The Process Mission
+
+..
+   SPDX-FileCopyrightText: Copyright The Zephyr Project Contributors
+   SPDX-License-Identifier: Apache-2.0
+
+.. _8021Qav:
+
+IEEE 802.1Qav
+#############
+
+概述
+****
+
+基于信用的整形（credit-based shaping）是网络调度器中使用的一种替代调度算法，用于在共享有限网络资源时实现公平性。Zephyr 支持配置 `IEEE 802.1Qav-2009 standard`_ 中描述的基于信用的整形器。Zephyr 并不实现实际的整形器，只是提供一种方式来配置由以太网设备驱动实现的整形器。
+
+启用 802.1Qav
+*************
+
+要启用 802.1Qav 整形器，以太网设备驱动必须声明它支持基于信用的整形，为此以太网驱动的能力函数必须返回 ``ETHERNET_QAV`` 值。通常还需要支持优先级队列 ``ETHERNET_PRIORITY_QUEUES``。
+
+.. code-block:: none
+
+        static enum ethernet_hw_caps eth_get_capabilities(const struct device *dev)
+        {
+                ARG_UNUSED(dev);
+
+                return ETHERNET_QAV | ETHERNET_PRIORITY_QUEUES |
+                       ETHERNET_HW_VLAN | ETHERNET_LINK_10BASE |
+                       ETHERNET_LINK_100BASE;
+        }
+
+示例见 ``sam-e70-xplained`` 开发板以太网驱动 :zephyr_file:`drivers/ethernet/eth_sam_gmac.c`。
+
+配置 802.1Qav
+*************
+
+应用可以按如下方式配置基于信用的整形器：
+
+.. code-block:: c
+
+        #include <zephyr/net/net_if.h>
+        #include <zephyr/net/ethernet.h>
+        #include <zephyr/net/ethernet_mgmt.h>
+
+        static void qav_set_status(struct net_if *iface,
+                                   int queue_id, bool enable)
+        {
+                struct ethernet_req_params params;
+                int ret;
+
+                memset(&params, 0, sizeof(params));
+
+                params.qav_param.queue_id = queue_id;
+                params.qav_param.enabled = enable;
+                params.qav_param.type = ETHERNET_QAV_PARAM_TYPE_STATUS;
+
+                /* Disable or enable Qav for a queue */
+                ret = net_mgmt(NET_REQUEST_ETHERNET_SET_QAV_PARAM,
+                               iface, &params,
+                               sizeof(struct ethernet_req_params));
+                if (ret) {
+                        LOG_ERR("Cannot %s Qav for queue %d for interface %p",
+                                enable ? "enable" : "disable",
+                                queue_id, iface);
+                }
+        }
+
+        static void qav_set_bandwidth_and_slope(struct net_if *iface,
+                                                int queue_id,
+                                                unsigned int bandwidth,
+                                                unsigned int idle_slope)
+        {
+                struct ethernet_req_params params;
+                int ret;
+
+                memset(&params, 0, sizeof(params));
+
+                params.qav_param.queue_id = queue_id;
+                params.qav_param.delta_bandwidth = bandwidth;
+                params.qav_param.type = ETHERNET_QAV_PARAM_TYPE_DELTA_BANDWIDTH;
+
+                ret = net_mgmt(NET_REQUEST_ETHERNET_SET_QAV_PARAM,
+                               iface, &params,
+                               sizeof(struct ethernet_req_params));
+                if (ret) {
+                        LOG_ERR("Cannot set Qav delta bandwidth %u for "
+                                "queue %d for interface %p",
+                                bandwidth, queue_id, iface);
+                }
+
+                params.qav_param.idle_slope = idle_slope;
+                params.qav_param.type = ETHERNET_QAV_PARAM_TYPE_IDLE_SLOPE;
+
+                ret = net_mgmt(NET_REQUEST_ETHERNET_SET_QAV_PARAM,
+                               iface, &params,
+                               sizeof(struct ethernet_req_params));
+                if (ret) {
+                        LOG_ERR("Cannot set Qav idle slope %u for "
+                                "queue %d for interface %p",
+                                idle_slope, queue_id, iface);
+                }
+        }
+
+.. _IEEE 802.1Qav-2009 standard:
+   https://standards.ieee.org/standard/802_1Qav-2009.html

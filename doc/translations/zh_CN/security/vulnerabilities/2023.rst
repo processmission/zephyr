@@ -1,0 +1,339 @@
+.. SPDX-FileCopyrightText: Copyright The Process Mission
+
+..
+   SPDX-FileCopyrightText: Copyright The Zephyr Project Contributors
+   SPDX-License-Identifier: Apache-2.0
+
+.. _vulnerabilities_2023:
+
+CVE-2023
+########
+
+:cve:`2023-0396`
+----------------
+
+Bluetooth HCI 中的缓冲区越界读取
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-8rpp-6vxq-pqg3 <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-8rpp-6vxq-pqg3>`_
+
+:cve:`2023-0397`
+----------------
+
+DoS：le_read_buffer_size_complete() 中的无效初始化
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-wc2h-h868-q7hj <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-wc2h-h868-q7hj>`_
+
+此问题已在 main 分支中修复，将包含在 v3.3.0 中。
+
+- `main 的修复 PR 54905 <https://github.com/zephyrproject-rtos/zephyr/pull/54905>`_
+
+- `v3.2.0 的修复 PR 47957 <https://github.com/zephyrproject-rtos/zephyr/pull/55024>`_
+
+- `v3.1.0 的修复 PR 47958 <https://github.com/zephyrproject-rtos/zephyr/pull/55023>`_
+
+- `v2.7.4 的修复 PR 47959 <https://github.com/zephyrproject-rtos/zephyr/pull/55022>`_
+
+:cve:`2023-0779`
+----------------
+
+net: shell: 输入验证不当
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-9xj8-6989-r549 <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-9xj8-6989-r549>`_
+
+此问题已在 main 分支中修复，将包含在 v3.3.0 中。
+
+- `main 的修复 PR 54371 <https://github.com/zephyrproject-rtos/zephyr/pull/54371>`_
+
+- `v3.2.0 的修复 PR 54380 <https://github.com/zephyrproject-rtos/zephyr/pull/54380>`_
+
+- `v2.7.4 的修复 PR 54381 <https://github.com/zephyrproject-rtos/zephyr/pull/54381>`_
+
+:cve:`2023-1901`
+----------------
+
+HCI send_sync 悬空信号量引用重用
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-xvvm-8mcm-9cq3 <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-xvvm-8mcm-9cq3>`_
+
+此问题已在 main 分支中修复，将包含在 v3.4.0 中。
+
+- `main 的修复 PR 56709 <https://github.com/zephyrproject-rtos/zephyr/pull/56709>`_
+
+:cve:`2023-1902`
+----------------
+
+HCI 连接创建中的悬空状态引用重用
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-fx9g-8fr2-q899 <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-fx9g-8fr2-q899>`_
+
+此问题已在 main 分支中修复，将包含在 v3.4.0 中。
+
+- `main 的修复 PR 56709 <https://github.com/zephyrproject-rtos/zephyr/pull/56709>`_
+
+:cve:`2023-3725`
+----------------
+
+Zephyr CANbus 子系统中存在潜在的缓冲区溢出漏洞。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-2g3m-p6c7-8rr3 <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-2g3m-p6c7-8rr3>`_
+
+此问题已在 main 分支中修复，将包含在 v3.5.0 中。
+
+- `main 的修复 PR 61502 <https://github.com/zephyrproject-rtos/zephyr/pull/61502>`_
+
+- `3.4 的修复 PR 61518 <https://github.com/zephyrproject-rtos/zephyr/pull/61518>`_
+
+- `3.3 的修复 PR 61517 <https://github.com/zephyrproject-rtos/zephyr/pull/61517>`_
+
+- `2.7 的修复 PR 61516 <https://github.com/zephyrproject-rtos/zephyr/pull/61516>`_
+
+:cve:`2023-4257`
+----------------
+
+Zephyr WiFi shell 模块中未检查的用户输入长度可能导致缓冲区溢出。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-853q-q69w-gf5j <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-853q-q69w-gf5j>`_
+
+此问题已在 main 分支中修复，将包含在 v3.5.0 中。
+
+- `main 的修复 PR 605377 <https://github.com/zephyrproject-rtos/zephyr/pull/605377>`_
+
+- `3.4 的修复 PR 61383 <https://github.com/zephyrproject-rtos/zephyr/pull/61383>`_
+
+:cve:`2023-4258`
+----------------
+
+bt: mesh: provisionee 侧配网协议实现中的漏洞
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-m34c-cp63-rwh7 <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-m34c-cp63-rwh7>`_
+
+此问题已在 main 分支中修复，将包含在 v3.5.0 中。
+
+- `main 的修复 PR 59467 <https://github.com/zephyrproject-rtos/zephyr/pull/59467>`_
+
+- `3.4 的修复 PR 60078 <https://github.com/zephyrproject-rtos/zephyr/pull/60078>`_
+
+- `3.3 的修复 PR 60079 <https://github.com/zephyrproject-rtos/zephyr/pull/60079>`_
+
+:cve:`2023-4259`
+----------------
+
+Zephyr eS-WiFi 驱动中的缓冲区溢出漏洞
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-gghm-c696-f4j4 <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-gghm-c696-f4j4>`_
+
+此问题已在 main 分支中修复，将包含在 v3.5.0 中。
+
+- `main 的修复 PR 63074 <https://github.com/zephyrproject-rtos/zephyr/pull/63074>`_
+
+- `main 的修复 PR 63750 <https://github.com/zephyrproject-rtos/zephyr/pull/63750>`_
+
+:cve:`2023-4260`
+----------------
+
+Zephyr FS 子系统中的 off-by-one 缓冲区溢出漏洞
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-gj27-862r-55wh <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-gj27-862r-55wh>`_
+
+此问题已在 main 分支中修复，将包含在 v3.5.0 中。
+
+- `main 的修复 PR 63079 <https://github.com/zephyrproject-rtos/zephyr/pull/63079>`_
+
+:cve:`2023-4262`
+----------------
+
+- 经过进一步分析，此问题被确定为误报。
+
+:cve:`2023-4263`
+----------------
+
+Zephyr IEEE 802.15.4 nRF 15.4 驱动中存在潜在的缓冲区溢出漏洞。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-rf6q-rhhp-pqhf <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-rf6q-rhhp-pqhf>`_
+
+此问题已在 main 分支中修复，将包含在 v3.5.0 中。
+
+- `main 的修复 PR 60528 <https://github.com/zephyrproject-rtos/zephyr/pull/60528>`_
+
+- `3.4 的修复 PR 61384 <https://github.com/zephyrproject-rtos/zephyr/pull/61384>`_
+
+- `2.7 的修复 PR 61216 <https://github.com/zephyrproject-rtos/zephyr/pull/61216>`_
+
+:cve:`2023-4264`
+----------------
+
+Zephyr Bluetooth 子系统中存在潜在的缓冲区溢出漏洞
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-rgx6-3w4j-gf5j <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-rgx6-3w4j-gf5j>`_
+
+此问题已在 main 分支中修复，将包含在 v3.5.0 中。
+
+- `main 的修复 PR 58834 <https://github.com/zephyrproject-rtos/zephyr/pull/58834>`_
+
+- `main 的修复 PR 60465 <https://github.com/zephyrproject-rtos/zephyr/pull/60465>`_
+
+- `main 的修复 PR 61845 <https://github.com/zephyrproject-rtos/zephyr/pull/61845>`_
+
+- `3.4 的修复 PR 61385 <https://github.com/zephyrproject-rtos/zephyr/pull/61385>`_
+
+:cve:`2023-4265`
+----------------
+
+Zephyr USB 代码中存在两个潜在的缓冲区溢出漏洞
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-4vgv-5r6q-r6xh <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-4vgv-5r6q-r6xh>`_
+
+此问题已在 main 分支中修复，将包含在 v3.4.0 中。
+
+- `main 的修复 PR 59157 <https://github.com/zephyrproject-rtos/zephyr/pull/59157>`_
+- `main 的修复 PR 59018 <https://github.com/zephyrproject-rtos/zephyr/pull/59018>`_
+
+:cve:`2023-4424`
+----------------
+
+bt: hci: DoS 与可能的 RCE
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-j4qm-xgpf-qjw3 <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-j4qm-xgpf-qjw3>`_
+
+此问题已在 main 分支中修复，将包含在 v3.5.0 中。
+
+- `main 的修复 PR 61651 <https://github.com/zephyrproject-rtos/zephyr/pull/61651>`_
+
+- `3.4 的修复 PR 61696 <https://github.com/zephyrproject-rtos/zephyr/pull/61696>`_
+
+- `3.3 的修复 PR 61695 <https://github.com/zephyrproject-rtos/zephyr/pull/61695>`_
+
+- `2.7 的修复 PR 61694 <https://github.com/zephyrproject-rtos/zephyr/pull/61694>`_
+
+
+:cve:`2023-5055`
+----------------
+
+L2CAP：le_ecred_reconf_req() 中可能存在基于栈的缓冲区溢出
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-wr8r-7f8x-24jj <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-wr8r-7f8x-24jj>`_
+
+此问题已在 main 分支中修复，将包含在 v3.5.0 中。
+
+- `main 的修复 PR 62381 <https://github.com/zephyrproject-rtos/zephyr/pull/62381>`_
+
+
+:cve:`2023-5139`
+----------------
+
+Zephyr STM32 Crypto 驱动中存在潜在的缓冲区溢出漏洞。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-rhrc-pcxp-4453 <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-rhrc-pcxp-4453>`_
+
+此问题已在 main 分支中修复，将包含在 v3.5.0 中。
+
+- `main 的修复 PR 61839 <https://github.com/zephyrproject-rtos/zephyr/pull/61839>`_
+
+:cve:`2023-5184`
+----------------
+
+Zephyr IPM 驱动中可能存在有符号到无符号转换错误和缓冲区溢出漏洞
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-8x3p-q3r5-xh9g <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-8x3p-q3r5-xh9g>`_
+
+此问题已在 main 分支中修复，将包含在 v3.5.0 中。
+
+- `main 的修复 PR 63069 <https://github.com/zephyrproject-rtos/zephyr/pull/63069>`_
+
+:cve:`2023-5563`
+----------------
+
+当使用 CONFIG_CAN_AUTO_BUS_OFF_RECOVERY=y 构建时，SJA1000 CAN 控制器驱动后端会自动尝试从总线关闭事件中恢复。这会导致在 IRQ 上下文中调用 k_sleep()，从而引发致命异常。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-98mc-rj7w-7rpv <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-98mc-rj7w-7rpv>`_
+
+此问题已在 main 分支中修复，将包含在 v3.5.0 中。
+
+- `main 的修复 PR 63713 <https://github.com/zephyrproject-rtos/zephyr/pull/63713>`_
+
+- `3.4 的修复 PR 63718 <https://github.com/zephyrproject-rtos/zephyr/pull/63718>`_
+
+- `3.3 的修复 PR 63717 <https://github.com/zephyrproject-rtos/zephyr/pull/63717>`_
+
+:cve:`2023-5753`
+----------------
+
+在禁用断言时，Zephyr Bluetooth 子系统源代码中存在潜在的缓冲区溢出漏洞。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-hmpr-px56-rvww <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-hmpr-px56-rvww>`_
+
+此问题已在 main 分支中修复，将包含在 v3.5.0 中。
+
+- `main 的修复 PR 63605 <https://github.com/zephyrproject-rtos/zephyr/pull/63605>`_
+
+
+:cve:`2023-5779`
+----------------
+
+多个 CAN 驱动中的 remove_rx_filter 存在越界问题。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-7cmj-963q-jj47 <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-7cmj-963q-jj47>`_
+
+此问题已在 main 分支中修复，将包含在 v3.6.0 中。
+
+- `main 的修复 PR 64399 <https://github.com/zephyrproject-rtos/zephyr/pull/64399>`_
+
+- `3.5 的修复 PR 64416 <https://github.com/zephyrproject-rtos/zephyr/pull/64416>`_
+
+- `3.4 的修复 PR 64415 <https://github.com/zephyrproject-rtos/zephyr/pull/64415>`_
+
+- `3.3 的修复 PR 64427 <https://github.com/zephyrproject-rtos/zephyr/pull/64427>`_
+
+- `2.7 的修复 PR 64431 <https://github.com/zephyrproject-rtos/zephyr/pull/64431>`_
+
+:cve:`2023-6249`
+----------------
+
+esp32_ipm_send 中的有符号到无符号转换问题可能导致缓冲区溢出
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-32f5-3p9h-2rqc <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-32f5-3p9h-2rqc>`_
+
+此问题已在 main 分支中修复，将包含在 v3.6.0 中。
+
+- `main 的修复 PR 65546 <https://github.com/zephyrproject-rtos/zephyr/pull/65546>`_
+
+:cve:`2023-6749`
+----------------
+
+settings shell 中来自用户输入的未检查数据可能导致缓冲区溢出。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-757h-rw37-66hw <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-757h-rw37-66hw>`_
+
+此问题已在 main 分支中修复，将包含在 v3.6.0 中。
+
+- `main 的修复 PR 66451 <https://github.com/zephyrproject-rtos/zephyr/pull/66451>`_
+
+- `3.5 的修复 PR 66584 <https://github.com/zephyrproject-rtos/zephyr/pull/66584>`_
+
+:cve:`2023-6881`
+----------------
+
+Zephyr fuse 文件系统中存在潜在的缓冲区溢出漏洞。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-mh67-4h3q-p437 <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-mh67-4h3q-p437>`_
+
+此问题已在 main 分支中修复，将包含在 v3.6.0 中。
+
+- `main 的修复 PR 66592 <https://github.com/zephyrproject-rtos/zephyr/pull/66592>`_
+
+:cve:`2023-7060`
+----------------
+
+Zephyr OS IP 数据包处理中缺少安全控制
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-fjc8-223c-qgqr <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-fjc8-223c-qgqr>`_
+
+此问题已在 main 分支中修复，将包含在 v3.6.0 中。
+
+- `main 的修复 PR 66645 <https://github.com/zephyrproject-rtos/zephyr/pull/66645>`_
+
+- `3.5 的修复 PR 66739 <https://github.com/zephyrproject-rtos/zephyr/pull/66739>`_
+
+- `3.4 的修复 PR 66738 <https://github.com/zephyrproject-rtos/zephyr/pull/66738>`_
+
+- `2.7 的修复 PR 66887 <https://github.com/zephyrproject-rtos/zephyr/pull/66887>`_

@@ -1,0 +1,47 @@
+.. SPDX-FileCopyrightText: Copyright The Process Mission
+
+..
+   SPDX-FileCopyrightText: Copyright The Zephyr Project Contributors
+   SPDX-License-Identifier: Apache-2.0
+
+:orphan:
+
+.. _page-not-found:
+
+抱歉，找不到此页面
+##################
+
+.. image:: images/Zephyr-Kite-in-tree.png
+   :align: right
+
+.. raw:: html
+
+   <noscript>
+   Sorry, the page you requested was not found on this site.
+   </noscript>
+   <script type="text/javaScript">
+   <!--
+   var strReferrer=document.referrer;
+   if (strReferrer.length > 0) {
+      document.write("<p>Sorry, the page you requested: " +
+      "<a href=\"" + strReferrer + "\">" +
+      strReferrer + "</a> was not found on this site.</p>");
+   } else {
+      document.write("<p>Sorry, the page you requested was not found on this site.</p>")
+   }
+   //-->
+   </script>
+
+请检查网址中是否有拼写错误。
+
+您访问的页面也可能已被删除或更名。
+
+请使用页面左侧的导航链接浏览本站主要章节，或使用搜索框查找内容。
+
+如果您是通过链接访问此页面时遇到此错误，请在 `GitHub`_ 上创建 issue 告知我们。
+
+.. _GitHub: https://github.com/zephyrproject-rtos/zephyr/issues
+
+.. raw:: html
+
+   <div style='clear:both'></div>

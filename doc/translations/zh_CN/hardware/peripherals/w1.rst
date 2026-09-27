@@ -1,0 +1,88 @@
+.. SPDX-FileCopyrightText: Copyright The Process Mission
+
+..
+   SPDX-FileCopyrightText: Copyright The Zephyr Project Contributors
+   SPDX-License-Identifier: Apache-2.0
+
+.. _w1_api:
+
+1-Wire 总线
+###########
+
+概述
+****
+
+1-Wire 是一种低速半双工串行总线，仅使用一根导线加地线即可实现数据传输和设备供电。与 I2C 类似，1-Wire 使用双向集电极开路数据线，是一种单主机多点总线。这意味着所有与从设备的数据交换均由一个主机发起。1-Wire 总线支持比 I2C 更长的总线线路，标准模式下速率最高可达 15.4 kbps，超速模式下最高可达 125 kbps。在标准速率配置下，长度为 100 米、连接 10 个节点的总线可以实现可靠通信。使用超速模式时，长度为 10 米、连接 3 个节点的总线预计可以稳定工作。优化时序参数并减少总线上的节点数量，可能进一步延长总线距离。
+
+实现细节见 `BOOK OF IBUTTON STANDARDS`_ 。
+
+.. figure:: 1-Wire_bus_topology.drawio.svg
+   :align: center
+   :alt: 1-Wire 总线拓扑
+
+   典型的 1-Wire 总线拓扑
+
+
+.. _w1-master-api:
+
+W1 主机 API
+===========
+
+Zephyr 的 1-Wire 主机 API 用于与温度传感器、串行存储器等 1-Wire 从设备交互。
+
+在 Zephyr 中，此 API 分为以下几层。
+
+* 链路层处理总线复位、存在检测和位传输操作等基本通信功能。它是 Zephyr 中唯一依赖硬件的层。该层由使用 Zephyr :ref:`uart_api` 接口的驱动提供支持，应该能够在大多数 Zephyr 平台上工作。未来可能会添加基于 GPIO/定时器的驱动以及针对特定硬件的驱动。
+* 1-Wire 网络层处理从设备识别和总线仲裁所需的所有机制，包括 Match ROM、Search ROM 等 ROM 命令。
+
+   * 所有从设备都有一个唯一的 64 位标识号，其中包含一个 8 位的 `1-Wire Family Code`_ 和一个 8 位的 CRC。
+   * 为了查找总线上的从设备，标准规定了一种搜索算法，可以逐一检测总线上的所有从设备。该算法在 `1-Wire Search Algorithm Application Note`_ 中有详细说明。
+
+* 通用 1-Wire 驱动未实现传输层和表示层功能，因此这些功能必须由各个从设备驱动处理。
+
+1-Wire API 目前处于实验阶段。
+
+
+配置选项
+********
+
+相关配置选项：
+
+* :kconfig:option:`CONFIG_W1`
+* :kconfig:option:`CONFIG_W1_NET`
+
+
+W1 串行驱动
+***********
+
+``zephyr,w1-serial`` 驱动使用 UART 外设实现 1-Wire 接口。每个 1-Wire 位都被编码为一个字节，通过 UART 发送。在标准速率下，数据传输使用 115200 波特，复位/存在检测使用 9600 波特。在超速模式下，波特率可配置，默认数据传输使用 1000000 波特，复位/存在检测使用 115200 波特。
+
+API 参考
+********
+
+1-Wire 数据链路层
+=================
+
+.. doxygengroup:: w1_data_link
+
+1-Wire 网络层
+=============
+
+.. doxygengroup:: w1_network
+
+1-Wire 通用函数和辅助函数
+=========================
+
+与任何网络分层均无直接关系的函数。
+
+.. doxygengroup:: w1_interface
+
+
+.. _BOOK OF IBUTTON STANDARDS:
+   https://www.analog.com/en/resources/technical-articles/book-of-ibuttonreg-standards.html
+
+.. _1-Wire Family Code:
+   https://www.analog.com/en/resources/technical-articles/1wire-software-resource-guide-device-description.html
+
+.. _1-Wire Search Algorithm Application Note:
+   https://www.analog.com/en/resources/app-notes/1wire-search-algorithm.html

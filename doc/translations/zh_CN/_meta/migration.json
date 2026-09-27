@@ -1,0 +1,14 @@
+{
+    "format": "Complete reStructuredText sources; localized HTML templates and search JavaScript",
+    "rst_documents": 768,
+    "catalog_entries_migrated": 39277,
+    "generated_entries_excluded": 570,
+    "manual_adjustments": [
+        "Included README prose migrated as README.rst",
+        "Maintenance instructions rewritten for RST workflow",
+        "Implicit Contents title uses the Sphinx document language",
+        "Literal block delimiters, implicit links, glossary aliases, and table widths repaired"
+    ],
+    "review": "Existing translations were reused and structurally checked; this is not a full linguistic review.",
+    "publication": "Chinese pages only; English originals and standalone generated references link upstream."
+}

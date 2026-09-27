@@ -1,0 +1,20 @@
+{# SPDX-FileCopyrightText: Copyright The Process Mission #}
+{# SPDX-FileCopyrightText: Copyright The Zephyr Project Contributors
+   SPDX-License-Identifier: Apache-2.0 #}
+{% extends "layout.html" %}
+{% set title = "搜索" %}
+{% block footer %}
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      Search.loadIndex("{{ pathto('searchindex.js', 1) }}?v={{ search_index_version }}");
+    });
+  </script>
+  {{ super() }}
+{% endblock %}
+{% block body %}
+  <h1>搜索文档</h1>
+  <p>输入关键词查找本站译文，也可以用英文检索技术标识符和 API 名称。</p>
+  <p><a id="upstream-search" href="{{ docs_upstream_base_url }}search.html">搜索上游英文文档</a></p>
+  <noscript><p>请启用 JavaScript 后使用搜索功能。</p></noscript>
+  <div id="search-results"></div>
+{% endblock %}

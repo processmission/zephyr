@@ -1,0 +1,164 @@
+.. SPDX-FileCopyrightText: Copyright The Process Mission
+
+..
+   SPDX-FileCopyrightText: Copyright The Zephyr Project Contributors
+   SPDX-License-Identifier: Apache-2.0
+
+.. _ieee802154_interface:
+
+IEEE 802.15.4
+#############
+
+.. contents::
+    :local:
+    :depth: 2
+
+简介
+****
+
+IEEE 802.15.4 是一项技术标准，定义了低速率无线个域网（LR-WPAN）的运行方式。有关该标准的更详细概述，请参阅 `IEEE 802.15.4 维基百科条目 <https://en.wikipedia.org/wiki/IEEE_802.15.4>`_。
+
+最新版本的标准可通过 `IEEE GET Program <https://ieeexplore.ieee.org/browse/standards/get-program/page/series?id=68>`_ 获取。您需要创建一个免费的 IEEE 账户，然后即可下载。
+
+目前遵循的是 IEEE 802.15.4-2020 规范。该版本向后兼容 IEEE 802.15.4-2015，后者部分内容包含在 Thread 协议栈中。2020 版本还纳入了此前被标准接受的扩展，即 IEEE 802.15.4g（SUN FSK）和 IEEE 802.15.4e（TSCH），它们与工业物联网（IoT）和自动化相关。关于 UWB 测距技术的最新进展，请参见 IEEE 802.15.4z，它尚未集成到标准的主线中。
+
+除非另有说明，文档中引用标准章节时，均指 IEEE 802.15.4-2020 的章节、表格和插图编号。
+
+Zephyr 通过 6LoWPAN 同时支持原生 IEEE 802.15.4 和 Thread。Zephyr 的 :ref:`thread_protocol_interface` 实现基于 `OpenThread <https://openthread.io/>`_。6LoWPAN 中的 IPv6 报头压缩用于原生 IEEE 802.15.4。
+
+支持的驱动
+**********
+
+Zephyr 包含多个适用于各种硬件平台的树内 IEEE 802.15.4 无线驱动。下表概述了所有可用驱动及其供应商、支持的频段、总线接口，以及用于启用各驱动的 Kconfig 选项。
+
+.. list-table:: IEEE 802.15.4 树内无线驱动
+   :header-rows: 1
+   :widths: 15 15 30 15 10
+
+   * - 驱动
+     - 供应商
+     - 兼容
+     - 频段
+     - 总线
+   * - CC1200
+     - Texas Instruments
+     - :dtcompatible:`ti,cc1200`
+     - Sub-GHz
+     - SPI
+   * - CC13xx/CC26xx
+     - Texas Instruments
+     - :dtcompatible:`ti,cc13xx-cc26xx-ieee802154`
+     - 2.4 GHz
+     - 片上
+   * - CC13xx/CC26xx Sub-GHz
+     - Texas Instruments
+     - :dtcompatible:`ti,cc13xx-cc26xx-ieee802154-subghz`
+     - Sub-GHz
+     - 片上
+   * - CC2520
+     - Texas Instruments
+     - :dtcompatible:`ti,cc2520`
+     - 2.4 GHz
+     - SPI
+   * - DW1000
+     - Decawave (Qorvo)
+     - :dtcompatible:`decawave,dw1000`
+     - UWB（3.5–6.5 GHz）
+     - SPI
+   * - ESP32
+     - Espressif
+     - :dtcompatible:`espressif,esp32-ieee802154`
+     - 2.4 GHz
+     - 片上
+   * - KW41Z
+     - NXP
+     - :dtcompatible:`nxp,kw41z-ieee802154`
+     - 2.4 GHz
+     - 片上
+   * - MCR20A
+     - NXP
+     - :dtcompatible:`nxp,mcr20a`
+     - 2.4 GHz
+     - SPI
+   * - MCXW
+     - NXP
+     - :dtcompatible:`nxp,mcxw-ieee802154`
+     - 2.4 GHz
+     - 片上
+   * - nRF5
+     - Nordic Semiconductor
+     - :dtcompatible:`nordic,nrf-ieee802154`
+     - 2.4 GHz
+     - 片上
+   * - RF2XX (AT86RF2xx)
+     - Atmel (Microchip)
+     - :dtcompatible:`atmel,rf2xx`
+     - 2.4 GHz / Sub-GHz
+     - SPI
+   * - STM32WBA
+     - STMicroelectronics
+     - :dtcompatible:`st,stm32wba-ieee802154`
+     - 2.4 GHz
+     - 片上
+   * - Telink B91
+     - Telink Semiconductor
+     - :dtcompatible:`telink,b91-zb`
+     - 2.4 GHz
+     - 片上
+   * - UART Pipe
+     - 虚拟（QEMU）
+     - :dtcompatible:`zephyr,ieee802154-uart-pipe`
+     - 不适用（仿真）
+     - UART
+
+.. note::
+   UART Pipe 驱动是用于在 QEMU 环境中测试 IEEE 802.15.4 网络的虚拟驱动。它不适用于真实无线硬件。
+
+有关各驱动的详细配置选项，请参见 :zephyr_file:`drivers/ieee802154/` 中对应的 Kconfig 文件。
+
+API 参考
+********
+
+IEEE 802.15.4 API 概览
+======================
+
+面向所有读者，介绍并概述整个 IEEE 802.15.4 子系统及其所有 API、配置和用户接口。
+
+.. doxygengroup:: ieee802154
+
+
+.. _ieee802154_mgmt_api:
+
+IEEE 802.15.4 管理 API
+======================
+
+这是 IEEE 802.15.4 **应用开发者** 最需要关注的主要子系统专用 API，它允许在运行时配置 IEEE 802.15.4 子系统。应用开发者其他相关的接口还有典型的 shell、socket、Kconfig 和 devicetree API，可通过 Zephyr 与子系统无关的通用文档访问。请注意其中的 IEEE802154/ieee802154 前缀。
+
+.. doxygengroup:: ieee802154_mgmt
+
+
+.. _ieee802154_driver_api:
+
+IEEE 802.15.4 驱动 API
+======================
+
+这是 IEEE 802.15.4 **驱动开发者** 最需要关注的主要 API。
+
+.. doxygengroup:: ieee802154_driver
+
+
+.. _ieee802154_l2_api:
+
+IEEE 802.15.4 L2 / 原生协议栈 API
+=================================
+
+本文档介绍 IEEE 802.15.4 L2 原生协议栈，应用和驱动都不会直接访问它。它由 Zephyr 的上层网络层（L3+）、socket 和网络上下文抽象在内部调用。因此，该 API 仅供 IEEE 802.15.4 **子系统贡献者** 关注。
+
+.. doxygengroup:: ieee802154_l2
+
+OpenThread L2 适配层 API
+========================
+
+Zephyr 的 OpenThread L2 平台适配层将外部 OpenThread 协议栈与 Zephyr 的 IEEE 802.15.4 协议无关驱动 API 连接起来。该 API 仅供 OpenThread L2 **子系统贡献者** 关注。
+
+OpenThread API 属于 :ref:`thread_protocol_interface` 子系统，相关文档见该处。

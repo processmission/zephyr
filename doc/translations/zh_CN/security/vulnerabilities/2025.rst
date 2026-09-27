@@ -1,0 +1,239 @@
+.. SPDX-FileCopyrightText: Copyright The Process Mission
+
+..
+   SPDX-FileCopyrightText: Copyright The Zephyr Project Contributors
+   SPDX-License-Identifier: Apache-2.0
+
+.. _vulnerabilities_2025:
+
+CVE-2025
+########
+
+:cve:`2025-1673`
+----------------
+
+在 dns_validate_msg 中调用 crc16_ansi 和 strlen 时发生越界读取
+
+恶意或格式错误的 DNS 数据包如果没有有效载荷，可能引发越界读取，从而导致崩溃（拒绝服务）或计算错误。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-jjhx-rrh4-j8mx <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-jjhx-rrh4-j8mx>`_
+
+此问题已在 main 中针对 v4.1.0 修复。
+
+- `main 的修复 PR 82072 <https://github.com/zephyrproject-rtos/zephyr/pull/82072>`_
+
+- `4.0 的修复 PR 82289 <https://github.com/zephyrproject-rtos/zephyr/pull/82289>`_
+
+- `3.7 的修复 PR 82288 <https://github.com/zephyrproject-rtos/zephyr/pull/82288>`_
+
+:cve:`2025-1674`
+----------------
+
+解包 DNS 应答时发生越界读取
+
+由于缺少输入验证，恶意或格式错误的数据包可导致越界读取。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-x975-8pgf-qh66 <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-x975-8pgf-qh66>`_
+
+此问题已在 main 中针对 v4.1.0 修复。
+
+- `main 的修复 PR 82072 <https://github.com/zephyrproject-rtos/zephyr/pull/82072>`_
+
+- `4.0 的修复 PR 82289 <https://github.com/zephyrproject-rtos/zephyr/pull/82289>`_
+
+- `3.7 的修复 PR 82288 <https://github.com/zephyrproject-rtos/zephyr/pull/82288>`_
+
+:cve:`2025-1675`
+----------------
+
+dns_copy_qname 中的越界读取
+
+dns_pack.c 中的 dns_copy_qname 函数使用不可信字段执行 memcpy 操作，且不检查源缓冲区是否足够大，以容纳所复制的数据。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-2m84-5hfw-m8v4 <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-2m84-5hfw-m8v4>`_
+
+此问题已在 main 中针对 v4.1.0 修复。
+
+- `main 的修复 PR 82072 <https://github.com/zephyrproject-rtos/zephyr/pull/82072>`_
+
+- `4.0 的修复 PR 82289 <https://github.com/zephyrproject-rtos/zephyr/pull/82289>`_
+
+- `3.7 的修复 PR 82288 <https://github.com/zephyrproject-rtos/zephyr/pull/82288>`_
+
+:cve:`2025-2962`
+----------------
+
+dns_copy_qname 中的无限循环
+
+dns 实现中的拒绝服务问题可能导致无限循环。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-2qp5-c2vq-g2ww <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-2qp5-c2vq-g2ww>`_
+
+此问题已在 main 中针对 v4.2.0 修复。
+
+- `main 的修复 PR 87753 <https://github.com/zephyrproject-rtos/zephyr/pull/87753>`_
+
+- `4.1 的修复 PR 87925 <https://github.com/zephyrproject-rtos/zephyr/pull/87925>`_
+
+- `3.7 的修复 PR 87949 <https://github.com/zephyrproject-rtos/zephyr/pull/87949>`_
+
+:cve:`2025-7403`
+----------------
+
+Bluetooth：bt_conn_tx_processor 的不安全处理
+
+bt_conn_tx_processor 中的不安全处理会导致 use-after-free，进而造成 write-before-zero。写入的 4 个字节由攻击者控制，可实现精确的内存破坏。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-9r46-cqqw-6j2j <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-9r46-cqqw-6j2j>`_
+
+此问题已在 main 中针对 v4.2.0 修复。
+
+- `main 的修复 PR 90975 <https://github.com/zephyrproject-rtos/zephyr/pull/90975>`_
+
+:cve:`2025-10456`
+-----------------
+
+Bluetooth：半任意地使 BLE 目标设备发送断开连接请求的能力
+
+在 Bluetooth Low Energy（BLE）固定通道（如 SMP 或 ATT）的处理中发现了一个漏洞。具体而言，攻击者可利用一个缺陷，使 BLE 目标设备（即受攻击的设备）尝试断开固定通道，而 Bluetooth 规范不允许这样做。这会导致未定义行为，包括可能的断言失败、崩溃或内存损坏。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-hcc8-3qr7-c9m8 <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-hcc8-3qr7-c9m8>`_
+
+此问题已在 main 中针对 v4.2.0 修复。
+
+- `main 的修复 PR 93576 <https://github.com/zephyrproject-rtos/zephyr/pull/93576>`_
+
+- `3.7 的修复 PR 100474 <https://github.com/zephyrproject-rtos/zephyr/pull/100474>`_
+
+:cve:`2025-10457`
+-----------------
+
+Bluetooth：上下文之外的 le_conn_rsp 处理
+
+负责处理 BLE 连接响应的函数未验证响应是否在预期之内，即设备是否已发起连接请求，而只依赖标识符匹配。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-xqj6-vh76-2vv8 <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-xqj6-vh76-2vv8>`_
+
+此问题已在 main 中针对 v4.2.0 修复。
+
+- `main 的修复 PR 94080 <https://github.com/zephyrproject-rtos/zephyr/pull/94080>`_
+
+:cve:`2025-10458`
+-----------------
+
+Bluetooth：le_conn_rsp 未清理 CID、MTU 和 MPS 值
+
+这些参数未经校验或清理，随后被用于各种内部操作。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-vmww-237q-2fwp <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-vmww-237q-2fwp>`_
+
+此问题已在 main 中针对 v4.2.0 修复。
+
+- `main 的修复 PR 93174 <https://github.com/zephyrproject-rtos/zephyr/pull/93174>`_
+
+:cve:`2025-9408`
+----------------
+
+Cortex M 上的用户空间权限提升漏洞
+
+Cortex M（可能还有 R 和 A，但我认为没有）上的系统调用入口存在竞态，为恶意用户空间进程提供了非常切实可行的权限提升途径。
+
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-3r6j-5mp3-75wr <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-3r6j-5mp3-75wr>`_
+
+此问题已在 main 中针对 v4.3.0 修复。
+
+- `main 的修复 PR 95101 <https://github.com/zephyrproject-rtos/zephyr/pull/95101>`_
+- `main 的修复 PR 96850 <https://github.com/zephyrproject-rtos/zephyr/pull/96850>`_
+
+- `4.2 的修复 PR 96014 <https://github.com/zephyrproject-rtos/zephyr/pull/96014>`_
+- `4.2 的修复 PR 97306 <https://github.com/zephyrproject-rtos/zephyr/pull/97306>`_
+
+- `4.1 的修复 PR 96015 <https://github.com/zephyrproject-rtos/zephyr/pull/96015>`_
+- `4.1 的修复 PR 97305 <https://github.com/zephyrproject-rtos/zephyr/pull/97305>`_
+
+- `3.7 的修复 PR 96030 <https://github.com/zephyrproject-rtos/zephyr/pull/96030>`_
+- `3.7 的修复 PR 97313 <https://github.com/zephyrproject-rtos/zephyr/pull/97313>`_
+
+:cve:`2025-9557`
+----------------
+
+Bluetooth：Mesh：gen_prov_cont 中的越界写入
+
+越界写入可能导致任意代码执行。即使设备具有某种形式的内存保护，也仍可能导致崩溃并由此造成拒绝服务。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-r3j3-c5v7-2ppf <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-r3j3-c5v7-2ppf>`_
+
+此问题已在 main 中针对 v4.3.0 修复。
+
+- `main 的修复 PR 95061 <https://github.com/zephyrproject-rtos/zephyr/pull/95061>`_
+
+- `4.2 的修复 PR 97518 <https://github.com/zephyrproject-rtos/zephyr/pull/97518>`_
+
+- `4.1 的修复 PR 97517 <https://github.com/zephyrproject-rtos/zephyr/pull/97517>`_
+
+:cve:`2025-9558`
+----------------
+
+Bluetooth：Mesh：gen_prov_start 中的越界写入
+
+pb_adv.c 中的 gen_prov_start 函数存在潜在的越界写入（OOB Write）漏洞。接收数据的完整长度未经任何数据大小校验便被复制到 link.rx.buf 接收缓冲区中。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-8wvr-688x-68vr <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-8wvr-688x-68vr>`_
+
+此问题已在 main 中针对 v4.3.0 修复。
+
+- `main 的修复 PR 95064 <https://github.com/zephyrproject-rtos/zephyr/pull/95064>`_
+
+- `4.2 的修复 PR 97520 <https://github.com/zephyrproject-rtos/zephyr/pull/97520>`_
+
+- `4.1 的修复 PR 97519 <https://github.com/zephyrproject-rtos/zephyr/pull/97519>`_
+
+
+:cve:`2025-12035`
+-----------------
+
+Bluetooth：Bluetooth Classic（BR/EDR）L2CAP 中的整数溢出
+
+Bluetooth Host 协议栈中存在整数溢出问题，位于 bt_br_acl_recv 例程中，该例程是处理入站 BR/EDR L2CAP 流量的关键路径。
+
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-p793-3456-h7w3 <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-p793-3456-h7w3>`_
+
+此问题已在 main 中针对 v4.3.0 修复。
+
+- `main 的修复 PR 97370 <https://github.com/zephyrproject-rtos/zephyr/pull/97370>`_
+
+
+:cve:`2025-12890`
+-----------------
+
+Bluetooth：peripheral：对畸形连接请求的处理不当
+
+对 interval 设置为 1（本应不合法）且 chM 为 0x7CFFFFFFFF 的畸形 Connection Request 处理不当会触发崩溃。此后该 peripheral 设备将无法再被连接。
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-8hrf-pfww-83v9 <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-8hrf-pfww-83v9>`_
+
+此问题已在 main 中针对 v4.2.0 修复。
+
+- `main 的修复 PR 89955 <https://github.com/zephyrproject-rtos/zephyr/pull/89955>`_
+
+:cve:`2025-12899`
+-----------------
+
+net：icmp：越界内存读取
+
+Zephyr 网络协议栈中的缺陷会使包含 ICMP 类型 128 的 IPv4 数据包被误判为 ICMPv6 Echo Request。这会导致越界内存读取，并在网络子系统中构成潜在的信息泄露漏洞。
+
+
+- `Zephyr 项目缺陷跟踪系统 GHSA-c2vg-hj83-c2vg <https://github.com/zephyrproject-rtos/zephyr/security/advisories/GHSA-c2vg-hj83-c2vg>`_
+
+此问题已在 main 中针对 v4.3.0 修复。
+
+- `main 的修复 PR 98780 <https://github.com/zephyrproject-rtos/zephyr/pull/98780>`_
+
+- `4.2 的修复 PR 98983 <https://github.com/zephyrproject-rtos/zephyr/pull/98983>`_
+
+- `4.1 的修复 PR 98984 <https://github.com/zephyrproject-rtos/zephyr/pull/98984>`_
+
+- `3.7 的修复 PR 98985 <https://github.com/zephyrproject-rtos/zephyr/pull/98985>`_

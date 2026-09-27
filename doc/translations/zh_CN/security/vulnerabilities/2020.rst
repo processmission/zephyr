@@ -1,0 +1,478 @@
+.. SPDX-FileCopyrightText: Copyright The Process Mission
+
+..
+   SPDX-FileCopyrightText: Copyright The Zephyr Project Contributors
+   SPDX-License-Identifier: Apache-2.0
+
+.. _vulnerabilities_2020:
+
+CVE-2020
+########
+
+:cve:`2020-10019`
+-----------------
+
+Zephyr 的 USB DFU 中存在缓冲区溢出漏洞，通过 USB 连接的主机可能借此造成远程代码执行。
+
+此问题已在 v1.14.2、v2.2.0 和 v2.1.1 版本中修复。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-25 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-25>`_
+
+- `1.14.x 的修复 PR23460 <https://github.com/zephyrproject-rtos/zephyr/pull/23460>`_
+
+- `2.1.x 的修复 PR23457 <https://github.com/zephyrproject-rtos/zephyr/pull/23457>`_
+
+- `2.2.0 中的修复 PR23190 <https://github.com/zephyrproject-rtos/zephyr/pull/23190>`_
+
+:cve:`2020-10021`
+-----------------
+
+USB Mass Storage 中非对齐大小导致的越界写入
+
+USB Mass Storage 的 memoryWrite 处理程序中非对齐大小导致的越界写入。
+
+参见 NCC-ZEP-024、NCC-ZEP-025、NCC-ZEP-026
+
+此问题已在 v1.14.2 和 v2.2.0 版本中修复。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-26 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-26>`_
+
+- `v1.14.2 的修复 PR23455 <https://github.com/zephyrproject-rtos/zephyr/pull/23455>`_
+
+- `v2.1 分支的修复 PR23456 <https://github.com/zephyrproject-rtos/zephyr/pull/23456>`_
+
+- `v2.2.0 的修复 PR23240 <https://github.com/zephyrproject-rtos/zephyr/pull/23240>`_
+
+:cve:`2020-10022`
+-----------------
+
+UpdateHub 模块将可变大小的哈希字符串复制到固定大小的数组
+
+从 UpdateHub 服务器接收到的格式错误的 JSON 负载可能触发 Zephyr OS 中的内存损坏。最好的情况是导致拒绝服务，最坏的情况是导致代码执行。
+
+参见 NCC-ZEP-016
+
+此问题已通过下列针对 main、v2.1.0 分支和 v2.2.0 分支的拉取请求修复。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-28 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-28>`_
+
+- `main 的修复 PR24154 <https://github.com/zephyrproject-rtos/zephyr/pull/24154>`_
+
+- `v2.1.0 分支的修复 PR24065 <https://github.com/zephyrproject-rtos/zephyr/pull/24065>`_
+
+- `v2.2.0 分支的修复 PR24066 <https://github.com/zephyrproject-rtos/zephyr/pull/24066>`_
+
+:cve:`2020-10023`
+-----------------
+
+shell 子系统在 shell_spaces_trim 中存在缓冲区溢出漏洞
+
+shell 子系统中存在缓冲区溢出，能够物理访问设备的攻击者可以造成内存损坏，导致拒绝服务，甚至可能在 Zephyr 内核中执行代码。
+
+参见 NCC-ZEP-019
+
+此问题已在 v1.14.2、v2.2.0 版本以及 v2.1.0 分支中修复，
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-29 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-29>`_
+
+- `v1.14.2 的修复 PR23646 <https://github.com/zephyrproject-rtos/zephyr/pull/23646>`_
+
+- `v2.1.0 分支的修复 PR23649 <https://github.com/zephyrproject-rtos/zephyr/pull/23649>`_
+
+- `v2.2.0 的修复 PR23304 <https://github.com/zephyrproject-rtos/zephyr/pull/23304>`_
+
+:cve:`2020-10024`
+-----------------
+
+ARM 平台在验证系统调用编号时使用有符号整数比较
+
+ARM 平台相关代码在验证系统调用编号时使用有符号整数比较。已在用户线程中获得代码执行能力的攻击者可以将权限提升到内核权限。
+
+参见 NCC-ZEP-001
+
+此问题已在 v1.14.2 和 v2.2.0 版本以及 v2.1.0 分支中修复，
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-30 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-30>`_
+
+- `v1.14.2 的修复 PR23535 <https://github.com/zephyrproject-rtos/zephyr/pull/23535>`_
+
+- `v2.1.0 分支的修复 PR23498 <https://github.com/zephyrproject-rtos/zephyr/pull/23498>`_
+
+- `v2.2.0 的修复 PR23323 <https://github.com/zephyrproject-rtos/zephyr/pull/23323>`_
+
+:cve:`2020-10027`
+-----------------
+
+ARC 平台在验证系统调用编号时使用有符号整数比较
+
+已在用户线程中获得代码执行能力的攻击者可以将权限提升到内核权限。
+
+参见 NCC-ZEP-001
+
+此问题已在 v1.14.2 和 v2.2.0 版本以及 v2.1.0 分支中修复。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-35 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-35>`_
+
+- `v1.14.2 的修复 PR23500 <https://github.com/zephyrproject-rtos/zephyr/pull/23500>`_
+
+- `v2.1.0 分支的修复 PR23499 <https://github.com/zephyrproject-rtos/zephyr/pull/23499>`_
+
+- `v2.2.0 的修复 PR23328 <https://github.com/zephyrproject-rtos/zephyr/pull/23328>`_
+
+:cve:`2020-10028`
+-----------------
+
+GPIO 子系统中的多个系统调用未进行参数验证
+
+多个系统调用的参数验证不充分
+
+参见 NCC-ZEP-006
+
+此问题已在 v1.14.2 和 v2.2.0 版本以及 v2.1.0 分支中修复。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-32 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-32>`_
+
+- `v1.14.2 的修复 PR23733 <https://github.com/zephyrproject-rtos/zephyr/pull/23733>`_
+
+- `v2.1.0 分支的修复 PR23737 <https://github.com/zephyrproject-rtos/zephyr/pull/23737>`_
+
+- `v2.2.0 的修复 PR23308（gpio 补丁） <https://github.com/zephyrproject-rtos/zephyr/pull/23308>`_
+
+:cve:`2020-10058`
+-----------------
+
+kscan 子系统中的多个系统调用未进行参数验证
+
+kscan 子系统中的多个系统调用执行的参数验证不充分，可能使用户空间中执行的代码获得提升的权限。
+
+参见 NCC-ZEP-006
+
+此问题已在 v2.1.0 分支和 v2.2.0 版本中修复。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-34 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-34>`_
+
+- `v2.1.0 分支的修复 PR23748 <https://github.com/zephyrproject-rtos/zephyr/pull/23748>`_
+
+- `v2.2.0 的修复 PR23308（kscan 补丁） <https://github.com/zephyrproject-rtos/zephyr/pull/23308>`_
+
+:cve:`2020-10059`
+-----------------
+
+UpdateHub 模块显式禁用 TLS 验证
+
+UpdateHub 模块禁用了 DTLS 对端检查，这会导致中间人攻击。固件映像要求有效签名，这缓解了该问题。然而，在没有对端检查的情况下使用 DTLS 并无益处。
+
+参见 NCC-ZEP-018
+
+此问题已在针对 Zephyr main 的 PR 中修复。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-36 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-36>`_
+
+- `main 上的修复 PR24954（将在 v2.3.0 中修复） <https://github.com/zephyrproject-rtos/zephyr/pull/24954>`_
+
+- `v2.1.0 的修复 PR24954 <https://github.com/zephyrproject-rtos/zephyr/pull/24999>`_
+
+- `v2.2.0 的修复 PR24954 <https://github.com/zephyrproject-rtos/zephyr/pull/24997>`_
+
+:cve:`2020-10060`
+-----------------
+
+UpdateHub 可能解引用未初始化的指针
+
+在 updatehub_probe 中，JSON 解析完成后，代码会从输出结构中的两个不同位置访问 objects\[1]。如果 JSON 包含的元素少于两个，该访问将引用未初始化的栈内存。这可能导致崩溃、拒绝服务，甚至可能造成信息泄露。
+
+建议在修复可用之前禁用 updatehub。
+
+参见 NCC-ZEP-030
+
+此问题已在针对 Zephyr main 的 PR 中修复。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-37 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-37>`_
+
+- `main 上的修复 PR27865（将在 v2.4.0 中修复） <https://github.com/zephyrproject-rtos/zephyr/pull/27865>`_
+
+- `v2.3.0 的修复 PR27865 <https://github.com/zephyrproject-rtos/zephyr/pull/27889>`_
+
+- `v2.2.0 的修复 PR27865 <https://github.com/zephyrproject-rtos/zephyr/pull/27891>`_
+
+- `v2.1.0 的修复 PR27865 <https://github.com/zephyrproject-rtos/zephyr/pull/27893>`_
+
+:cve:`2020-10061`
+-----------------
+
+无效数据包序列的错误处理
+
+Zephyr Bluetooth 实现中对缓冲区已满情况的处理不当可能导致内存损坏。
+
+此问题已在 v1.14.0 和 v2.2.0 分支中修复，并将包含在 v2.3.0 中。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-75 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-75>`_
+
+- `v2.3 的修复 PR23516（拆分驱动） <https://github.com/zephyrproject-rtos/zephyr/pull/23516>`_
+
+- `v2.3 的修复 PR23517（传统驱动） <https://github.com/zephyrproject-rtos/zephyr/pull/23517>`_
+
+- `v1.14.0 分支的修复 PR23091 <https://github.com/zephyrproject-rtos/zephyr/pull/23091>`_
+
+- `v2.2.0 分支的修复 PR23547 <https://github.com/zephyrproject-rtos/zephyr/pull/23547>`_
+
+:cve:`2020-10062`
+-----------------
+
+MQTT 中数据包长度解码错误
+
+CVE：Zephyr 项目的 MQTT 数据包长度解码器中存在差一错误，可能导致内存损坏并可能造成远程代码执行。NCC-ZEP-031
+
+MQTT 数据包头长度可以为 1 到 4 字节。代码中的差一错误可能导致其被解释为 5 字节，从而引发整数溢出，导致内存损坏。
+
+此问题已在 main 中针对 v2.3 修复。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-84 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-84>`_
+
+- `v2.3 的提交 11b7a37d <https://github.com/zephyrproject-rtos/zephyr/pull/23821/commits/11b7a37d9a0b438270421b224221d91929843de4>`_
+
+- `NCC-ZEP report`_ (NCC-ZEP-031)
+
+.. _NCC-ZEP report: https://research.nccgroup.com/2020/05/26/research-report-zephyr-and-mcuboot-security-assessment
+
+:cve:`2020-10063`
+-----------------
+
+CoAP 选项解析中因整数溢出导致的远程拒绝服务
+
+能够发送任意 CoAP 数据包供 Zephyr 解析的远程攻击者可以造成拒绝服务。
+
+此问题已在 main 中针对 v2.3 修复。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-55 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-55>`_
+
+- `main 中针对 v2.3 的修复 PR24435 <https://github.com/zephyrproject-rtos/zephyr/pull/24435>`_
+
+- `v2.2 分支的修复 PR24531 <https://github.com/zephyrproject-rtos/zephyr/pull/24531>`_
+
+- `v2.1 分支的修复 PR24535 <https://github.com/zephyrproject-rtos/zephyr/pull/24535>`_
+
+- `v1.14 分支的修复 PR24530 <https://github.com/zephyrproject-rtos/zephyr/pull/24530>`_
+
+- `NCC-ZEP report`_ (NCC-ZEP-032)
+
+:cve:`2020-10064`
+-----------------
+
+ieee802154 处理中的输入帧验证不当
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-65 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-65>`_
+
+- `v2.4 的修复 PR24971 <https://github.com/zephyrproject-rtos/zephyr/pull/24971>`_
+
+- `v1.4 的修复 PR33451 <https://github.com/zephyrproject-rtos/zephyr/pull/33451>`_
+
+:cve:`2020-10065`
+-----------------
+
+在 Bluetooth HCI over SPI 驱动中，对 HCI_ACL 数据包未验证用户提供的长度（<= 0xffff）便将其复制到固定大小的缓冲区（默认：77 字节），从而导致越界写入。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-66 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-66>`_
+
+- 此问题尚未修复。
+
+:cve:`2020-10066`
+-----------------
+
+Bluetooth HCI 核心中的错误处理不正确
+
+在 hci_cmd_done 中，buf 参数以 null 传入会导致空指针解引用。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-67 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-67>`_
+
+- `v2.4 的修复 PR24902 <https://github.com/zephyrproject-rtos/zephyr/pull/24902>`_
+
+- `v1.4 的修复 PR25089 <https://github.com/zephyrproject-rtos/zephyr/pull/25089>`_
+
+:cve:`2020-10067`
+-----------------
+
+is_in_region 中的整数溢出允许用户线程访问内核内存
+
+恶意用户空间应用可以造成整数溢出，从而绕过系统调用处理程序执行的安全检查。其影响取决于底层系统调用，轻则导致拒绝服务，重则造成信息泄露，甚至引发内存损坏并在内核中执行代码。
+
+参见 NCC-ZEP-005
+
+此问题已在 v1.14.2 和 v2.2.0 版本中修复。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-27 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-27>`_
+
+- `v1.14.2 的修复 PR23653 <https://github.com/zephyrproject-rtos/zephyr/pull/23653>`_
+
+- `v2.1 分支的修复 PR23654 <https://github.com/zephyrproject-rtos/zephyr/pull/23654>`_
+
+- `v2.2.0 的修复 PR23239 <https://github.com/zephyrproject-rtos/zephyr/pull/23239>`_
+
+:cve:`2020-10068`
+-----------------
+
+Zephyr Bluetooth DLE 重复请求漏洞
+
+在 Zephyr 项目 Bluetooth 子系统中，某些重复和连续的数据包可能导致行为异常，从而造成拒绝服务。
+
+此问题已在 v1.14.0 和 v2.2.0 分支中修复，并将包含在 v2.3.0 中。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-78 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-78>`_
+
+- `v2.3 的修复 PR23707（拆分驱动） <https://github.com/zephyrproject-rtos/zephyr/pull/23707>`_
+
+- `v2.3 的修复 PR23708（传统驱动） <https://github.com/zephyrproject-rtos/zephyr/pull/23708>`_
+
+- `v1.14.0 分支的修复 PR23091 <https://github.com/zephyrproject-rtos/zephyr/pull/23091>`_
+
+- `v2.2.0 的修复 PR23964 <https://github.com/zephyrproject-rtos/zephyr/pull/23964>`_
+
+:cve:`2020-10069`
+-----------------
+
+Zephyr Bluetooth 未检查的数据包数据导致拒绝服务
+
+Bluetooth 数据中未经检查的参数可能导致断言失败或除零，从而造成拒绝服务攻击。
+
+此问题已在 v1.14.0 和 v2.2.0 分支中修复，并将包含在 v2.3.0 中。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-81 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-81>`_
+
+- `v2.3 的修复 PR23705（拆分驱动） <https://github.com/zephyrproject-rtos/zephyr/pull/23705>`_
+
+- `v2.3 的修复 PR23706（传统驱动） <https://github.com/zephyrproject-rtos/zephyr/pull/23706>`_
+
+- `v1.14.0 分支的修复 PR23091 <https://github.com/zephyrproject-rtos/zephyr/pull/23091>`_
+
+- `v2.2.0 分支的修复 PR23963 <https://github.com/zephyrproject-rtos/zephyr/pull/23963>`_
+
+:cve:`2020-10070`
+-----------------
+
+MQTT 接收缓冲区上发生缓冲区溢出
+
+在 Zephyr 项目的 MQTT 代码中，边界检查不当可能导致内存损坏，并可能造成远程代码执行。NCC-ZEP-031
+
+计算数据包长度时，算术溢出可能导致接受大于可用缓冲区空间的接收缓冲区，从而使用户数据被写入该缓冲区之外。
+
+此问题已在 main 中针对 v2.3 修复。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-85 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-85>`_
+
+- `v2.3 的提交 0b39cbf3 <https://github.com/zephyrproject-rtos/zephyr/pull/23821/commits/0b39cbf3c01d7feec9d0dd7cc7e0e374b6113542>`_
+
+- `NCC-ZEP report`_ (NCC-ZEP-031)
+
+:cve:`2020-10071`
+-----------------
+
+MQTT 中发布消息长度验证不充分
+
+Zephyr MQTT 解析代码对发布消息的长度字段检查不充分，可能导致缓冲区溢出，并可能造成远程代码执行。NCC-ZEP-031
+
+此问题已在 main 中针对 v2.3 修复。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-86 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-86>`_
+
+- `v2.3 的修复提交 989c4713 <https://github.com/zephyrproject-rtos/zephyr/pull/23821/commits/989c4713ba429aa5105fe476b4d629718f3e6082>`_
+
+- `NCC-ZEP report`_ (NCC-ZEP-031)
+
+:cve:`2020-10072`
+-----------------
+
+所有线程都可以访问所有套接字文件描述符
+
+网络套接字 API 文件描述符没有权限管理机制。系统上运行的任何线程只要知道文件描述符的数值，就可以读写套接字文件描述符。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-87 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-87>`_
+
+- `v2.4 的修复 PR25804 <https://github.com/zephyrproject-rtos/zephyr/pull/25804>`_
+
+- `v1.4 的修复 PR27176 <https://github.com/zephyrproject-rtos/zephyr/pull/27176>`_
+
+:cve:`2020-10136`
+-----------------
+
+IP-in-IP 协议默认路由任意流量 zephyrproject
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-64 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-64>`_
+
+:cve:`2020-13598`
+-----------------
+
+FS：在 FAT_FS 中启用长文件名并调用 fs_stat 时发生缓冲区溢出
+
+对文件名长度超过 12 个字符的文件执行 fs_stat 将导致缓冲区溢出。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-88 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-88>`_
+
+- `v2.4 的修复 PR25852 <https://github.com/zephyrproject-rtos/zephyr/pull/25852>`_
+
+- `v2.3 的修复 PR28782 <https://github.com/zephyrproject-rtos/zephyr/pull/28782>`_
+
+- `v1.4 的修复 PR33577 <https://github.com/zephyrproject-rtos/zephyr/pull/33577>`_
+
+:cve:`2020-13599`
+-----------------
+
+settings 与 littlefs 的安全问题
+
+当 settings 与 littlefs 结合使用时，可以使用 MCUmgr 从设备中提取所有安全相关信息，例如可在 bt-mesh 中利用这些信息从设备获取设备密钥、网络密钥和应用密钥。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-57 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-57>`_
+
+- `v2.4 的修复 PR26083 <https://github.com/zephyrproject-rtos/zephyr/pull/26083>`_
+
+:cve:`2020-13600`
+-----------------
+
+eswifi 响应中格式错误的 SPI 可能损坏内核内存
+
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-91 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-91>`_
+
+- `v2.4 的修复 PR26712 <https://github.com/zephyrproject-rtos/zephyr/pull/26712>`_
+
+:cve:`2020-13601`
+-----------------
+
+DNS 读取中可能出现越界读取
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-92 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-92>`_
+
+- `v2.4 的修复 PR27774 <https://github.com/zephyrproject-rtos/zephyr/pull/27774>`_
+
+- `v1.4 的修复 PR30503 <https://github.com/zephyrproject-rtos/zephyr/pull/30503>`_
+
+:cve:`2020-13602`
+-----------------
+
+LwM2M do_write_op_tlv 中的远程拒绝服务
+
+在 Zephyr LwM2M 实现中，格式错误的输入可能导致无限循环，从而造成拒绝服务攻击。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-56 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-56>`_
+
+- `v2.4 的修复 PR26571 <https://github.com/zephyrproject-rtos/zephyr/pull/26571>`_
+
+- `v1.4 的修复 PR33578 <https://github.com/zephyrproject-rtos/zephyr/pull/33578>`_
+
+:cve:`2020-13603`
+-----------------
+
+mempool 中可能发生溢出
+
+ * Zephyr 则提供了预构建的 'malloc' 包装函数作为替代。
+ * 'malloc' 函数是 'sys_mem_pool_alloc' 函数的包装函数。
+ * sys_mem_pool_alloc 以不安全的方式分配 'size + WB_UP(sizeof(struct sys_mem_pool_block))'。
+ * 请求非常大的 size 值会导致内部整数回绕。
+ * 整数回绕会导致成功分配到的内存非常小。
+ * 例如：调用 malloc(0xffffffff) 会成功分配 7 字节。
+ * 这会导致堆溢出。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-111 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-111>`_
+
+- `v2.4 的修复 PR31796 <https://github.com/zephyrproject-rtos/zephyr/pull/31796>`_
+
+- `v1.4 的修复 PR32808 <https://github.com/zephyrproject-rtos/zephyr/pull/26571>`_

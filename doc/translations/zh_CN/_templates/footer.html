@@ -1,0 +1,27 @@
+{# SPDX-FileCopyrightText: Copyright The Process Mission #}
+{# SPDX-FileCopyrightText: Copyright The Zephyr Project Contributors
+   SPDX-License-Identifier: Apache-2.0 #}
+{% extends "!footer.html" %}
+{% block contentinfo %}
+{%- set sentence_end = "。" if docs_language == "zh_CN" else "." %}
+{%- set label_sep = "" if docs_language == "zh_CN" else " " %}
+<p>
+  {%- if show_copyright %}
+  {%- if docs_language == "zh_CN" %}
+  版权所有 &#169; {{ copyright }}{{ sentence_end }}
+  {%- else %}
+  &#169; Copyright {{ copyright }}{{ sentence_end }}
+  {%- endif %}
+  {%- endif %}
+
+  {%- if last_updated %}
+  <div class="lastupdated">
+    生成时间：{{ label_sep }}{{ last_updated }}{{ sentence_end }}
+    {%- set git_last_updated, sha1 = pagename | git_info | default((None, None), true) %}
+    {%- if git_last_updated %}
+    源文件更新：{{ label_sep }}{{ git_last_updated }}{{ sentence_end }}
+    {%- endif %}
+  </div>
+  {%- endif -%}
+</p>
+{% endblock %}

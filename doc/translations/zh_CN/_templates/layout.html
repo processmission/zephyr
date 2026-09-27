@@ -1,0 +1,107 @@
+{# SPDX-FileCopyrightText: Copyright The Process Mission #}
+{# SPDX-FileCopyrightText: Copyright The Zephyr Project Contributors
+   SPDX-License-Identifier: Apache-2.0 #}
+{% extends "!layout.html" %}
+{% block document %}
+  {% if is_release %}
+    <div class="wy-alert wy-alert-danger" data-nosnippet>
+
+      本页的<a href="https://docs.zephyrproject.org/latest/{{ pagename }}.html">最新开发版（英文）</a>
+      可能比当前发布的 {{ version }} 版本包含更新的内容。
+
+    </div>
+  {% endif %}
+  {{ super() }}
+{% endblock %}
+{% block menu %}
+  <div data-nosnippet>
+    {% if not docs_site_base_url %}
+      {% include "zversions.html" %}
+    {% endif %}
+    {{ super() }}
+    <div class="toctree-wrapper compound">
+      <p class="caption"><span class="caption-text">GitHub</span></p>
+      <ul>
+        <li class="toctree-l1">
+          <a class="reference external" href="https://github.com/zephyrproject-rtos/zephyr">
+            Zephyr 官方仓库
+          </a>
+        </li>
+        <li class="toctree-l1">
+          <a class="reference external" href="https://github.com/processmission/zephyr/tree/docs-zh">
+            中文文档维护仓库
+          </a>
+        </li>
+      </ul>
+    </div>
+    {% if reference_links %}
+    <div class="toctree-wrapper compound">
+      <p class="caption"><span class="caption-text">参考</span></p>
+      <ul>
+        {% for title, url in reference_links.items() %}
+        <li class="toctree-l1">
+          <a class="reference internal" href="{{ url }}">{{ title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endif %}
+  </div>
+{% endblock %}
+{% block extrahead %}
+  <meta name="color-scheme" content="dark light">
+  {% if docs_site_base_url %}
+  <link rel="alternate" hreflang="en" href="{{ docs_upstream_base_url }}{{ pagename }}.html"/>
+  <link rel="alternate" hreflang="zh-CN" href="{{ docs_site_base_url }}{{ pagename }}.html"/>
+  {% endif %}
+  {# Use dark mode loader script to prevent "flashing" of the page on load.
+     As we need a <noscript> tag and very specific orderding of the tags, this can't be done via
+     the usual add_js_file()/add_css_file() Sphinx API.
+     See https://github.com/GoogleChromeLabs/dark-mode-toggle/issues/77 #}
+  <noscript id="dark-mode-toggle-stylesheets">
+    <link rel="stylesheet" href="{{ pathto('_static/css/light.css', 1) }}" type="text/css" media="(prefers-color-scheme: light)"/>
+    <link rel="stylesheet" href="{{ pathto('_static/css/dark.css', 1) }}" type="text/css" media="(prefers-color-scheme: dark)"/>
+  </noscript>
+  <script src="{{ pathto('_static/js/dark-mode-toggle-stylesheets-loader.min.js', 1) }}"></script>
+  <script type="module" src="{{ pathto('_static/js/dark-mode-toggle.min.mjs', 1) }}"></script>
+  {% if kapa_website_id %}
+
+  {% set kapa_modal_title = "Zephyr 中文助手" %}
+  {% set kapa_consent_screen_title = "这个 AI 助手如何工作？" %}
+  {% set kapa_consent_screen_disclaimer = "该 AI 助手会基于您的问题，在 Zephyr 文档、源代码以及
+    GitHub issue 和 PR 中检索答案。您的提问与交互内容可能会被匿名收集和分析，用于发现文档中
+    可以改进的地方。我们不会收集任何可识别个人身份的信息。
+    点击“接受”即表示您同意使用这一 AI 功能并允许收集相关数据。
+    AI 生成的回答可能不准确，重要信息请以官方文档为准。" %}
+
+  <script async src="https://widget.kapa.ai/kapa-widget.bundle.js"
+    data-website-id="{{ kapa_website_id }}"
+    data-color-scheme-selector="[data-theme='dark']"
+    data-search-mode-enabled="true"
+    data-project-name="Zephyr"
+    data-modal-title="{{ kapa_modal_title }}"
+    data-view-mode="sidebar"
+    data-search-result-target="_self"
+    data-modal-open-on-command-k="true"
+    data-project-color="#7929d2"
+    data-project-logo="{{ pathto('_static/images/logo.svg', 1) }}"
+    data-modal-logo-hidden="true"
+    data-user-analytics-cookie-enabled="false"
+    data-button-bg-color="transparent"
+    data-button-hover-bg-color="transparent"
+    data-button-box-shadow="none"
+    data-button-border="none"
+    data-button-width="6rem"
+    data-button-image-height="50px"
+    data-button-image-width="50px"
+    data-button-hover-animation-enabled="false"
+    data-button-image="{{ pathto('_static/images/chatbot.webp', 1) }}"
+    data-button-text=" "
+    data-consent-required="true"
+    data-consent-screen-title="{{ kapa_consent_screen_title }}"
+    data-consent-screen-disclaimer="{{ kapa_consent_screen_disclaimer }}"
+    data-mcp-enabled="true"
+    data-mcp-server-url="https://zephyrproject.mcp.kapa.ai"
+  ></script>
+  {% endif %}
+{% endblock %}

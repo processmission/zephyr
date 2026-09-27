@@ -1,0 +1,21 @@
+.. SPDX-FileCopyrightText: Copyright The Process Mission
+
+..
+   SPDX-FileCopyrightText: Copyright The Zephyr Project Contributors
+   SPDX-License-Identifier: Apache-2.0
+
+.. _vulnerabilities_2019:
+
+CVE-2019
+########
+
+:cve:`2019-9506`
+----------------
+
+Bluetooth BR/EDR 规范直到 5.1 版（含）允许足够短的加密密钥长度，并且不会阻止攻击者影响密钥长度协商。这使得实际的暴力破解攻击（又称 “KNOB”）成为可能，此类攻击可以解密流量并注入任意密文，而受害者不会察觉。
+
+- `Zephyr 项目缺陷跟踪系统 ZEPSEC-20 <https://zephyrprojectsec.atlassian.net/browse/ZEPSEC-20>`_
+
+- `v1.14.0 的修复 PR18702 <https://github.com/zephyrproject-rtos/zephyr/pull/18702>`_
+
+- `v2.0.0 的修复 PR18659 <https://github.com/zephyrproject-rtos/zephyr/pull/18659>`_

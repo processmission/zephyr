@@ -1,0 +1,15 @@
+{
+    "project": "Zephyr 项目",
+    "html_title": "Zephyr 项目文档",
+    "date_format": "%Y年%m月%d日",
+    "copyright_holders": "Zephyr 项目成员及个人贡献者",
+    "docs_title": "文档",
+    "references": {
+        "API 文档（英文）": "/doxygen/html/index.html",
+        "Kconfig 选项（英文）": "/kconfig.html",
+        "Devicetree 绑定（英文）": "/build/dts/api/bindings.html",
+        "CMake 模块（英文）": "/build/cmake-ref/index.html",
+        "West 项目（英文）": "/develop/manifest/index.html",
+        "术语表": "/glossary.html"
+    }
+}
